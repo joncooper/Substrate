@@ -7,13 +7,15 @@
 //
 
 #import "SubstrateAppDelegate.h"
+#import "OpenGLView.h"
 
 @implementation SubstrateAppDelegate
 
 @synthesize window;
-
+@synthesize glView;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
+	[glView startAnimation];
 	[window makeKeyAndVisible];
     return YES;
 }

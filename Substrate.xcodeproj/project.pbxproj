@@ -13,6 +13,11 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		614D133311ADD6BA00646C4A /* Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 614D133211ADD6BA00646C4A /* Renderer.m */; };
+		614D138311ADE17100646C4A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614D138211ADE17100646C4A /* OpenGLES.framework */; };
+		614D138511ADE17100646C4A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614D138411ADE17100646C4A /* QuartzCore.framework */; };
+		614D139511ADE21E00646C4A /* OpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 614D139411ADE21E00646C4A /* OpenGLView.m */; };
+		614D13B811ADE87D00646C4A /* SubstrateRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */; };
 		618AD97711AD9FD600D8AF67 /* FrameBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 618AD97611AD9FD600D8AF67 /* FrameBuffer.m */; };
 		61BD2C6611ACA73900EDAEA3 /* SubstrateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61BD2C6511ACA73900EDAEA3 /* SubstrateView.m */; };
 		61BD2D4511AD878100EDAEA3 /* Palette.m in Sources */ = {isa = PBXBuildFile; fileRef = 61BD2D4411AD878100EDAEA3 /* Palette.m */; };
@@ -29,6 +34,14 @@
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Substrate_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Substrate_Prefix.pch; sourceTree = "<group>"; };
+		614D133111ADD6BA00646C4A /* Renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Renderer.h; sourceTree = "<group>"; };
+		614D133211ADD6BA00646C4A /* Renderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Renderer.m; sourceTree = "<group>"; };
+		614D138211ADE17100646C4A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		614D138411ADE17100646C4A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		614D139311ADE21E00646C4A /* OpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLView.h; sourceTree = "<group>"; };
+		614D139411ADE21E00646C4A /* OpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLView.m; sourceTree = "<group>"; };
+		614D13B611ADE87D00646C4A /* SubstrateRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubstrateRenderer.h; sourceTree = "<group>"; };
+		614D13B711ADE87D00646C4A /* SubstrateRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubstrateRenderer.m; sourceTree = "<group>"; };
 		618AD97511AD9FD600D8AF67 /* FrameBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameBuffer.h; sourceTree = "<group>"; };
 		618AD97611AD9FD600D8AF67 /* FrameBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrameBuffer.m; sourceTree = "<group>"; };
 		61BD2C6411ACA73900EDAEA3 /* SubstrateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubstrateView.h; sourceTree = "<group>"; };
@@ -47,6 +60,8 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				614D138311ADE17100646C4A /* OpenGLES.framework in Frameworks */,
+				614D138511ADE17100646C4A /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +71,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				614D133011ADD6AD00646C4A /* OpenGL */,
 				1D3623240D0F684500981E51 /* SubstrateAppDelegate.h */,
 				1D3623250D0F684500981E51 /* SubstrateAppDelegate.m */,
 				61BD2C6411ACA73900EDAEA3 /* SubstrateView.h */,
@@ -64,6 +80,8 @@
 				61BD2D4411AD878100EDAEA3 /* Palette.m */,
 				618AD97511AD9FD600D8AF67 /* FrameBuffer.h */,
 				618AD97611AD9FD600D8AF67 /* FrameBuffer.m */,
+				614D13B611ADE87D00646C4A /* SubstrateRenderer.h */,
+				614D13B711ADE87D00646C4A /* SubstrateRenderer.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -113,8 +131,21 @@
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+				614D138211ADE17100646C4A /* OpenGLES.framework */,
+				614D138411ADE17100646C4A /* QuartzCore.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		614D133011ADD6AD00646C4A /* OpenGL */ = {
+			isa = PBXGroup;
+			children = (
+				614D133111ADD6BA00646C4A /* Renderer.h */,
+				614D133211ADD6BA00646C4A /* Renderer.m */,
+				614D139311ADE21E00646C4A /* OpenGLView.h */,
+				614D139411ADE21E00646C4A /* OpenGLView.m */,
+			);
+			name = OpenGL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +207,9 @@
 				61BD2C6611ACA73900EDAEA3 /* SubstrateView.m in Sources */,
 				61BD2D4511AD878100EDAEA3 /* Palette.m in Sources */,
 				618AD97711AD9FD600D8AF67 /* FrameBuffer.m in Sources */,
+				614D133311ADD6BA00646C4A /* Renderer.m in Sources */,
+				614D139511ADE21E00646C4A /* OpenGLView.m in Sources */,
+				614D13B811ADE87D00646C4A /* SubstrateRenderer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
