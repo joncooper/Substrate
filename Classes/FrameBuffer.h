@@ -8,9 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-
-@interface FrameBuffer : NSObject {
-
+@interface FrameBuffer : NSObject {	
+	uint32_t *pixels;
+	int width;
+	int height;
 }
+
+- (id) initWithWidth:(int)width AndHeight:(int)height;
+- (uint32_t) getPixelAtX:(int)x andY:(int)y;
+- (void) setPixelAtX:(int)x andY:(int)y to:(uint32_t)pixel;
 
 @end

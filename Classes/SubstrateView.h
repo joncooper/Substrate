@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FrameBuffer.h"
 #import "Palette.h"
 
 @interface SubstrateView : UIView {
 	NSTimer *timer;
+	FrameBuffer *fb;
 	Palette *palette;
 }
 
