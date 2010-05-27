@@ -18,6 +18,7 @@
 		614D138511ADE17100646C4A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614D138411ADE17100646C4A /* QuartzCore.framework */; };
 		614D139511ADE21E00646C4A /* OpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 614D139411ADE21E00646C4A /* OpenGLView.m */; };
 		614D13B811ADE87D00646C4A /* SubstrateRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */; };
+		614D166C11AEC26500646C4A /* texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 614D166B11AEC26500646C4A /* texture.png */; };
 		618AD97711AD9FD600D8AF67 /* FrameBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 618AD97611AD9FD600D8AF67 /* FrameBuffer.m */; };
 		61BD2C6611ACA73900EDAEA3 /* SubstrateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61BD2C6511ACA73900EDAEA3 /* SubstrateView.m */; };
 		61BD2D4511AD878100EDAEA3 /* Palette.m in Sources */ = {isa = PBXBuildFile; fileRef = 61BD2D4411AD878100EDAEA3 /* Palette.m */; };
@@ -42,6 +43,7 @@
 		614D139411ADE21E00646C4A /* OpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLView.m; sourceTree = "<group>"; };
 		614D13B611ADE87D00646C4A /* SubstrateRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubstrateRenderer.h; sourceTree = "<group>"; };
 		614D13B711ADE87D00646C4A /* SubstrateRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubstrateRenderer.m; sourceTree = "<group>"; };
+		614D166B11AEC26500646C4A /* texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture.png; sourceTree = "<group>"; };
 		618AD97511AD9FD600D8AF67 /* FrameBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameBuffer.h; sourceTree = "<group>"; };
 		618AD97611AD9FD600D8AF67 /* FrameBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrameBuffer.m; sourceTree = "<group>"; };
 		61BD2C6411ACA73900EDAEA3 /* SubstrateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubstrateView.h; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				614D166B11AEC26500646C4A /* texture.png */,
 				61BD2D6411AD8DE400EDAEA3 /* pollockShimmering.gif */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -192,6 +195,7 @@
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				61BD2D6511AD8DE400EDAEA3 /* pollockShimmering.gif in Resources */,
+				614D166C11AEC26500646C4A /* texture.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

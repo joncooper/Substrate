@@ -36,8 +36,6 @@
 	glBindRenderbufferOES(GL_RENDERBUFFER_OES, colorRenderbuffer);
 	glFramebufferRenderbufferOES(GL_FRAMEBUFFER_OES, GL_COLOR_ATTACHMENT0_OES, GL_RENDERBUFFER_OES, colorRenderbuffer);
 	
-	// NOTE: no depth buffer!
-	
 	return self;
 }
 

@@ -13,7 +13,7 @@
 #import <OpenGLES/ES1/glext.h>
 
 @interface Renderer : NSObject {
-@private
+@protected
 	//
 	// An EAGLContext defines the rendering context that is the target of all OpenGL ES commands.
 	//
@@ -26,6 +26,7 @@
 	// The OpenGL ES names for the framebuffer and renderbuffer used to render to this view 
 	GLuint defaultFramebuffer;
 	GLuint colorRenderbuffer;
+	GLuint depthRenderbuffer;
 }
 
 - (void) render;

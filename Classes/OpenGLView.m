@@ -7,6 +7,7 @@
 //
 
 #import "OpenGLView.h"
+#import "SubstrateRenderer.h"
 #import "Renderer.h"
 
 @implementation OpenGLView
@@ -24,7 +25,7 @@
 										kEAGLColorFormatRGBA8, kEAGLDrawablePropertyColorFormat,
 										nil];
 		
-		renderer = [[Renderer alloc] init];
+		renderer = [[SubstrateRenderer alloc] init];
 		if (!renderer) {
 			[self release];
 			return nil;
