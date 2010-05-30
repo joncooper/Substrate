@@ -6,16 +6,30 @@
 //  Copyright 2010 Jon Cooper. All rights reserved.
 //
 
+#import "FBPixel.h"
 #import <Foundation/Foundation.h>
+#import <OpenGLES/ES1/gl.h>
 
-@interface FrameBuffer : NSObject {	
-	uint32_t *pixels;
+
+@interface FrameBuffer : NSObject {
+@private
 	int width;
 	int height;
+	uint32_t *pixels;
+	BOOL dirty;
 }
 
 - (id) initWithWidth:(int)width AndHeight:(int)height;
-- (uint32_t) getPixelAtX:(int)x andY:(int)y;
-- (void) setPixelAtX:(int)x andY:(int)y to:(uint32_t)pixel;
+
+- (int) getWidth;
+- (int) getHeight;
+
+- (FBPixel) getPixelAtX:(int)x andY:(int)y;
+- (void) setPixelAtX:(int)x andY:(int)y to:(FBPixel)pixel;
+
+// Semantics: isDirty gets unset on a getBuffer* call and set on setPixel* call
+- (BOOL) isDirty;
+- (GLubyte *) getBufferRGBA8888Pixels;
 
 @end
+
