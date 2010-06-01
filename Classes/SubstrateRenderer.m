@@ -237,9 +237,6 @@ typedef struct {
 	glEnableClientState(GL_TEXTURE_COORD_ARRAY);
 	glEnableClientState(GL_NORMAL_ARRAY);
 	
-	glScalef(1.0, 3.0 / 4.0, 1.0);
-	glTranslatef(0.0, (1.0 - (3.0 / 4.0)), 1.0);
-	
 	glVertexPointer(3, GL_FLOAT, 0, squareVertices);
 	glTexCoordPointer(2, GL_FLOAT, 0, texCoords);
 	glNormalPointer(GL_FLOAT, 0, normals);

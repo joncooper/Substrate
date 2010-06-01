@@ -9,8 +9,7 @@
 
 static inline float random_float(float lower, float upper) 
 {
-	float ret = fmodf((float) random(), (upper - lower)) + lower;
-	return ret;
+	return (upper - lower) * ((float) random() / RAND_MAX) + lower;
 }
 
 static inline int random_int(int lower, int upper)

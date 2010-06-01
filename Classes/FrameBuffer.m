@@ -71,10 +71,6 @@ int offset(int x, int y, int width)
 					
 - (GLubyte *) getBufferRGBA8888Pixels
 {
-	// Now here's a question.
-	// Does a uint32_t alloc equal four GLubyte allocs?
-	// If this blows up in my face I'm going to swap the backing from uint32_t to GLubyte.
-	
 	dirty = NO;
 	return (GLubyte *) pixels;
 }

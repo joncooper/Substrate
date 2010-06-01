@@ -7,15 +7,14 @@
  *
  */
 
-// Should these be clamped floats instead?
 typedef struct {
-	uint8_t r;
-	uint8_t g;
-	uint8_t b;
-	uint8_t a;
+	float r;
+	float g;
+	float b;
+	float a;
 } FBPixel;
 
-static inline FBPixel MakeFBPixel(uint8_t r, uint8_t g, uint8_t b, uint8_t a) 
+static inline FBPixel MakeFBPixel(float r, float g, float b, float a) 
 {
 	FBPixel pixel;
 	pixel.r = r;
@@ -25,12 +24,25 @@ static inline FBPixel MakeFBPixel(uint8_t r, uint8_t g, uint8_t b, uint8_t a)
 	return pixel;
 }
 
+static inline BOOL BlessFBPixel(FBPixel pixel) {
+	if ((pixel.r >= 0.0) && (pixel.r <= 1.0) &&
+		(pixel.g >= 0.0) && (pixel.g <= 1.0) &&
+		(pixel.b >= 0.0) && (pixel.b <= 1.0) &&
+		(pixel.a >= 0.0) && (pixel.a <= 1.0)) {
+		return YES;
+	}
+	else return NO;
+}
+
 static inline uint32_t FBPixelToUint32(FBPixel pixel)
 {
-	return ((uint32_t) pixel.r | ((uint32_t) pixel.g) << 8 | ((uint32_t) pixel.b) << 16 | ((uint32_t) pixel.a) << 24);
+	uint8_t r = (uint8_t) roundf(pixel.r * 255.0);
+	uint8_t g = (uint8_t) roundf(pixel.g * 255.0);
+	uint8_t b = (uint8_t) roundf(pixel.b * 255.0);
+	uint8_t a = (uint8_t) roundf(pixel.a * 255.0);
+	return ((uint32_t) r | ((uint32_t) g) << 8 | ((uint32_t) b) << 16 | ((uint32_t) a) << 24);
 }
 	
-
 // Be careful to apply the shift before the cast, otherwise you are shifting something that's already 8 bits.
 
 static inline uint8_t FBUnpackR(uint32_t packed) 
@@ -55,9 +67,9 @@ static inline uint8_t FBUnpackA(uint32_t packed) {
 static inline FBPixel Uint32ToFBPixel(uint32_t bytes) 
 {
 	FBPixel pixel;
-	pixel.r = FBUnpackR(bytes);
-	pixel.g = FBUnpackG(bytes);
-	pixel.b = FBUnpackB(bytes);
-	pixel.a = FBUnpackA(bytes);
+	pixel.r = ((float) FBUnpackR(bytes)) / 255.0;
+	pixel.g = ((float) FBUnpackG(bytes)) / 255.0;
+	pixel.b = ((float) FBUnpackB(bytes)) / 255.0;
+	pixel.a = ((float) FBUnpackA(bytes)) / 255.0;
 	return pixel;
 }

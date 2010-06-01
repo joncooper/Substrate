@@ -65,7 +65,8 @@
 {
 	x = cx;
 	y = cy;
-	t = ca; // %360
+	t = ca;
+	t = fmodf(ca, 360.0); // %360
 	// This constant adjusts spacing from the crack point. It's not magic otherwise.
 	x += 0.61 * cos(t * M_PI/180);
 	y += 0.61 * sin(t * M_PI/180);
@@ -137,7 +138,7 @@
 	}
 
 	// Bounds check.
-	if ((rx < 0) || (rx >= dimx) || (ry < 0) || (ry >= dimy))
+	if ((rx < 0) || (rx >= (dimx - 1)) || (ry < 0) || (ry >= (dimy - 1)))
 		return;
 	
 	[sandPainter renderX:rx Y:ry OX:x OY:y];
@@ -165,8 +166,8 @@
 	if ((cx >= 0) && (cx < dimx) && (cy >= 0) && (cy < dimy)) 
 	{
 		// Weird, colors seem inverted or something
-		[substrate.fbPainter setColor:MakeFBPixel(0x00, 0x00, 0x00, 0xD8)]; // 0xD8 ?
-		[substrate.fbPainter pointXf:cx Yf:cy];
+		[substrate.fbPainter setColor:MakeFBPixel(0.0, 0.0, 0.0, 0.85)]; // 0xD8 ?
+		[substrate.fbPainter pointX:cx Y:cy];
 		
 		// [substrate.fbPainter pointXf:fmax(x + random_float(-z, z), 0)
 		//						  Yf:fmax(y + random_float(-z, z), 0)]

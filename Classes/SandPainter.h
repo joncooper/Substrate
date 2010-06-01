@@ -18,6 +18,6 @@
 }
 
 - (id) initWithSubstrate:(Substrate *)substrate;
-- (void) renderX:(int) x Y:(int)y OX:(int)ox OY:(int) oy;
+- (void) renderX:(float) x Y:(float)y OX:(float)ox OY:(float) oy;
 
 @end

@@ -47,7 +47,12 @@
         uint8_t green = rawData[i + 1]; 
         uint8_t blue  = rawData[i + 2];
         uint8_t alpha = rawData[i + 3];
-		FBPixel pixel = MakeFBPixel(red, green, blue, alpha);
+		
+		FBPixel pixel = MakeFBPixel((float) (red / 0xFF),
+									(float) (green / 0xFF), 
+									(float) (blue / 0xFF), 
+									(float) (alpha / 0xFF));
+		
 		NSValue *wrappedPixel = [NSValue value:&pixel withObjCType:@encode(FBPixel)];
 		if (![result containsObject:wrappedPixel])
 			[result addObject:wrappedPixel];
@@ -60,6 +65,20 @@
 }
 
 - (FBPixel) randomColor {
+	
+	NSMutableArray *newColors = [NSMutableArray arrayWithCapacity:3];
+	
+	FBPixel c1 = MakeFBPixel(214.0 / 255.0, 180.0 / 255.0, 159.0 / 255.0, 1.0);
+	FBPixel c2 = MakeFBPixel(158.0 / 255.0, 213.0 / 255.0, 206.0 / 255.0, 1.0);
+	FBPixel c3 = MakeFBPixel(158.0 / 255.0, 164.0 / 255.0, 213.0 / 255.0, 1.0);
+	
+	[newColors addObject:[NSValue value:&c1 withObjCType:@encode(FBPixel)]];
+	[newColors addObject:[NSValue value:&c2 withObjCType:@encode(FBPixel)]];
+	[newColors addObject:[NSValue value:&c3 withObjCType:@encode(FBPixel)]];
+
+	
+	colors = newColors;
+	
 	if (colors != nil) {
 		int index = random() % [colors count];
 		FBPixel pixel;

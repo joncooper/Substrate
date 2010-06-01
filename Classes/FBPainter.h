@@ -20,9 +20,9 @@
 
 - (void) setColor:(FBPixel)color;
 - (void) setBackgroundColor:(FBPixel) color;
-- (void) pointX:(int)x Y:(int)y;
-- (void) pointXf:(float)x Yf:(float)y;
+- (void) pointX:(float)x Y:(float)y;
 
 - (void) randomizeFB;
+- (void) alphaTestFB;
 
 @end

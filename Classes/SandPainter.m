@@ -24,7 +24,7 @@
 }
 
 
-- (void) renderX:(int) x Y:(int)y OX:(int)ox OY:(int) oy
+- (void) renderX:(float)x Y:(float)y OX:(float)ox OY:(float) oy
 {
 	// modulate gain
 	gain += random_float(-0.05, 0.05);
@@ -37,19 +37,22 @@
 	
 	// calculate grains by distance
 	// TODO: do you need to use roundf()? 
-	//int grains = (int) sqrtf((ox - x) * (ox - x) + (oy - y) * (oy - y));
+	// int grains = (int) sqrtf((ox - x) * (ox - x) + (oy - y) * (oy - y));
 	
-	int grains = 32;
+	int grains = 128;
 	
 	// lay down grains of sand using transparent pixels
 	float w = gain / (grains - 1.0);
 	for (int i = 0; i < grains; i++) {
 		float a = 0.1 - i / (grains * 10.0);
 		FBPixel aColor = c;
-		aColor.a = a * 0xFF;
+		aColor.a = a;
 		[substrate.fbPainter setColor:aColor];
-		[substrate.fbPainter pointXf:ox + (x - ox) * sin(sin(i * w))
-								  Yf:oy + (y - oy) * sin(sin(i * w))];
+		
+		float nx = ox + (x - ox) * sin(sin(i * w));
+		float ny = oy + (y - oy) * sin(sin(i * w));
+		
+		[substrate.fbPainter pointX:nx	Y:ny];
 	}
 } 
 

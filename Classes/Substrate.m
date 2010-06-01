@@ -36,7 +36,7 @@
 	
 	fbPainter = [[FBPainter alloc] init];
 	fbPainter.fb = [[FrameBuffer alloc] initWithWidth:width AndHeight:height];
-	[fbPainter setBackgroundColor:MakeFBPixel(0xFF, 0xFF, 0xFF, 0xFF)];
+	[fbPainter setBackgroundColor:MakeFBPixel(1.0, 1.0, 1.0, 1.0)];
 	
 	// create and erase crack grid
 	

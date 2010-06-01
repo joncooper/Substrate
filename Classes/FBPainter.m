@@ -8,6 +8,7 @@
 
 #import "FBPainter.h"
 #import <Foundation/Foundation.h>
+#import "Util.h"
 
 @implementation FBPainter
 
@@ -18,8 +19,11 @@
 	currentColor = color;
 }
 
+// A background color is always opaque. So we are going to blow away any alpha.
+//
 - (void) setBackgroundColor:(FBPixel) color;
 {
+	color.a = 1.0;
 	[self setColor:color];
 	
 	int width = [fb getWidth];
@@ -30,71 +34,36 @@
 			[fb setPixelAtX:x andY:y to:currentColor];
 }
 
-- (void) pointX:(int)x Y:(int)y
+// I assume that pixels are going to come in not premultiplied, because that's how I think of colors.
+// If we used setBackgroundColor we are drawing onto a surface with an alpha of 1.0.
+// 
+- (void) pointX:(float)x Y:(float)y
 {
-	// Draw points onto the FB with blending.
-	// Use the associative (i.e. NON-premultiplied) approach. 
+	// Consider adding antialiasing, but for now, round.
+	int rx = roundf(x);
+	int ry = roundf(y);
 	
-	FBPixel existingPixel = [fb getPixelAtX:x andY:y];
+	// Bounds check
+	if ((rx < 0) || (rx >= [fb getWidth]) || (ry < 0) || (ry >= [fb getHeight]))
+		return;
+	
+	FBPixel existingPixel = [fb getPixelAtX:rx andY:ry];
 	FBPixel newPixel;
 	
-	float ccR, ccG, ccB, ccA;
-	float epR, epG, epB, epA;
-	float npR, npG, npB;
-	float newAlpha;
+	// Blend into something with an alpha of 1.0. i.e. the FB itself is always alpha 1.
+	newPixel.r = (currentColor.r * currentColor.a) + ((existingPixel.r) * (1.0 - currentColor.a));
+	newPixel.g = (currentColor.g * currentColor.a) + ((existingPixel.g) * (1.0 - currentColor.a));
+	newPixel.b = (currentColor.b * currentColor.a) + ((existingPixel.b) * (1.0 - currentColor.a));
 	
-	ccR = (float) (currentColor.r / 255.0);
-	ccG = (float) (currentColor.g / 255.0);
-	ccB = (float) (currentColor.b / 255.0);
-	ccA = (float) (currentColor.a / 255.0);
+	// definitionally
+	newPixel.a = 1.0; 	
 	
-	epR = (float) (existingPixel.r / 255.0);
-	epG = (float) (existingPixel.g / 255.0);
-	epB = (float) (existingPixel.b / 255.0);
-	epA = (float) (existingPixel.a / 255.0);
-	
-	newAlpha = ccA + ((1.0 - ccA) * epA);
-	
-	npR = (ccR * ccA) + ((epR * epA) * (1.0 - ccA));
-	npG = (ccG * ccA) + ((epG * epG) * (1.0 - ccA));
-	npB = (ccB * ccA) + ((epB * epA) * (1.0 - ccA));
-
-	if (newAlpha > 0.0) {
-		npR /= newAlpha;
-		npG /= newAlpha;
-		npB /= newAlpha;
+	// TODO: remove after debug
+	if (!BlessFBPixel(newPixel)) {
+		NSLog(@"Aieee!");
 	}
 	
-	newPixel.r = (uint8_t) (npR * 255.0);
-	newPixel.g = (uint8_t) (npG * 255.0);
-	newPixel.b = (uint8_t) (npB * 255.0);
-	newPixel.a = newAlpha;
-	
-	/*
-	uint8_t newAlpha = currentColor.a + ((0xFF - currentColor.a) * (existingPixel.a/0xFF));
-	newPixel.a = newAlpha;
-	
-	newPixel.r = (currentColor.r * (currentColor.a)/0xFF) + ((existingPixel.r * (existingPixel.a)/0xFF) * (0xFF - currentColor.a)); 
-	newPixel.g = (currentColor.g * (currentColor.a)/0xFF) + ((existingPixel.g * (existingPixel.a)/0xFF) * (0xFF - currentColor.a));
-	newPixel.b = (currentColor.b * (currentColor.a)/0xFF) + ((existingPixel.b * (existingPixel.a)/0xFF) * (0xFF - currentColor.a));
-	if (newAlpha != 0x00) {
-		newPixel.r *= (1 / (newAlpha/0xFF));
-		newPixel.g *= (1 / (newAlpha/0xFF));
-		newPixel.b *= (1 / (newAlpha/0xFF));
-	} 
-
-	 else 
-		// Not super sure what I'm supposed to do here.
-	}
-	 */
-	
-	[fb setPixelAtX:x andY:y to:newPixel];
-}
-
-// Possibly antialias one day. For now, round.
-- (void) pointXf:(float)x Yf:(float)y
-{
-	[self pointX:roundf(x) Y:roundf(y)];
+	[fb setPixelAtX:rx andY:ry to:newPixel];
 }
 
 #pragma mark -
@@ -102,10 +71,10 @@
 
 FBPixel randomPixelA1() {
 	FBPixel pixel;
-	pixel.r = random() % 0xFF;
-	pixel.g = random() % 0xFF;
-	pixel.b = random() % 0xFF;
-	pixel.a = 0xFF;
+	pixel.r = random_float(0.0, 1.0);
+	pixel.g = random_float(0.0, 1.0);
+	pixel.b = random_float(0.0, 1.0);
+	pixel.a = 1.0;
 	return pixel;
 }
 
@@ -123,22 +92,18 @@ FBPixel randomPixelA1() {
 - (void) rgbLinesFB {
 	int width = [fb getWidth];
 	int height = [fb getHeight];
-	
-	FBPixel red = MakeFBPixel(0xFF, 0x00, 0x00, 0xFF);
-	FBPixel green = MakeFBPixel(0x00, 0xFF, 0x00, 0xFF);
-	FBPixel blue = MakeFBPixel(0x00, 0x00, 0xFF, 0xFF);
-	
-	[self setColor:red];
+
+	[self setColor:MakeFBPixel(1.0, 0.0, 0.0, 1.0)];
 	for (int x = 0; x < width; x++) 
 		for (int y = 0; y < (height / 3); y++)
 			[self pointX:x Y:y];
 	
-	[self setColor:green];
+	[self setColor:MakeFBPixel(0.0, 1.0, 0.0, 1.0)];
 	for (int x = 0; x < width; x++) 
 		for (int y = (height / 3); y < ((height / 3) * 2); y++)
 			[self pointX:x Y:y];
 	
-	[self setColor:blue];
+	[self setColor:MakeFBPixel(0.0, 0.0, 1.0, 1.0)];
 	for (int x = 0; x < width; x++) 
 		for (int y = ((height / 3) * 2); y < ((height / 3) * 3); y++)
 			[self pointX:x Y:y];
@@ -149,8 +114,8 @@ FBPixel randomPixelA1() {
 	int width = [fb getWidth];
 	int height = [fb getHeight];
 	
-	FBPixel red_50pct = MakeFBPixel(0xFF, 0x00, 0x00, 0x7F);
-	FBPixel green_50pct = MakeFBPixel(0x00, 0xFF, 0x00, 0x7F);
+	FBPixel red_50pct = MakeFBPixel(1.0, 0.0, 0.0, 0.5);
+	FBPixel green_50pct = MakeFBPixel(0.0, 0.0, 1.0, 0.5);
 	
 	[self setColor:red_50pct];
 	for (int x = 0; x < width; x++)
