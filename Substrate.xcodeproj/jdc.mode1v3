@@ -274,12 +274,6 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>6</integer>
-									<integer>4</integer>
-									<integer>3</integer>
-									<integer>0</integer>
-								</array>
-								<array>
 									<integer>8</integer>
 									<integer>4</integer>
 									<integer>3</integer>
@@ -300,42 +294,6 @@
 								<array>
 									<integer>14</integer>
 									<integer>4</integer>
-									<integer>3</integer>
-									<integer>0</integer>
-								</array>
-								<array>
-									<integer>15</integer>
-									<integer>4</integer>
-									<integer>3</integer>
-									<integer>0</integer>
-								</array>
-								<array>
-									<integer>17</integer>
-									<integer>16</integer>
-									<integer>3</integer>
-									<integer>0</integer>
-								</array>
-								<array>
-									<integer>18</integer>
-									<integer>16</integer>
-									<integer>3</integer>
-									<integer>0</integer>
-								</array>
-								<array>
-									<integer>19</integer>
-									<integer>16</integer>
-									<integer>3</integer>
-									<integer>0</integer>
-								</array>
-								<array>
-									<integer>20</integer>
-									<integer>16</integer>
-									<integer>3</integer>
-									<integer>0</integer>
-								</array>
-								<array>
-									<integer>21</integer>
-									<integer>16</integer>
 									<integer>3</integer>
 									<integer>0</integer>
 								</array>
@@ -378,7 +336,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>SubstrateRenderer.m</string>
+								<string>Substrate.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -386,11 +344,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>SubstrateRenderer.m</string>
+										<string>Substrate.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>61B8CCDD11B5AC20007A1B77</string>
+										<string>61B8CD9211B5BFA9007A1B77</string>
 										<key>history</key>
 										<array>
 											<string>61BD2D7011AD8ED400EDAEA3</string>
@@ -400,27 +358,27 @@
 											<string>614D155D11AE298300646C4A</string>
 											<string>6134466911AF31DC001530F4</string>
 											<string>6134485511B05AD6001530F4</string>
-											<string>6134485711B05AD6001530F4</string>
 											<string>6134485A11B05AD6001530F4</string>
 											<string>61B8C75011B19396007A1B77</string>
 											<string>61B8C81611B1A0C2007A1B77</string>
-											<string>61B8CA6D11B20503007A1B77</string>
 											<string>61B8CA6F11B20503007A1B77</string>
 											<string>61B8CB1511B20F72007A1B77</string>
-											<string>61B8CB6511B2178B007A1B77</string>
 											<string>61B8CBE611B2DE39007A1B77</string>
 											<string>61B8CC2811B2E666007A1B77</string>
 											<string>61B8CC3B11B59866007A1B77</string>
-											<string>61B8CC7D11B5A166007A1B77</string>
-											<string>61B8CC9911B5A761007A1B77</string>
-											<string>61B8CC9B11B5A761007A1B77</string>
-											<string>61B8CCAB11B5A880007A1B77</string>
 											<string>61B8CCC111B5AB54007A1B77</string>
-											<string>61B8CCC211B5AB54007A1B77</string>
-											<string>61B8CCD911B5AC20007A1B77</string>
-											<string>61B8CCDA11B5AC20007A1B77</string>
-											<string>61B8CCDB11B5AC20007A1B77</string>
-											<string>61B8CCDC11B5AC20007A1B77</string>
+											<string>61B8CCE811B5ADFC007A1B77</string>
+											<string>61B8CCE911B5ADFC007A1B77</string>
+											<string>61B8CCF911B5B05A007A1B77</string>
+											<string>61B8CCFA11B5B05A007A1B77</string>
+											<string>61B8CCFB11B5B05A007A1B77</string>
+											<string>61B8CCFC11B5B05A007A1B77</string>
+											<string>61B8CD3311B5B390007A1B77</string>
+											<string>61B8CD4011B5B9D7007A1B77</string>
+											<string>61B8CD7111B5BD0D007A1B77</string>
+											<string>61B8CD8A11B5BF82007A1B77</string>
+											<string>61B8CD8B11B5BF82007A1B77</string>
+											<string>61B8CD7911B5BD42007A1B77</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -618,13 +576,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>61B8CCDE11B5AC20007A1B77</string>
 		<string>61B8C6DF11B17E36007A1B77</string>
 		<string>61B8C6E111B17E36007A1B77</string>
-		<string>61B8C6D611B17C98007A1B77</string>
-		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>61BD2C3311ACA60900EDAEA3</string>
+		<string>1C530D57069F1CE1000CFCEE</string>
+		<string>61B8C6D611B17C98007A1B77</string>
 		<string>/Users/jdc/Documents/IPhone/Substrate/Substrate.xcodeproj</string>
 		<string>1C78EAAD065D492600B07095</string>
 	</array>
@@ -652,7 +609,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Palette.m</string>
+								<string>OpenGLView.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -969,7 +926,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {888, 317}}</string>
 								<key>RubberWindowFrame</key>
-								<string>21 416 888 358 0 0 1440 878 </string>
+								<string>11 470 888 358 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXDebugCLIModule</string>
@@ -998,7 +955,7 @@
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.consoleV3</string>
 			<key>WindowString</key>
-			<string>21 416 888 358 0 0 1440 878 </string>
+			<string>11 470 888 358 0 0 1440 878 </string>
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>

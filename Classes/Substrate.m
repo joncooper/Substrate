@@ -27,8 +27,8 @@
 	// seed the random number generator
 	srandomdev();
 	
-	width = 512;
-	height = 512;
+	width = 768;
+	height = 1004;
 	cracks = [[NSMutableArray alloc] init];
 	// palette = [Palette paletteFromImageFile:@"pollockShimmering"];
 	
@@ -47,7 +47,7 @@
 	
 	// make random crack seeds
 	
-	float crackDensity = 5e-6f;
+	float crackDensity = 5e-5f;
 	int numCracks = width * height * crackDensity;
 	
 	for (int seed = 0; seed < numCracks; seed++) {
@@ -79,7 +79,7 @@
 
 - (void) tick 
 {
-	int ticksPerFrame = 50;
+	int ticksPerFrame = 10;
 	for (int k = 0; k < ticksPerFrame; k++) {
 		for (int i = 0; i < [cracks count]; i++) {
 			[[cracks objectAtIndex:i] move];

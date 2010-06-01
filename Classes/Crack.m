@@ -65,7 +65,7 @@
 {
 	x = cx;
 	y = cy;
-	t = ca;
+	// t = ca;
 	t = fmodf(ca, 360.0); // %360
 	// This constant adjusts spacing from the crack point. It's not magic otherwise.
 	x += 0.61 * cos(t * M_PI/180);
@@ -122,7 +122,7 @@
 	while (openSpace) {
 		// move perpendicular to crack
 		rx += 0.81 * sin(t * (M_PI/180));
-		ry += 0.81 * cos(t * (M_PI/180));
+		ry -= 0.81 * cos(t * (M_PI/180));
 		int cx = (int) rx;
 		int cy = (int) ry;
 		if ((cx >= 0) && (cx < dimx) && (cy >= 0) && (cy < dimy)) {

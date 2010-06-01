@@ -134,14 +134,14 @@ typedef struct {
 	// Grab the texture in RGBA from the frame buffer and copy the data in
 	
 	GLubyte *textureData = [substrate.fbPainter.fb getBufferRGBA8888Pixels];
-	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, 512, 512, 0, GL_RGBA, GL_UNSIGNED_BYTE, textureData);
+	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, 1024, 1024, 0, GL_RGBA, GL_UNSIGNED_BYTE, textureData);
 
 }
 
 // Update the texture with new image data from the FB
 - (void) updateTexture {
 	GLubyte *textureData = [substrate.fbPainter.fb getBufferRGBA8888Pixels];
-	glTexSubImage2D(GL_TEXTURE_2D, 0, 0, 0, 512, 512, GL_RGBA, GL_UNSIGNED_BYTE, textureData);
+	glTexSubImage2D(GL_TEXTURE_2D, 0, 0, 0, 768, 1004, GL_RGBA, GL_UNSIGNED_BYTE, textureData);
 }
 
 // Set up the projection and viewport
@@ -221,11 +221,14 @@ typedef struct {
 	
 	// Map and enable the texture
 	
+	GLfloat tw = 768.0  / 1024.0;
+	GLfloat th = 1004.0 / 1024.0;
+	
 	GLfloat texCoords[] = { 
-		0.0, 1.0, 
-		1.0, 1.0, 
+		0.0, th, 
+		tw, th, 
 		0.0, 0.0, 
-		1.0, 0.0 
+		tw, 0.0 
 	};
 	
 	// Material setup

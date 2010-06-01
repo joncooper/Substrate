@@ -34,7 +34,7 @@
 			61B8CB3011B211B4007A1B77 /* SandPainter.m:47 */,
 			61B8CB9211B21AA4007A1B77 /* Crack.m:126 */,
 			61B8CBB711B21D4B007A1B77 /* SandPainter.m:55 */,
-			61B8CC7911B5A163007A1B77 /* FBPainter.m:63 */,
+			61B8CD7C11B5BF2E007A1B77 /* Palette.m:83 */,
 		);
 		codeSenseManager = 61BD2C3611ACA60900EDAEA3 /* Code sense */;
 		executables = (
@@ -602,6 +602,67 @@
 			61B8CCDB11B5AC20007A1B77 /* PBXTextBookmark */ = 61B8CCDB11B5AC20007A1B77 /* PBXTextBookmark */;
 			61B8CCDC11B5AC20007A1B77 /* PBXTextBookmark */ = 61B8CCDC11B5AC20007A1B77 /* PBXTextBookmark */;
 			61B8CCDD11B5AC20007A1B77 /* PBXTextBookmark */ = 61B8CCDD11B5AC20007A1B77 /* PBXTextBookmark */;
+			61B8CCDF11B5AD33007A1B77 /* PBXTextBookmark */ = 61B8CCDF11B5AD33007A1B77 /* PBXTextBookmark */;
+			61B8CCE011B5AD33007A1B77 /* PBXTextBookmark */ = 61B8CCE011B5AD33007A1B77 /* PBXTextBookmark */;
+			61B8CCE111B5AD33007A1B77 /* PBXTextBookmark */ = 61B8CCE111B5AD33007A1B77 /* PBXTextBookmark */;
+			61B8CCE611B5AD4A007A1B77 /* PBXTextBookmark */ = 61B8CCE611B5AD4A007A1B77 /* PBXTextBookmark */;
+			61B8CCE811B5ADFC007A1B77 /* PBXTextBookmark */ = 61B8CCE811B5ADFC007A1B77 /* PBXTextBookmark */;
+			61B8CCE911B5ADFC007A1B77 /* PBXTextBookmark */ = 61B8CCE911B5ADFC007A1B77 /* PBXTextBookmark */;
+			61B8CCEA11B5ADFC007A1B77 /* PBXTextBookmark */ = 61B8CCEA11B5ADFC007A1B77 /* PBXTextBookmark */;
+			61B8CCEB11B5ADFC007A1B77 /* PBXTextBookmark */ = 61B8CCEB11B5ADFC007A1B77 /* PBXTextBookmark */;
+			61B8CCEC11B5ADFC007A1B77 /* PBXTextBookmark */ = 61B8CCEC11B5ADFC007A1B77 /* PBXTextBookmark */;
+			61B8CCF111B5AE31007A1B77 /* PBXTextBookmark */ = 61B8CCF111B5AE31007A1B77 /* PBXTextBookmark */;
+			61B8CCF911B5B05A007A1B77 /* PBXTextBookmark */ = 61B8CCF911B5B05A007A1B77 /* PBXTextBookmark */;
+			61B8CCFA11B5B05A007A1B77 /* PBXTextBookmark */ = 61B8CCFA11B5B05A007A1B77 /* PBXTextBookmark */;
+			61B8CCFB11B5B05A007A1B77 /* PBXTextBookmark */ = 61B8CCFB11B5B05A007A1B77 /* PBXTextBookmark */;
+			61B8CCFC11B5B05A007A1B77 /* PBXTextBookmark */ = 61B8CCFC11B5B05A007A1B77 /* PBXTextBookmark */;
+			61B8CCFD11B5B05A007A1B77 /* PBXTextBookmark */ = 61B8CCFD11B5B05A007A1B77 /* PBXTextBookmark */;
+			61B8CCFE11B5B05A007A1B77 /* PBXTextBookmark */ = 61B8CCFE11B5B05A007A1B77 /* PBXTextBookmark */;
+			61B8CD0611B5B08C007A1B77 /* PBXTextBookmark */ = 61B8CD0611B5B08C007A1B77 /* PBXTextBookmark */;
+			61B8CD0E11B5B154007A1B77 /* PBXTextBookmark */ = 61B8CD0E11B5B154007A1B77 /* PBXTextBookmark */;
+			61B8CD1C11B5B1FE007A1B77 /* PBXTextBookmark */ = 61B8CD1C11B5B1FE007A1B77 /* PBXTextBookmark */;
+			61B8CD2411B5B290007A1B77 /* PBXTextBookmark */ = 61B8CD2411B5B290007A1B77 /* PBXTextBookmark */;
+			61B8CD2B11B5B2FF007A1B77 /* PBXTextBookmark */ = 61B8CD2B11B5B2FF007A1B77 /* PBXTextBookmark */;
+			61B8CD2C11B5B2FF007A1B77 /* PBXTextBookmark */ = 61B8CD2C11B5B2FF007A1B77 /* PBXTextBookmark */;
+			61B8CD2D11B5B2FF007A1B77 /* PBXTextBookmark */ = 61B8CD2D11B5B2FF007A1B77 /* PBXTextBookmark */;
+			61B8CD3311B5B390007A1B77 /* PBXTextBookmark */ = 61B8CD3311B5B390007A1B77 /* PBXTextBookmark */;
+			61B8CD3411B5B390007A1B77 /* PBXTextBookmark */ = 61B8CD3411B5B390007A1B77 /* PBXTextBookmark */;
+			61B8CD3511B5B390007A1B77 /* PBXTextBookmark */ = 61B8CD3511B5B390007A1B77 /* PBXTextBookmark */;
+			61B8CD3911B5B3BC007A1B77 /* PBXTextBookmark */ = 61B8CD3911B5B3BC007A1B77 /* PBXTextBookmark */;
+			61B8CD3F11B5B9D7007A1B77 /* PBXTextBookmark */ = 61B8CD3F11B5B9D7007A1B77 /* PBXTextBookmark */;
+			61B8CD4011B5B9D7007A1B77 /* PBXTextBookmark */ = 61B8CD4011B5B9D7007A1B77 /* PBXTextBookmark */;
+			61B8CD4111B5B9D7007A1B77 /* PBXTextBookmark */ = 61B8CD4111B5B9D7007A1B77 /* PBXTextBookmark */;
+			61B8CD4211B5B9D7007A1B77 /* PBXTextBookmark */ = 61B8CD4211B5B9D7007A1B77 /* PBXTextBookmark */;
+			61B8CD4811B5BA11007A1B77 /* PBXTextBookmark */ = 61B8CD4811B5BA11007A1B77 /* PBXTextBookmark */;
+			61B8CD4911B5BA11007A1B77 /* PBXTextBookmark */ = 61B8CD4911B5BA11007A1B77 /* PBXTextBookmark */;
+			61B8CD4A11B5BA11007A1B77 /* PBXTextBookmark */ = 61B8CD4A11B5BA11007A1B77 /* PBXTextBookmark */;
+			61B8CD5011B5BA72007A1B77 /* PBXTextBookmark */ = 61B8CD5011B5BA72007A1B77 /* PBXTextBookmark */;
+			61B8CD5711B5BB14007A1B77 /* PBXTextBookmark */ = 61B8CD5711B5BB14007A1B77 /* PBXTextBookmark */;
+			61B8CD5811B5BB14007A1B77 /* PBXTextBookmark */ = 61B8CD5811B5BB14007A1B77 /* PBXTextBookmark */;
+			61B8CD5911B5BB14007A1B77 /* PBXTextBookmark */ = 61B8CD5911B5BB14007A1B77 /* PBXTextBookmark */;
+			61B8CD5C11B5BB7B007A1B77 /* PBXTextBookmark */ = 61B8CD5C11B5BB7B007A1B77 /* PBXTextBookmark */;
+			61B8CD5D11B5BBD3007A1B77 /* PBXTextBookmark */ = 61B8CD5D11B5BBD3007A1B77 /* PBXTextBookmark */;
+			61B8CD5E11B5BBD3007A1B77 /* PBXTextBookmark */ = 61B8CD5E11B5BBD3007A1B77 /* PBXTextBookmark */;
+			61B8CD5F11B5BBD3007A1B77 /* PBXTextBookmark */ = 61B8CD5F11B5BBD3007A1B77 /* PBXTextBookmark */;
+			61B8CD6811B5BC5A007A1B77 /* PBXTextBookmark */ = 61B8CD6811B5BC5A007A1B77 /* PBXTextBookmark */;
+			61B8CD6B11B5BCD7007A1B77 /* PBXTextBookmark */ = 61B8CD6B11B5BCD7007A1B77 /* PBXTextBookmark */;
+			61B8CD6E11B5BCDF007A1B77 /* PBXTextBookmark */ = 61B8CD6E11B5BCDF007A1B77 /* PBXTextBookmark */;
+			61B8CD7111B5BD0D007A1B77 /* PBXTextBookmark */ = 61B8CD7111B5BD0D007A1B77 /* PBXTextBookmark */;
+			61B8CD7211B5BD0D007A1B77 /* PBXTextBookmark */ = 61B8CD7211B5BD0D007A1B77 /* PBXTextBookmark */;
+			61B8CD7311B5BD0D007A1B77 /* PBXTextBookmark */ = 61B8CD7311B5BD0D007A1B77 /* PBXTextBookmark */;
+			61B8CD7611B5BD1D007A1B77 /* PBXTextBookmark */ = 61B8CD7611B5BD1D007A1B77 /* PBXTextBookmark */;
+			61B8CD7911B5BD42007A1B77 /* PBXTextBookmark */ = 61B8CD7911B5BD42007A1B77 /* PBXTextBookmark */;
+			61B8CD7A11B5BD42007A1B77 /* PBXTextBookmark */ = 61B8CD7A11B5BD42007A1B77 /* PBXTextBookmark */;
+			61B8CD7B11B5BD42007A1B77 /* PBXTextBookmark */ = 61B8CD7B11B5BD42007A1B77 /* PBXTextBookmark */;
+			61B8CD8011B5BF31007A1B77 /* PBXTextBookmark */ = 61B8CD8011B5BF31007A1B77 /* PBXTextBookmark */;
+			61B8CD8111B5BF31007A1B77 /* PBXTextBookmark */ = 61B8CD8111B5BF31007A1B77 /* PBXTextBookmark */;
+			61B8CD8211B5BF31007A1B77 /* PBXTextBookmark */ = 61B8CD8211B5BF31007A1B77 /* PBXTextBookmark */;
+			61B8CD8611B5BF58007A1B77 /* PBXTextBookmark */ = 61B8CD8611B5BF58007A1B77 /* PBXTextBookmark */;
+			61B8CD8A11B5BF82007A1B77 /* PBXTextBookmark */ = 61B8CD8A11B5BF82007A1B77 /* PBXTextBookmark */;
+			61B8CD8B11B5BF82007A1B77 /* PBXTextBookmark */ = 61B8CD8B11B5BF82007A1B77 /* PBXTextBookmark */;
+			61B8CD8C11B5BF82007A1B77 /* PBXTextBookmark */ = 61B8CD8C11B5BF82007A1B77 /* PBXTextBookmark */;
+			61B8CD8F11B5BFA0007A1B77 /* PBXTextBookmark */ = 61B8CD8F11B5BFA0007A1B77 /* PBXTextBookmark */;
+			61B8CD9211B5BFA9007A1B77 /* PBXTextBookmark */ = 61B8CD9211B5BFA9007A1B77 /* PBXTextBookmark */;
 			61BD2D7011AD8ED400EDAEA3 = 61BD2D7011AD8ED400EDAEA3 /* PBXTextBookmark */;
 			61BD2D7111AD8ED400EDAEA3 = 61BD2D7111AD8ED400EDAEA3 /* PBXBookmark */;
 		};
@@ -621,7 +682,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 147";
 		rLen = 0;
-		rLoc = 5356;
+		rLoc = 5359;
 		rType = 0;
 		vrLen = 802;
 		vrLoc = 3443;
@@ -641,7 +702,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 77";
 		rLen = 0;
-		rLoc = 1704;
+		rLoc = 1705;
 		rType = 0;
 		vrLen = 922;
 		vrLoc = 662;
@@ -678,7 +739,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 102";
 		rLen = 0;
-		rLoc = 3842;
+		rLoc = 3845;
 		rType = 0;
 		vrLen = 1234;
 		vrLoc = 1388;
@@ -693,15 +754,15 @@
 	613445EC11AF0911001530F4 /* SandPainter.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1146, 793}}";
-			sepNavSelRange = "{851, 0}";
-			sepNavVisRange = "{343, 898}";
+			sepNavSelRange = "{831, 0}";
+			sepNavVisRange = "{343, 910}";
 		};
 	};
 	613445F111AF1FC7001530F4 /* FBPixel.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1146, 988}}";
 			sepNavSelRange = "{1694, 0}";
-			sepNavVisRange = "{625, 1088}";
+			sepNavVisRange = "{623, 1090}";
 		};
 	};
 	6134463311AF2F09001530F4 /* gl.h */ = {
@@ -720,9 +781,9 @@
 	};
 	6134466711AF319A001530F4 /* FBPainter.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1146, 1898}}";
-			sepNavSelRange = "{1362, 0}";
-			sepNavVisRange = "{544, 1224}";
+			sepNavIntBoundsRect = "{{0, 0}, {949, 1885}}";
+			sepNavSelRange = "{1030, 0}";
+			sepNavVisRange = "{663, 1192}";
 		};
 	};
 	6134466911AF31DC001530F4 /* PBXTextBookmark */ = {
@@ -751,7 +812,7 @@
 	};
 	6134481711B038ED001530F4 /* Substrate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {660, 601}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1146, 527}}";
 			sepNavSelRange = "{341, 0}";
 			sepNavVisRange = "{0, 540}";
 		};
@@ -922,9 +983,9 @@
 	};
 	614D133211ADD6BA00646C4A /* Renderer.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1146, 1508}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1146, 1599}}";
 			sepNavSelRange = "{1030, 0}";
-			sepNavVisRange = "{1242, 1338}";
+			sepNavVisRange = "{687, 1154}";
 			sepNavWindowFrame = "{{147, 4}, {1067, 874}}";
 		};
 	};
@@ -937,16 +998,16 @@
 	};
 	614D139311ADE21E00646C4A /* OpenGLView.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1146, 589}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1146, 527}}";
 			sepNavSelRange = "{292, 0}";
 			sepNavVisRange = "{0, 447}";
 		};
 	};
 	614D139411ADE21E00646C4A /* OpenGLView.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1251, 1339}}";
-			sepNavSelRange = "{1085, 0}";
-			sepNavVisRange = "{813, 538}";
+			sepNavIntBoundsRect = "{{0, 0}, {1379, 1482}}";
+			sepNavSelRange = "{1848, 0}";
+			sepNavVisRange = "{1254, 1041}";
 			sepNavWindowFrame = "{{84, 236}, {1067, 874}}";
 		};
 	};
@@ -1018,9 +1079,9 @@
 	};
 	618AD97611AD9FD600D8AF67 /* FrameBuffer.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {949, 1027}}";
-			sepNavSelRange = "{868, 0}";
-			sepNavVisRange = "{682, 486}";
+			sepNavIntBoundsRect = "{{0, 0}, {1146, 1027}}";
+			sepNavSelRange = "{876, 0}";
+			sepNavVisRange = "{0, 700}";
 			sepNavWindowFrame = "{{15, 4}, {1067, 874}}";
 		};
 	};
@@ -1043,7 +1104,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 102";
 		rLen = 0;
-		rLoc = 3842;
+		rLoc = 3845;
 		rType = 0;
 		vrLen = 1234;
 		vrLoc = 1388;
@@ -1053,7 +1114,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 50";
 		rLen = 20;
-		rLoc = 1275;
+		rLoc = 1276;
 		rType = 0;
 		vrLen = 1085;
 		vrLoc = 79;
@@ -1093,7 +1154,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 148";
 		rLen = 0;
-		rLoc = 5356;
+		rLoc = 5359;
 		rType = 0;
 		vrLen = 900;
 		vrLoc = 3383;
@@ -1103,7 +1164,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 50";
 		rLen = 20;
-		rLoc = 1275;
+		rLoc = 1276;
 		rType = 0;
 		vrLen = 852;
 		vrLoc = 738;
@@ -1123,7 +1184,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 115";
 		rLen = 0;
-		rLoc = 4235;
+		rLoc = 4238;
 		rType = 0;
 		vrLen = 1316;
 		vrLoc = 1388;
@@ -1133,7 +1194,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 118";
 		rLen = 0;
-		rLoc = 4235;
+		rLoc = 4238;
 		rType = 0;
 		vrLen = 1393;
 		vrLoc = 1388;
@@ -1143,7 +1204,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 120";
 		rLen = 0;
-		rLoc = 4235;
+		rLoc = 4238;
 		rType = 0;
 		vrLen = 1405;
 		vrLoc = 1388;
@@ -1153,7 +1214,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 120";
 		rLen = 0;
-		rLoc = 4235;
+		rLoc = 4238;
 		rType = 0;
 		vrLen = 1405;
 		vrLoc = 1388;
@@ -1163,7 +1224,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 124";
 		rLen = 0;
-		rLoc = 4345;
+		rLoc = 4348;
 		rType = 0;
 		vrLen = 1365;
 		vrLoc = 1388;
@@ -1173,7 +1234,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 124";
 		rLen = 0;
-		rLoc = 4345;
+		rLoc = 4348;
 		rType = 0;
 		vrLen = 1365;
 		vrLoc = 1388;
@@ -1183,7 +1244,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 126";
 		rLen = 0;
-		rLoc = 4345;
+		rLoc = 4348;
 		rType = 0;
 		vrLen = 1328;
 		vrLoc = 1388;
@@ -1193,7 +1254,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 126";
 		rLen = 0;
-		rLoc = 4345;
+		rLoc = 4348;
 		rType = 0;
 		vrLen = 1342;
 		vrLoc = 1388;
@@ -1203,7 +1264,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 129";
 		rLen = 0;
-		rLoc = 4345;
+		rLoc = 4348;
 		rType = 0;
 		vrLen = 1314;
 		vrLoc = 1388;
@@ -1213,7 +1274,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 129";
 		rLen = 0;
-		rLoc = 4345;
+		rLoc = 4348;
 		rType = 0;
 		vrLen = 1335;
 		vrLoc = 1388;
@@ -1223,7 +1284,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 129";
 		rLen = 0;
-		rLoc = 4345;
+		rLoc = 4348;
 		rType = 0;
 		vrLen = 782;
 		vrLoc = 0;
@@ -1233,7 +1294,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 50";
 		rLen = 20;
-		rLoc = 1275;
+		rLoc = 1276;
 		rType = 0;
 		vrLen = 928;
 		vrLoc = 662;
@@ -1243,7 +1304,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 47";
 		rLen = 0;
-		rLoc = 1188;
+		rLoc = 1189;
 		rType = 0;
 		vrLen = 959;
 		vrLoc = 621;
@@ -1253,7 +1314,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 55";
 		rLen = 0;
-		rLoc = 1345;
+		rLoc = 1346;
 		rType = 0;
 		vrLen = 958;
 		vrLoc = 621;
@@ -1273,7 +1334,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 129";
 		rLen = 0;
-		rLoc = 4345;
+		rLoc = 4348;
 		rType = 0;
 		vrLen = 782;
 		vrLoc = 0;
@@ -1283,7 +1344,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 56";
 		rLen = 0;
-		rLoc = 1424;
+		rLoc = 1425;
 		rType = 0;
 		vrLen = 1079;
 		vrLoc = 383;
@@ -1303,7 +1364,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 142";
 		rLen = 0;
-		rLoc = 5033;
+		rLoc = 5036;
 		rType = 0;
 		vrLen = 945;
 		vrLoc = 2885;
@@ -1323,7 +1384,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 104";
 		rLen = 0;
-		rLoc = 4172;
+		rLoc = 4174;
 		rType = 0;
 		vrLen = 1113;
 		vrLoc = 2338;
@@ -1333,7 +1394,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 104";
 		rLen = 0;
-		rLoc = 4172;
+		rLoc = 4174;
 		rType = 0;
 		vrLen = 1113;
 		vrLoc = 2186;
@@ -1343,7 +1404,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 104";
 		rLen = 0;
-		rLoc = 4172;
+		rLoc = 4174;
 		rType = 0;
 		vrLen = 1081;
 		vrLoc = 2186;
@@ -1393,7 +1454,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 56";
 		rLen = 0;
-		rLoc = 1424;
+		rLoc = 1425;
 		rType = 0;
 		vrLen = 1048;
 		vrLoc = 413;
@@ -1423,7 +1484,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 107";
 		rLen = 0;
-		rLoc = 4173;
+		rLoc = 4175;
 		rType = 0;
 		vrLen = 1133;
 		vrLoc = 2357;
@@ -1443,7 +1504,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 107";
 		rLen = 0;
-		rLoc = 4173;
+		rLoc = 4175;
 		rType = 0;
 		vrLen = 1094;
 		vrLoc = 2311;
@@ -1453,7 +1514,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 107";
 		rLen = 0;
-		rLoc = 4173;
+		rLoc = 4175;
 		rType = 0;
 		vrLen = 1137;
 		vrLoc = 2531;
@@ -1463,7 +1524,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 145";
 		rLen = 0;
-		rLoc = 5239;
+		rLoc = 5242;
 		rType = 0;
 		vrLen = 742;
 		vrLoc = 3710;
@@ -1473,7 +1534,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 56";
 		rLen = 0;
-		rLoc = 1424;
+		rLoc = 1425;
 		rType = 0;
 		vrLen = 1052;
 		vrLoc = 134;
@@ -1483,7 +1544,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 129";
 		rLen = 0;
-		rLoc = 4345;
+		rLoc = 4348;
 		rType = 0;
 		vrLen = 1016;
 		vrLoc = 710;
@@ -1532,7 +1593,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 177";
 		rLen = 0;
-		rLoc = 5027;
+		rLoc = 5030;
 		rType = 0;
 		vrLen = 1813;
 		vrLoc = 1574;
@@ -1542,7 +1603,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 56";
 		rLen = 0;
-		rLoc = 1424;
+		rLoc = 1425;
 		rType = 0;
 		vrLen = 1072;
 		vrLoc = 350;
@@ -1582,7 +1643,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 182";
 		rLen = 0;
-		rLoc = 5033;
+		rLoc = 5036;
 		rType = 0;
 		vrLen = 759;
 		vrLoc = 4944;
@@ -1592,7 +1653,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 181";
 		rLen = 0;
-		rLoc = 5028;
+		rLoc = 5031;
 		rType = 0;
 		vrLen = 861;
 		vrLoc = 4466;
@@ -1602,7 +1663,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 184";
 		rLen = 0;
-		rLoc = 5113;
+		rLoc = 5116;
 		rType = 0;
 		vrLen = 841;
 		vrLoc = 4575;
@@ -1612,7 +1673,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 184";
 		rLen = 0;
-		rLoc = 5113;
+		rLoc = 5116;
 		rType = 0;
 		vrLen = 1319;
 		vrLoc = 2270;
@@ -1622,7 +1683,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 184";
 		rLen = 0;
-		rLoc = 5113;
+		rLoc = 5116;
 		rType = 0;
 		vrLen = 1272;
 		vrLoc = 2270;
@@ -1632,7 +1693,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 139";
 		rLen = 0;
-		rLoc = 4174;
+		rLoc = 4176;
 		rType = 0;
 		vrLen = 1296;
 		vrLoc = 2293;
@@ -1642,7 +1703,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 139";
 		rLen = 0;
-		rLoc = 4174;
+		rLoc = 4176;
 		rType = 0;
 		vrLen = 1334;
 		vrLoc = 2293;
@@ -1652,7 +1713,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 139";
 		rLen = 0;
-		rLoc = 4174;
+		rLoc = 4176;
 		rType = 0;
 		vrLen = 1296;
 		vrLoc = 2293;
@@ -1662,7 +1723,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 139";
 		rLen = 0;
-		rLoc = 4174;
+		rLoc = 4176;
 		rType = 0;
 		vrLen = 1296;
 		vrLoc = 2293;
@@ -1672,7 +1733,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 139";
 		rLen = 0;
-		rLoc = 4174;
+		rLoc = 4176;
 		rType = 0;
 		vrLen = 1296;
 		vrLoc = 2293;
@@ -1682,7 +1743,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 139";
 		rLen = 0;
-		rLoc = 4174;
+		rLoc = 4176;
 		rType = 0;
 		vrLen = 1296;
 		vrLoc = 2293;
@@ -1692,7 +1753,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 139";
 		rLen = 0;
-		rLoc = 4174;
+		rLoc = 4176;
 		rType = 0;
 		vrLen = 1296;
 		vrLoc = 2293;
@@ -1702,7 +1763,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 139";
 		rLen = 0;
-		rLoc = 4174;
+		rLoc = 4176;
 		rType = 0;
 		vrLen = 1334;
 		vrLoc = 2293;
@@ -1712,7 +1773,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 139";
 		rLen = 0;
-		rLoc = 4174;
+		rLoc = 4176;
 		rType = 0;
 		vrLen = 1296;
 		vrLoc = 2293;
@@ -1722,7 +1783,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 139";
 		rLen = 0;
-		rLoc = 4174;
+		rLoc = 4176;
 		rType = 0;
 		vrLen = 877;
 		vrLoc = 4746;
@@ -1732,7 +1793,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 129";
 		rLen = 0;
-		rLoc = 4345;
+		rLoc = 4348;
 		rType = 0;
 		vrLen = 986;
 		vrLoc = 399;
@@ -1742,7 +1803,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 56";
 		rLen = 0;
-		rLoc = 1424;
+		rLoc = 1425;
 		rType = 0;
 		vrLen = 852;
 		vrLoc = 738;
@@ -1752,7 +1813,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 78";
 		rLen = 0;
-		rLoc = 1785;
+		rLoc = 1786;
 		rType = 0;
 		vrLen = 970;
 		vrLoc = 662;
@@ -1762,7 +1823,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 78";
 		rLen = 0;
-		rLoc = 1785;
+		rLoc = 1786;
 		rType = 0;
 		vrLen = 894;
 		vrLoc = 738;
@@ -1772,7 +1833,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 78";
 		rLen = 0;
-		rLoc = 1785;
+		rLoc = 1786;
 		rType = 0;
 		vrLen = 797;
 		vrLoc = 841;
@@ -1782,7 +1843,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 129";
 		rLen = 0;
-		rLoc = 4345;
+		rLoc = 4348;
 		rType = 0;
 		vrLen = 923;
 		vrLoc = 462;
@@ -1792,7 +1853,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 129";
 		rLen = 0;
-		rLoc = 4345;
+		rLoc = 4348;
 		rType = 0;
 		vrLen = 980;
 		vrLoc = 644;
@@ -1802,7 +1863,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 129";
 		rLen = 0;
-		rLoc = 4345;
+		rLoc = 4348;
 		rType = 0;
 		vrLen = 983;
 		vrLoc = 644;
@@ -1812,7 +1873,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 129";
 		rLen = 0;
-		rLoc = 4345;
+		rLoc = 4348;
 		rType = 0;
 		vrLen = 980;
 		vrLoc = 644;
@@ -1822,7 +1883,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 129";
 		rLen = 0;
-		rLoc = 4345;
+		rLoc = 4348;
 		rType = 0;
 		vrLen = 980;
 		vrLoc = 644;
@@ -1832,7 +1893,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 129";
 		rLen = 0;
-		rLoc = 4345;
+		rLoc = 4348;
 		rType = 0;
 		vrLen = 980;
 		vrLoc = 644;
@@ -1842,7 +1903,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 129";
 		rLen = 0;
-		rLoc = 4345;
+		rLoc = 4348;
 		rType = 0;
 		vrLen = 980;
 		vrLoc = 644;
@@ -1852,7 +1913,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 129";
 		rLen = 0;
-		rLoc = 4345;
+		rLoc = 4348;
 		rType = 0;
 		vrLen = 980;
 		vrLoc = 644;
@@ -1882,7 +1943,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 58";
 		rLen = 0;
-		rLoc = 1345;
+		rLoc = 1346;
 		rType = 0;
 		vrLen = 868;
 		vrLoc = 841;
@@ -1892,7 +1953,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 139";
 		rLen = 0;
-		rLoc = 4174;
+		rLoc = 4176;
 		rType = 0;
 		vrLen = 766;
 		vrLoc = 4942;
@@ -1902,7 +1963,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 129";
 		rLen = 0;
-		rLoc = 4345;
+		rLoc = 4348;
 		rType = 0;
 		vrLen = 1194;
 		vrLoc = 1263;
@@ -1912,7 +1973,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 88";
 		rLen = 0;
-		rLoc = 3041;
+		rLoc = 3044;
 		rType = 0;
 		vrLen = 1110;
 		vrLoc = 1263;
@@ -1922,7 +1983,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 87";
 		rLen = 0;
-		rLoc = 3041;
+		rLoc = 3044;
 		rType = 0;
 		vrLen = 1072;
 		vrLoc = 1016;
@@ -1932,7 +1993,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 87";
 		rLen = 0;
-		rLoc = 3041;
+		rLoc = 3044;
 		rType = 0;
 		vrLen = 1068;
 		vrLoc = 1016;
@@ -2002,7 +2063,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 80";
 		rLen = 0;
-		rLoc = 1704;
+		rLoc = 1705;
 		rType = 0;
 		vrLen = 835;
 		vrLoc = 841;
@@ -2022,7 +2083,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 80";
 		rLen = 0;
-		rLoc = 3041;
+		rLoc = 3044;
 		rType = 0;
 		vrLen = 1115;
 		vrLoc = 1103;
@@ -2032,7 +2093,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 80";
 		rLen = 0;
-		rLoc = 3041;
+		rLoc = 3044;
 		rType = 0;
 		vrLen = 1133;
 		vrLoc = 1103;
@@ -2042,7 +2103,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 80";
 		rLen = 0;
-		rLoc = 3041;
+		rLoc = 3044;
 		rType = 0;
 		vrLen = 1131;
 		vrLoc = 1103;
@@ -2052,7 +2113,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 80";
 		rLen = 0;
-		rLoc = 3041;
+		rLoc = 3044;
 		rType = 0;
 		vrLen = 998;
 		vrLoc = 1103;
@@ -2062,7 +2123,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 80";
 		rLen = 0;
-		rLoc = 3041;
+		rLoc = 3044;
 		rType = 0;
 		vrLen = 998;
 		vrLoc = 1103;
@@ -2072,7 +2133,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 80";
 		rLen = 0;
-		rLoc = 3041;
+		rLoc = 3044;
 		rType = 0;
 		vrLen = 1165;
 		vrLoc = 1103;
@@ -2082,7 +2143,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 80";
 		rLen = 0;
-		rLoc = 3041;
+		rLoc = 3044;
 		rType = 0;
 		vrLen = 1187;
 		vrLoc = 1103;
@@ -2092,7 +2153,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 80";
 		rLen = 0;
-		rLoc = 1704;
+		rLoc = 1705;
 		rType = 0;
 		vrLen = 867;
 		vrLoc = 809;
@@ -2102,7 +2163,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 58";
 		rLen = 0;
-		rLoc = 1345;
+		rLoc = 1346;
 		rType = 0;
 		vrLen = 1077;
 		vrLoc = 383;
@@ -2112,7 +2173,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 58";
 		rLen = 0;
-		rLoc = 1345;
+		rLoc = 1346;
 		rType = 0;
 		vrLen = 1155;
 		vrLoc = 221;
@@ -2122,7 +2183,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 80";
 		rLen = 0;
-		rLoc = 3041;
+		rLoc = 3044;
 		rType = 0;
 		vrLen = 1187;
 		vrLoc = 1103;
@@ -2132,7 +2193,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 119";
 		rLen = 0;
-		rLoc = 4345;
+		rLoc = 4348;
 		rType = 0;
 		vrLen = 1224;
 		vrLoc = 1545;
@@ -2142,7 +2203,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 116";
 		rLen = 0;
-		rLoc = 4342;
+		rLoc = 4345;
 		rType = 0;
 		vrLen = 1241;
 		vrLoc = 1545;
@@ -2152,7 +2213,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 95";
 		rLen = 0;
-		rLoc = 3471;
+		rLoc = 3474;
 		rType = 0;
 		vrLen = 1253;
 		vrLoc = 1513;
@@ -2162,7 +2223,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 95";
 		rLen = 0;
-		rLoc = 3471;
+		rLoc = 3474;
 		rType = 0;
 		vrLen = 1250;
 		vrLoc = 1513;
@@ -2172,7 +2233,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 80";
 		rLen = 0;
-		rLoc = 2332;
+		rLoc = 2335;
 		rType = 0;
 		vrLen = 1333;
 		vrLoc = 1545;
@@ -2182,7 +2243,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 83";
 		rLen = 0;
-		rLoc = 2070;
+		rLoc = 2073;
 		rType = 0;
 		vrLen = 1352;
 		vrLoc = 1545;
@@ -2192,7 +2253,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 84";
 		rLen = 0;
-		rLoc = 2332;
+		rLoc = 2335;
 		rType = 0;
 		vrLen = 1383;
 		vrLoc = 1545;
@@ -2212,7 +2273,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 82";
 		rLen = 0;
-		rLoc = 1553;
+		rLoc = 1556;
 		rType = 0;
 		vrLen = 951;
 		vrLoc = 448;
@@ -2222,7 +2283,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 101";
 		rLen = 0;
-		rLoc = 2029;
+		rLoc = 2032;
 		rType = 0;
 		vrLen = 1180;
 		vrLoc = 1774;
@@ -2232,7 +2293,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 101";
 		rLen = 0;
-		rLoc = 2026;
+		rLoc = 2029;
 		rType = 0;
 		vrLen = 1180;
 		vrLoc = 1774;
@@ -2242,7 +2303,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 109";
 		rLen = 0;
-		rLoc = 3024;
+		rLoc = 3027;
 		rType = 0;
 		vrLen = 1314;
 		vrLoc = 2099;
@@ -2252,7 +2313,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 101";
 		rLen = 0;
-		rLoc = 2028;
+		rLoc = 2031;
 		rType = 0;
 		vrLen = 1054;
 		vrLoc = 1364;
@@ -2262,7 +2323,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 110";
 		rLen = 0;
-		rLoc = 2332;
+		rLoc = 2335;
 		rType = 0;
 		vrLen = 1230;
 		vrLoc = 2351;
@@ -2272,7 +2333,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 112";
 		rLen = 0;
-		rLoc = 2330;
+		rLoc = 2333;
 		rType = 0;
 		vrLen = 1142;
 		vrLoc = 1774;
@@ -2282,7 +2343,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 109";
 		rLen = 0;
-		rLoc = 2286;
+		rLoc = 2289;
 		rType = 0;
 		vrLen = 1245;
 		vrLoc = 1870;
@@ -2292,7 +2353,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 58";
 		rLen = 0;
-		rLoc = 1345;
+		rLoc = 1346;
 		rType = 0;
 		vrLen = 1155;
 		vrLoc = 221;
@@ -2302,7 +2363,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 109";
 		rLen = 0;
-		rLoc = 2286;
+		rLoc = 2289;
 		rType = 0;
 		vrLen = 1012;
 		vrLoc = 634;
@@ -2312,7 +2373,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 160";
 		rLen = 0;
-		rLoc = 4348;
+		rLoc = 4351;
 		rType = 0;
 		vrLen = 1272;
 		vrLoc = 2239;
@@ -2322,7 +2383,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 116";
 		rLen = 0;
-		rLoc = 3024;
+		rLoc = 3027;
 		rType = 0;
 		vrLen = 1021;
 		vrLoc = 1545;
@@ -2332,7 +2393,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 160";
 		rLen = 0;
-		rLoc = 4348;
+		rLoc = 4351;
 		rType = 0;
 		vrLen = 1228;
 		vrLoc = 2401;
@@ -2342,7 +2403,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 161";
 		rLen = 0;
-		rLoc = 4348;
+		rLoc = 4351;
 		rType = 0;
 		vrLen = 937;
 		vrLoc = 1481;
@@ -2352,7 +2413,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 110";
 		rLen = 0;
-		rLoc = 2281;
+		rLoc = 2284;
 		rType = 0;
 		vrLen = 1039;
 		vrLoc = 1562;
@@ -2362,7 +2423,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 161";
 		rLen = 0;
-		rLoc = 4348;
+		rLoc = 4351;
 		rType = 0;
 		vrLen = 1222;
 		vrLoc = 2402;
@@ -2372,7 +2433,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 124";
 		rLen = 0;
-		rLoc = 3243;
+		rLoc = 3246;
 		rType = 0;
 		vrLen = 1243;
 		vrLoc = 2401;
@@ -2382,7 +2443,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 134";
 		rLen = 0;
-		rLoc = 3471;
+		rLoc = 3474;
 		rType = 0;
 		vrLen = 1247;
 		vrLoc = 2401;
@@ -2392,7 +2453,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 134";
 		rLen = 0;
-		rLoc = 3471;
+		rLoc = 3474;
 		rType = 0;
 		vrLen = 1293;
 		vrLoc = 2350;
@@ -2402,7 +2463,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 139";
 		rLen = 0;
-		rLoc = 4174;
+		rLoc = 4176;
 		rType = 0;
 		vrLen = 766;
 		vrLoc = 4942;
@@ -2412,7 +2473,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 229";
 		rLen = 0;
-		rLoc = 6237;
+		rLoc = 6300;
 		rType = 0;
 		vrLen = 1040;
 		vrLoc = 5342;
@@ -2432,7 +2493,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 229";
 		rLen = 0;
-		rLoc = 6237;
+		rLoc = 6300;
 		rType = 0;
 		vrLen = 1041;
 		vrLoc = 5342;
@@ -2442,7 +2503,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 156";
 		rLen = 0;
-		rLoc = 4593;
+		rLoc = 4596;
 		rType = 0;
 		vrLen = 1179;
 		vrLoc = 3625;
@@ -2452,7 +2513,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 134";
 		rLen = 0;
-		rLoc = 3471;
+		rLoc = 3474;
 		rType = 0;
 		vrLen = 1293;
 		vrLoc = 2350;
@@ -2462,7 +2523,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 58";
 		rLen = 0;
-		rLoc = 1345;
+		rLoc = 1346;
 		rType = 0;
 		vrLen = 834;
 		vrLoc = 841;
@@ -2472,7 +2533,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 156";
 		rLen = 0;
-		rLoc = 4593;
+		rLoc = 4596;
 		rType = 0;
 		vrLen = 1205;
 		vrLoc = 3625;
@@ -2482,7 +2543,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 208";
 		rLen = 0;
-		rLoc = 5669;
+		rLoc = 5672;
 		rType = 0;
 		vrLen = 714;
 		vrLoc = 4932;
@@ -2492,7 +2553,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 208";
 		rLen = 0;
-		rLoc = 5669;
+		rLoc = 5672;
 		rType = 0;
 		vrLen = 783;
 		vrLoc = 4932;
@@ -2502,7 +2563,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 58";
 		rLen = 0;
-		rLoc = 1345;
+		rLoc = 1346;
 		rType = 0;
 		vrLen = 866;
 		vrLoc = 809;
@@ -2512,7 +2573,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 73";
 		rLen = 0;
-		rLoc = 1595;
+		rLoc = 1596;
 		rType = 0;
 		vrLen = 855;
 		vrLoc = 889;
@@ -2531,7 +2592,7 @@
 		ignoreCount = 0;
 		lineNumber = 80;
 		location = Substrate;
-		modificationTime = 297118641.244051;
+		modificationTime = 297123672.816271;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -2547,7 +2608,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 77";
 		rLen = 15;
-		rLoc = 1618;
+		rLoc = 1619;
 		rType = 0;
 		vrLen = 855;
 		vrLoc = 889;
@@ -2557,7 +2618,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 77";
 		rLen = 15;
-		rLoc = 1618;
+		rLoc = 1619;
 		rType = 0;
 		vrLen = 856;
 		vrLoc = 889;
@@ -2567,7 +2628,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 77";
 		rLen = 15;
-		rLoc = 1618;
+		rLoc = 1619;
 		rType = 0;
 		vrLen = 856;
 		vrLoc = 889;
@@ -2577,7 +2638,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 134";
 		rLen = 0;
-		rLoc = 3471;
+		rLoc = 3474;
 		rType = 0;
 		vrLen = 1232;
 		vrLoc = 2350;
@@ -2587,7 +2648,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 134";
 		rLen = 0;
-		rLoc = 3471;
+		rLoc = 3474;
 		rType = 0;
 		vrLen = 1248;
 		vrLoc = 2403;
@@ -2597,7 +2658,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 134";
 		rLen = 0;
-		rLoc = 3471;
+		rLoc = 3474;
 		rType = 0;
 		vrLen = 1248;
 		vrLoc = 2403;
@@ -2607,7 +2668,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 134";
 		rLen = 0;
-		rLoc = 3471;
+		rLoc = 3474;
 		rType = 0;
 		vrLen = 1252;
 		vrLoc = 2403;
@@ -2637,7 +2698,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 208";
 		rLen = 0;
-		rLoc = 5669;
+		rLoc = 5672;
 		rType = 0;
 		vrLen = 1282;
 		vrLoc = 3650;
@@ -2647,7 +2708,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 77";
 		rLen = 15;
-		rLoc = 1618;
+		rLoc = 1619;
 		rType = 0;
 		vrLen = 902;
 		vrLoc = 843;
@@ -2657,7 +2718,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 134";
 		rLen = 0;
-		rLoc = 3471;
+		rLoc = 3474;
 		rType = 0;
 		vrLen = 1252;
 		vrLoc = 2403;
@@ -2667,7 +2728,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 134";
 		rLen = 0;
-		rLoc = 3471;
+		rLoc = 3474;
 		rType = 0;
 		vrLen = 1248;
 		vrLoc = 2403;
@@ -2677,7 +2738,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 134";
 		rLen = 0;
-		rLoc = 3471;
+		rLoc = 3474;
 		rType = 0;
 		vrLen = 1248;
 		vrLoc = 2403;
@@ -2687,7 +2748,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 134";
 		rLen = 0;
-		rLoc = 3471;
+		rLoc = 3474;
 		rType = 0;
 		vrLen = 1248;
 		vrLoc = 2403;
@@ -2697,7 +2758,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 134";
 		rLen = 0;
-		rLoc = 3471;
+		rLoc = 3474;
 		rType = 0;
 		vrLen = 1258;
 		vrLoc = 2403;
@@ -2707,7 +2768,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 134";
 		rLen = 0;
-		rLoc = 3471;
+		rLoc = 3474;
 		rType = 0;
 		vrLen = 1258;
 		vrLoc = 2403;
@@ -2717,7 +2778,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 134";
 		rLen = 0;
-		rLoc = 3471;
+		rLoc = 3474;
 		rType = 0;
 		vrLen = 1258;
 		vrLoc = 2403;
@@ -2727,7 +2788,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 134";
 		rLen = 0;
-		rLoc = 3471;
+		rLoc = 3474;
 		rType = 0;
 		vrLen = 1258;
 		vrLoc = 2403;
@@ -2737,7 +2798,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 134";
 		rLen = 0;
-		rLoc = 3471;
+		rLoc = 3474;
 		rType = 0;
 		vrLen = 1258;
 		vrLoc = 2403;
@@ -2747,7 +2808,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 135";
 		rLen = 0;
-		rLoc = 3471;
+		rLoc = 3474;
 		rType = 0;
 		vrLen = 1299;
 		vrLoc = 2403;
@@ -2757,7 +2818,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 135";
 		rLen = 0;
-		rLoc = 3471;
+		rLoc = 3474;
 		rType = 0;
 		vrLen = 1300;
 		vrLoc = 2403;
@@ -2767,7 +2828,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 77";
 		rLen = 15;
-		rLoc = 1618;
+		rLoc = 1619;
 		rType = 0;
 		vrLen = 827;
 		vrLoc = 923;
@@ -2777,7 +2838,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 77";
 		rLen = 15;
-		rLoc = 1618;
+		rLoc = 1619;
 		rType = 0;
 		vrLen = 827;
 		vrLoc = 923;
@@ -2787,7 +2848,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 77";
 		rLen = 15;
-		rLoc = 1618;
+		rLoc = 1619;
 		rType = 0;
 		vrLen = 827;
 		vrLoc = 923;
@@ -2797,7 +2858,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 208";
 		rLen = 0;
-		rLoc = 5669;
+		rLoc = 5672;
 		rType = 0;
 		vrLen = 806;
 		vrLoc = 4996;
@@ -2807,7 +2868,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 77";
 		rLen = 15;
-		rLoc = 1618;
+		rLoc = 1619;
 		rType = 0;
 		vrLen = 1135;
 		vrLoc = 288;
@@ -2837,7 +2898,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 77";
 		rLen = 15;
-		rLoc = 1618;
+		rLoc = 1619;
 		rType = 0;
 		vrLen = 1113;
 		vrLoc = 331;
@@ -2857,7 +2918,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 184";
 		rLen = 0;
-		rLoc = 5224;
+		rLoc = 5227;
 		rType = 0;
 		vrLen = 865;
 		vrLoc = 4800;
@@ -2867,7 +2928,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 184";
 		rLen = 0;
-		rLoc = 5237;
+		rLoc = 5240;
 		rType = 0;
 		vrLen = 828;
 		vrLoc = 4800;
@@ -2887,7 +2948,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 184";
 		rLen = 0;
-		rLoc = 5237;
+		rLoc = 5240;
 		rType = 0;
 		vrLen = 812;
 		vrLoc = 4974;
@@ -2897,7 +2958,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 184";
 		rLen = 0;
-		rLoc = 5198;
+		rLoc = 5201;
 		rType = 0;
 		vrLen = 824;
 		vrLoc = 4974;
@@ -2907,7 +2968,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 184";
 		rLen = 0;
-		rLoc = 5196;
+		rLoc = 5199;
 		rType = 0;
 		vrLen = 824;
 		vrLoc = 4974;
@@ -2927,7 +2988,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 77";
 		rLen = 15;
-		rLoc = 1618;
+		rLoc = 1619;
 		rType = 0;
 		vrLen = 1113;
 		vrLoc = 331;
@@ -2937,7 +2998,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 135";
 		rLen = 0;
-		rLoc = 3471;
+		rLoc = 3474;
 		rType = 0;
 		vrLen = 1305;
 		vrLoc = 2402;
@@ -2947,7 +3008,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 184";
 		rLen = 0;
-		rLoc = 5196;
+		rLoc = 5199;
 		rType = 0;
 		vrLen = 897;
 		vrLoc = 4935;
@@ -2957,7 +3018,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 195";
 		rLen = 0;
-		rLoc = 5393;
+		rLoc = 5396;
 		rType = 0;
 		vrLen = 897;
 		vrLoc = 4935;
@@ -2967,7 +3028,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 195";
 		rLen = 0;
-		rLoc = 5393;
+		rLoc = 5396;
 		rType = 0;
 		vrLen = 897;
 		vrLoc = 4935;
@@ -2987,7 +3048,7 @@
 		fRef = 6134466711AF319A001530F4 /* FBPainter.m */;
 		name = "FBPainter.m: 111";
 		rLen = 0;
-		rLoc = 2912;
+		rLoc = 2921;
 		rType = 0;
 		vrLen = 1152;
 		vrLoc = 2202;
@@ -2997,7 +3058,7 @@
 		fRef = 6134466711AF319A001530F4 /* FBPainter.m */;
 		name = "FBPainter.m: 108";
 		rLen = 0;
-		rLoc = 2823;
+		rLoc = 2832;
 		rType = 0;
 		vrLen = 1146;
 		vrLoc = 2202;
@@ -3007,7 +3068,7 @@
 		fRef = 6134466711AF319A001530F4 /* FBPainter.m */;
 		name = "FBPainter.m: 108";
 		rLen = 0;
-		rLoc = 2823;
+		rLoc = 2832;
 		rType = 0;
 		vrLen = 1150;
 		vrLoc = 2204;
@@ -3017,7 +3078,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 195";
 		rLen = 0;
-		rLoc = 5393;
+		rLoc = 5396;
 		rType = 0;
 		vrLen = 897;
 		vrLoc = 4935;
@@ -3027,7 +3088,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 240";
 		rLen = 0;
-		rLoc = 6237;
+		rLoc = 6300;
 		rType = 0;
 		vrLen = 1029;
 		vrLoc = 5543;
@@ -3037,7 +3098,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 185";
 		rLen = 0;
-		rLoc = 5203;
+		rLoc = 5206;
 		rType = 0;
 		vrLen = 908;
 		vrLoc = 4630;
@@ -3047,7 +3108,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 185";
 		rLen = 0;
-		rLoc = 5203;
+		rLoc = 5206;
 		rType = 0;
 		vrLen = 913;
 		vrLoc = 4630;
@@ -3057,7 +3118,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 135";
 		rLen = 0;
-		rLoc = 3471;
+		rLoc = 3474;
 		rType = 0;
 		vrLen = 1305;
 		vrLoc = 2402;
@@ -3067,7 +3128,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 77";
 		rLen = 15;
-		rLoc = 1618;
+		rLoc = 1619;
 		rType = 0;
 		vrLen = 1113;
 		vrLoc = 331;
@@ -3077,7 +3138,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 36";
 		rLen = 0;
-		rLoc = 835;
+		rLoc = 836;
 		rType = 0;
 		vrLen = 1095;
 		vrLoc = 331;
@@ -3087,7 +3148,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 36";
 		rLen = 0;
-		rLoc = 835;
+		rLoc = 836;
 		rType = 0;
 		vrLen = 1113;
 		vrLoc = 331;
@@ -3097,7 +3158,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 135";
 		rLen = 0;
-		rLoc = 3471;
+		rLoc = 3474;
 		rType = 0;
 		vrLen = 1305;
 		vrLoc = 2402;
@@ -3107,7 +3168,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 141";
 		rLen = 0;
-		rLoc = 3662;
+		rLoc = 3665;
 		rType = 0;
 		vrLen = 1281;
 		vrLoc = 2402;
@@ -3117,7 +3178,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 141";
 		rLen = 0;
-		rLoc = 3666;
+		rLoc = 3669;
 		rType = 0;
 		vrLen = 1281;
 		vrLoc = 2402;
@@ -3127,7 +3188,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 141";
 		rLen = 0;
-		rLoc = 3666;
+		rLoc = 3669;
 		rType = 0;
 		vrLen = 1281;
 		vrLoc = 2402;
@@ -3137,7 +3198,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 141";
 		rLen = 0;
-		rLoc = 3666;
+		rLoc = 3669;
 		rType = 0;
 		vrLen = 1281;
 		vrLoc = 2402;
@@ -3147,7 +3208,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 141";
 		rLen = 0;
-		rLoc = 3666;
+		rLoc = 3669;
 		rType = 0;
 		vrLen = 1182;
 		vrLoc = 2534;
@@ -3167,7 +3228,7 @@
 		fRef = 6134466711AF319A001530F4 /* FBPainter.m */;
 		name = "FBPainter.m: 108";
 		rLen = 0;
-		rLoc = 2823;
+		rLoc = 2832;
 		rType = 0;
 		vrLen = 1403;
 		vrLoc = 271;
@@ -3227,7 +3288,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 141";
 		rLen = 0;
-		rLoc = 3666;
+		rLoc = 3669;
 		rType = 0;
 		vrLen = 1209;
 		vrLoc = 2502;
@@ -3237,7 +3298,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 141";
 		rLen = 0;
-		rLoc = 3666;
+		rLoc = 3669;
 		rType = 0;
 		vrLen = 1209;
 		vrLoc = 2502;
@@ -3247,7 +3308,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 141";
 		rLen = 0;
-		rLoc = 3666;
+		rLoc = 3669;
 		rType = 0;
 		vrLen = 1209;
 		vrLoc = 2502;
@@ -3256,7 +3317,7 @@
 		isa = PBXTextBookmark;
 		fRef = 6134466711AF319A001530F4 /* FBPainter.m */;
 		rLen = 0;
-		rLoc = 64;
+		rLoc = 66;
 		rType = 1;
 	};
 	61B8C9D311B1E83D007A1B77 /* PBXTextBookmark */ = {
@@ -3324,7 +3385,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 36";
 		rLen = 0;
-		rLoc = 835;
+		rLoc = 836;
 		rType = 0;
 		vrLen = 1113;
 		vrLoc = 331;
@@ -3334,7 +3395,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 185";
 		rLen = 0;
-		rLoc = 5203;
+		rLoc = 5206;
 		rType = 0;
 		vrLen = 913;
 		vrLoc = 4630;
@@ -3344,7 +3405,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 185";
 		rLen = 0;
-		rLoc = 5203;
+		rLoc = 5206;
 		rType = 0;
 		vrLen = 935;
 		vrLoc = 4683;
@@ -3354,7 +3415,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 186";
 		rLen = 0;
-		rLoc = 5239;
+		rLoc = 5242;
 		rType = 0;
 		vrLen = 937;
 		vrLoc = 4683;
@@ -3364,7 +3425,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 186";
 		rLen = 0;
-		rLoc = 5239;
+		rLoc = 5242;
 		rType = 0;
 		vrLen = 1084;
 		vrLoc = 5545;
@@ -3374,7 +3435,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 141";
 		rLen = 0;
-		rLoc = 3666;
+		rLoc = 3669;
 		rType = 0;
 		vrLen = 1292;
 		vrLoc = 2419;
@@ -3384,7 +3445,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 141";
 		rLen = 0;
-		rLoc = 3666;
+		rLoc = 3669;
 		rType = 0;
 		vrLen = 1292;
 		vrLoc = 2417;
@@ -3394,7 +3455,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 141";
 		rLen = 0;
-		rLoc = 3666;
+		rLoc = 3669;
 		rType = 0;
 		vrLen = 1294;
 		vrLoc = 2417;
@@ -3434,7 +3495,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 141";
 		rLen = 0;
-		rLoc = 3666;
+		rLoc = 3669;
 		rType = 0;
 		vrLen = 1293;
 		vrLoc = 2417;
@@ -3444,7 +3505,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 36";
 		rLen = 0;
-		rLoc = 835;
+		rLoc = 836;
 		rType = 0;
 		vrLen = 1113;
 		vrLoc = 331;
@@ -3464,7 +3525,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 185";
 		rLen = 0;
-		rLoc = 5203;
+		rLoc = 5206;
 		rType = 0;
 		vrLen = 831;
 		vrLoc = 4935;
@@ -3474,7 +3535,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 186";
 		rLen = 0;
-		rLoc = 5239;
+		rLoc = 5242;
 		rType = 0;
 		vrLen = 902;
 		vrLoc = 4935;
@@ -3484,7 +3545,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 141";
 		rLen = 0;
-		rLoc = 3666;
+		rLoc = 3669;
 		rType = 0;
 		vrLen = 1307;
 		vrLoc = 2403;
@@ -3494,7 +3555,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 141";
 		rLen = 0;
-		rLoc = 3666;
+		rLoc = 3669;
 		rType = 0;
 		vrLen = 1304;
 		vrLoc = 2403;
@@ -3504,7 +3565,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 161";
 		rLen = 0;
-		rLoc = 4284;
+		rLoc = 4287;
 		rType = 0;
 		vrLen = 1188;
 		vrLoc = 2534;
@@ -3514,7 +3575,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 161";
 		rLen = 0;
-		rLoc = 4284;
+		rLoc = 4287;
 		rType = 0;
 		vrLen = 1188;
 		vrLoc = 2534;
@@ -3574,7 +3635,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 132";
 		rLen = 0;
-		rLoc = 3471;
+		rLoc = 3474;
 		rType = 0;
 		vrLen = 1292;
 		vrLoc = 2403;
@@ -3584,7 +3645,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 119";
 		rLen = 0;
-		rLoc = 3024;
+		rLoc = 3027;
 		rType = 0;
 		vrLen = 1157;
 		vrLoc = 2094;
@@ -3594,7 +3655,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 119";
 		rLen = 0;
-		rLoc = 3024;
+		rLoc = 3027;
 		rType = 0;
 		vrLen = 1157;
 		vrLoc = 2094;
@@ -3604,7 +3665,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 141";
 		rLen = 0;
-		rLoc = 3019;
+		rLoc = 3022;
 		rType = 0;
 		vrLen = 985;
 		vrLoc = 2094;
@@ -3630,7 +3691,7 @@
 		ignoreCount = 0;
 		lineNumber = 114;
 		location = Substrate;
-		modificationTime = 297118641.245864;
+		modificationTime = 297123672.821371;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -3639,7 +3700,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 36";
 		rLen = 0;
-		rLoc = 835;
+		rLoc = 836;
 		rType = 0;
 		vrLen = 1113;
 		vrLoc = 331;
@@ -3659,7 +3720,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 186";
 		rLen = 0;
-		rLoc = 5239;
+		rLoc = 5242;
 		rType = 0;
 		vrLen = 902;
 		vrLoc = 4935;
@@ -3709,7 +3770,7 @@
 		fRef = 613445EC11AF0911001530F4 /* SandPainter.m */;
 		name = "SandPainter.m: 58";
 		rLen = 0;
-		rLoc = 1053;
+		rLoc = 1059;
 		rType = 0;
 		vrLen = 1035;
 		vrLoc = 276;
@@ -3768,7 +3829,7 @@
 		ignoreCount = 0;
 		lineNumber = 15;
 		location = Substrate;
-		modificationTime = 297118641.247099;
+		modificationTime = 297123672.822418;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -3787,7 +3848,7 @@
 		fRef = 613445EC11AF0911001530F4 /* SandPainter.m */;
 		name = "SandPainter.m: 58";
 		rLen = 0;
-		rLoc = 1053;
+		rLoc = 1059;
 		rType = 0;
 		vrLen = 1079;
 		vrLoc = 232;
@@ -3797,7 +3858,7 @@
 		fRef = 613445EC11AF0911001530F4 /* SandPainter.m */;
 		name = "SandPainter.m: 58";
 		rLen = 0;
-		rLoc = 1053;
+		rLoc = 1059;
 		rType = 0;
 		vrLen = 1073;
 		vrLoc = 232;
@@ -3874,7 +3935,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 157";
 		rLen = 0;
-		rLoc = 3450;
+		rLoc = 3453;
 		rType = 0;
 		vrLen = 1346;
 		vrLoc = 2779;
@@ -3884,7 +3945,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 138";
 		rLen = 0;
-		rLoc = 2979;
+		rLoc = 2982;
 		rType = 0;
 		vrLen = 1039;
 		vrLoc = 2310;
@@ -3899,20 +3960,20 @@
 		delayBeforeContinue = 0;
 		fileReference = 613445EC11AF0911001530F4 /* SandPainter.m */;
 		functionName = "-renderX:Y:OX:OY:";
-		hitCount = 0;
+		hitCount = 1;
 		ignoreCount = 0;
 		lineNumber = 27;
 		location = Substrate;
-		modificationTime = 297118641.248214;
+		modificationTime = 297123673.692581;
 		originalNumberOfMultipleMatches = 1;
-		state = 2;
+		state = 1;
 	};
 	61B8CAA611B207CB007A1B77 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 138";
 		rLen = 0;
-		rLoc = 2979;
+		rLoc = 2982;
 		rType = 0;
 		vrLen = 1119;
 		vrLoc = 2310;
@@ -3972,7 +4033,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 186";
 		rLen = 0;
-		rLoc = 5239;
+		rLoc = 5242;
 		rType = 0;
 		vrLen = 836;
 		vrLoc = 4932;
@@ -3982,7 +4043,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 143";
 		rLen = 0;
-		rLoc = 2979;
+		rLoc = 2982;
 		rType = 0;
 		vrLen = 925;
 		vrLoc = 2310;
@@ -3992,7 +4053,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 79";
 		rLen = 0;
-		rLoc = 1658;
+		rLoc = 1659;
 		rType = 0;
 		vrLen = 790;
 		vrLoc = 958;
@@ -4002,7 +4063,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 79";
 		rLen = 0;
-		rLoc = 1658;
+		rLoc = 1659;
 		rType = 0;
 		vrLen = 791;
 		vrLoc = 958;
@@ -4012,7 +4073,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 79";
 		rLen = 0;
-		rLoc = 1658;
+		rLoc = 1659;
 		rType = 0;
 		vrLen = 791;
 		vrLoc = 958;
@@ -4042,7 +4103,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 143";
 		rLen = 0;
-		rLoc = 2979;
+		rLoc = 2982;
 		rType = 0;
 		vrLen = 925;
 		vrLoc = 2310;
@@ -4052,7 +4113,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 143";
 		rLen = 0;
-		rLoc = 2979;
+		rLoc = 2982;
 		rType = 0;
 		vrLen = 1033;
 		vrLoc = 2427;
@@ -4062,7 +4123,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 143";
 		rLen = 0;
-		rLoc = 2979;
+		rLoc = 2982;
 		rType = 0;
 		vrLen = 828;
 		vrLoc = 0;
@@ -4072,7 +4133,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 79";
 		rLen = 0;
-		rLoc = 1658;
+		rLoc = 1659;
 		rType = 0;
 		vrLen = 786;
 		vrLoc = 958;
@@ -4112,7 +4173,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 143";
 		rLen = 0;
-		rLoc = 2979;
+		rLoc = 2982;
 		rType = 0;
 		vrLen = 1022;
 		vrLoc = 2315;
@@ -4132,7 +4193,7 @@
 		fRef = 613445EC11AF0911001530F4 /* SandPainter.m */;
 		name = "SandPainter.m: 50";
 		rLen = 0;
-		rLoc = 852;
+		rLoc = 858;
 		rType = 0;
 		vrLen = 1002;
 		vrLoc = 276;
@@ -4142,7 +4203,7 @@
 		fRef = 613445EC11AF0911001530F4 /* SandPainter.m */;
 		name = "SandPainter.m: 50";
 		rLen = 0;
-		rLoc = 852;
+		rLoc = 858;
 		rType = 0;
 		vrLen = 1030;
 		vrLoc = 248;
@@ -4152,7 +4213,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 143";
 		rLen = 0;
-		rLoc = 2979;
+		rLoc = 2982;
 		rType = 0;
 		vrLen = 1021;
 		vrLoc = 2316;
@@ -4162,7 +4223,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 168";
 		rLen = 0;
-		rLoc = 3650;
+		rLoc = 3653;
 		rType = 0;
 		vrLen = 1326;
 		vrLoc = 2985;
@@ -4172,7 +4233,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 168";
 		rLen = 0;
-		rLoc = 3660;
+		rLoc = 3663;
 		rType = 0;
 		vrLen = 1307;
 		vrLoc = 2983;
@@ -4182,7 +4243,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 168";
 		rLen = 0;
-		rLoc = 3660;
+		rLoc = 3663;
 		rType = 0;
 		vrLen = 1307;
 		vrLoc = 2983;
@@ -4192,7 +4253,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 168";
 		rLen = 0;
-		rLoc = 3660;
+		rLoc = 3663;
 		rType = 0;
 		vrLen = 1331;
 		vrLoc = 2983;
@@ -4272,7 +4333,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 50";
 		rLen = 0;
-		rLoc = 1099;
+		rLoc = 1100;
 		rType = 0;
 		vrLen = 962;
 		vrLoc = 675;
@@ -4282,7 +4343,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 50";
 		rLen = 0;
-		rLoc = 1099;
+		rLoc = 1100;
 		rType = 0;
 		vrLen = 962;
 		vrLoc = 675;
@@ -4292,7 +4353,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 82";
 		rLen = 0;
-		rLoc = 1658;
+		rLoc = 1659;
 		rType = 0;
 		vrLen = 790;
 		vrLoc = 1012;
@@ -4302,7 +4363,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 82";
 		rLen = 0;
-		rLoc = 1658;
+		rLoc = 1659;
 		rType = 0;
 		vrLen = 791;
 		vrLoc = 1012;
@@ -4312,7 +4373,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 82";
 		rLen = 0;
-		rLoc = 1658;
+		rLoc = 1659;
 		rType = 0;
 		vrLen = 1073;
 		vrLoc = 131;
@@ -4351,7 +4412,7 @@
 		ignoreCount = 0;
 		lineNumber = 47;
 		location = Substrate;
-		modificationTime = 297118641.249598;
+		modificationTime = 297123672.824299;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -4370,7 +4431,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 82";
 		rLen = 0;
-		rLoc = 1658;
+		rLoc = 1659;
 		rType = 0;
 		vrLen = 791;
 		vrLoc = 1012;
@@ -4380,7 +4441,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 168";
 		rLen = 0;
-		rLoc = 3660;
+		rLoc = 3663;
 		rType = 0;
 		vrLen = 971;
 		vrLoc = 2264;
@@ -4390,7 +4451,7 @@
 		fRef = 613445EC11AF0911001530F4 /* SandPainter.m */;
 		name = "SandPainter.m: 45";
 		rLen = 0;
-		rLoc = 939;
+		rLoc = 945;
 		rType = 0;
 		vrLen = 1050;
 		vrLoc = 161;
@@ -4400,7 +4461,7 @@
 		fRef = 613445EC11AF0911001530F4 /* SandPainter.m */;
 		name = "SandPainter.m: 45";
 		rLen = 0;
-		rLoc = 939;
+		rLoc = 945;
 		rType = 0;
 		vrLen = 1046;
 		vrLoc = 161;
@@ -4410,7 +4471,7 @@
 		fRef = 613445EC11AF0911001530F4 /* SandPainter.m */;
 		name = "SandPainter.m: 45";
 		rLen = 0;
-		rLoc = 939;
+		rLoc = 945;
 		rType = 0;
 		vrLen = 1050;
 		vrLoc = 161;
@@ -4420,7 +4481,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 82";
 		rLen = 0;
-		rLoc = 1658;
+		rLoc = 1659;
 		rType = 0;
 		vrLen = 1045;
 		vrLoc = 0;
@@ -4430,7 +4491,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 240";
 		rLen = 0;
-		rLoc = 6237;
+		rLoc = 6300;
 		rType = 0;
 		vrLen = 1063;
 		vrLoc = 5601;
@@ -4440,7 +4501,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 240";
 		rLen = 0;
-		rLoc = 6237;
+		rLoc = 6300;
 		rType = 0;
 		vrLen = 1028;
 		vrLoc = 5601;
@@ -4450,7 +4511,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 241";
 		rLen = 0;
-		rLoc = 6237;
+		rLoc = 6300;
 		rType = 0;
 		vrLen = 1027;
 		vrLoc = 5601;
@@ -4460,7 +4521,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 241";
 		rLen = 0;
-		rLoc = 6237;
+		rLoc = 6300;
 		rType = 0;
 		vrLen = 1080;
 		vrLoc = 5601;
@@ -4470,7 +4531,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 82";
 		rLen = 0;
-		rLoc = 1658;
+		rLoc = 1659;
 		rType = 0;
 		vrLen = 1045;
 		vrLoc = 0;
@@ -4480,7 +4541,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 50";
 		rLen = 0;
-		rLoc = 1096;
+		rLoc = 1097;
 		rType = 0;
 		vrLen = 787;
 		vrLoc = 1012;
@@ -4490,7 +4551,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 50";
 		rLen = 0;
-		rLoc = 1096;
+		rLoc = 1097;
 		rType = 0;
 		vrLen = 792;
 		vrLoc = 1012;
@@ -4560,7 +4621,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 31";
 		rLen = 0;
-		rLoc = 496;
+		rLoc = 497;
 		rType = 0;
 		vrLen = 1096;
 		vrLoc = 383;
@@ -4570,7 +4631,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 146";
 		rLen = 0;
-		rLoc = 4423;
+		rLoc = 4426;
 		rType = 0;
 		vrLen = 1159;
 		vrLoc = 3521;
@@ -4580,7 +4641,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 146";
 		rLen = 0;
-		rLoc = 4423;
+		rLoc = 4426;
 		rType = 0;
 		vrLen = 977;
 		vrLoc = 5712;
@@ -4590,7 +4651,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 241";
 		rLen = 0;
-		rLoc = 6237;
+		rLoc = 6300;
 		rType = 0;
 		vrLen = 969;
 		vrLoc = 5712;
@@ -4600,7 +4661,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 241";
 		rLen = 0;
-		rLoc = 6237;
+		rLoc = 6300;
 		rType = 0;
 		vrLen = 969;
 		vrLoc = 5712;
@@ -4610,7 +4671,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 241";
 		rLen = 0;
-		rLoc = 6237;
+		rLoc = 6300;
 		rType = 0;
 		vrLen = 975;
 		vrLoc = 5712;
@@ -4620,7 +4681,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 241";
 		rLen = 0;
-		rLoc = 6237;
+		rLoc = 6300;
 		rType = 0;
 		vrLen = 962;
 		vrLoc = 5712;
@@ -4630,7 +4691,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 241";
 		rLen = 0;
-		rLoc = 6237;
+		rLoc = 6300;
 		rType = 0;
 		vrLen = 962;
 		vrLoc = 5712;
@@ -4640,7 +4701,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 241";
 		rLen = 0;
-		rLoc = 6237;
+		rLoc = 6300;
 		rType = 0;
 		vrLen = 962;
 		vrLoc = 5712;
@@ -4650,7 +4711,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 241";
 		rLen = 0;
-		rLoc = 6237;
+		rLoc = 6300;
 		rType = 0;
 		vrLen = 962;
 		vrLoc = 5712;
@@ -4660,7 +4721,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 241";
 		rLen = 0;
-		rLoc = 6237;
+		rLoc = 6300;
 		rType = 0;
 		vrLen = 962;
 		vrLoc = 5712;
@@ -4670,7 +4731,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 241";
 		rLen = 0;
-		rLoc = 6237;
+		rLoc = 6300;
 		rType = 0;
 		vrLen = 979;
 		vrLoc = 5695;
@@ -4680,7 +4741,7 @@
 		fRef = 613445EC11AF0911001530F4 /* SandPainter.m */;
 		name = "SandPainter.m: 45";
 		rLen = 0;
-		rLoc = 939;
+		rLoc = 945;
 		rType = 0;
 		vrLen = 1032;
 		vrLoc = 178;
@@ -4690,7 +4751,7 @@
 		fRef = 613445EC11AF0911001530F4 /* SandPainter.m */;
 		name = "SandPainter.m: 42";
 		rLen = 0;
-		rLoc = 851;
+		rLoc = 857;
 		rType = 0;
 		vrLen = 1012;
 		vrLoc = 198;
@@ -4700,7 +4761,7 @@
 		fRef = 613445EC11AF0911001530F4 /* SandPainter.m */;
 		name = "SandPainter.m: 42";
 		rLen = 0;
-		rLoc = 851;
+		rLoc = 857;
 		rType = 0;
 		vrLen = 938;
 		vrLoc = 279;
@@ -4719,7 +4780,7 @@
 		ignoreCount = 0;
 		lineNumber = 126;
 		location = Substrate;
-		modificationTime = 297118641.250941;
+		modificationTime = 297123672.82527;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -4728,7 +4789,7 @@
 		fRef = 613445EC11AF0911001530F4 /* SandPainter.m */;
 		name = "SandPainter.m: 42";
 		rLen = 0;
-		rLoc = 851;
+		rLoc = 857;
 		rType = 0;
 		vrLen = 938;
 		vrLoc = 279;
@@ -4738,7 +4799,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 31";
 		rLen = 0;
-		rLoc = 496;
+		rLoc = 497;
 		rType = 0;
 		vrLen = 1094;
 		vrLoc = 383;
@@ -4748,7 +4809,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 168";
 		rLen = 0;
-		rLoc = 3660;
+		rLoc = 3663;
 		rType = 0;
 		vrLen = 921;
 		vrLoc = 2316;
@@ -4758,7 +4819,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 168";
 		rLen = 0;
-		rLoc = 3660;
+		rLoc = 3663;
 		rType = 0;
 		vrLen = 936;
 		vrLoc = 2339;
@@ -4768,7 +4829,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 168";
 		rLen = 0;
-		rLoc = 3660;
+		rLoc = 3663;
 		rType = 0;
 		vrLen = 1004;
 		vrLoc = 2395;
@@ -4778,7 +4839,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 168";
 		rLen = 0;
-		rLoc = 3660;
+		rLoc = 3663;
 		rType = 0;
 		vrLen = 965;
 		vrLoc = 2137;
@@ -4788,7 +4849,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 168";
 		rLen = 0;
-		rLoc = 3660;
+		rLoc = 3663;
 		rType = 0;
 		vrLen = 933;
 		vrLoc = 2170;
@@ -4798,7 +4859,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 169";
 		rLen = 0;
-		rLoc = 3660;
+		rLoc = 3663;
 		rType = 0;
 		vrLen = 889;
 		vrLoc = 2291;
@@ -4828,7 +4889,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 169";
 		rLen = 0;
-		rLoc = 3660;
+		rLoc = 3663;
 		rType = 0;
 		vrLen = 891;
 		vrLoc = 2287;
@@ -4838,7 +4899,7 @@
 		fRef = 613445EC11AF0911001530F4 /* SandPainter.m */;
 		name = "SandPainter.m: 42";
 		rLen = 0;
-		rLoc = 851;
+		rLoc = 857;
 		rType = 0;
 		vrLen = 990;
 		vrLoc = 227;
@@ -4867,7 +4928,7 @@
 		ignoreCount = 0;
 		lineNumber = 55;
 		location = Substrate;
-		modificationTime = 297118641.252304;
+		modificationTime = 297123672.826358;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -5036,7 +5097,7 @@
 		fRef = 6134466711AF319A001530F4 /* FBPainter.m */;
 		name = "FBPainter.m: 121";
 		rLen = 0;
-		rLoc = 2172;
+		rLoc = 2181;
 		rType = 0;
 		vrLen = 1232;
 		vrLoc = 2695;
@@ -5126,7 +5187,7 @@
 		fRef = 6134466711AF319A001530F4 /* FBPainter.m */;
 		name = "FBPainter.m: 121";
 		rLen = 0;
-		rLoc = 2172;
+		rLoc = 2181;
 		rType = 0;
 		vrLen = 936;
 		vrLoc = 0;
@@ -5186,7 +5247,7 @@
 		fRef = 6134466711AF319A001530F4 /* FBPainter.m */;
 		name = "FBPainter.m: 161";
 		rLen = 0;
-		rLoc = 2944;
+		rLoc = 2953;
 		rType = 0;
 		vrLen = 1526;
 		vrLoc = 1019;
@@ -5213,7 +5274,7 @@
 		fRef = 6134466711AF319A001530F4 /* FBPainter.m */;
 		name = "FBPainter.m: 49";
 		rLen = 0;
-		rLoc = 1718;
+		rLoc = 1727;
 		rType = 0;
 		vrLen = 999;
 		vrLoc = 643;
@@ -5243,7 +5304,7 @@
 		fRef = 6134466711AF319A001530F4 /* FBPainter.m */;
 		name = "FBPainter.m: 62";
 		rLen = 0;
-		rLoc = 1822;
+		rLoc = 1831;
 		rType = 0;
 		vrLen = 1131;
 		vrLoc = 1213;
@@ -5273,7 +5334,7 @@
 		fRef = 6134466711AF319A001530F4 /* FBPainter.m */;
 		name = "FBPainter.m: 63";
 		rLen = 0;
-		rLoc = 1880;
+		rLoc = 1889;
 		rType = 0;
 		vrLen = 1154;
 		vrLoc = 469;
@@ -5313,7 +5374,7 @@
 		fRef = 6134466711AF319A001530F4 /* FBPainter.m */;
 		name = "FBPainter.m: 63";
 		rLen = 0;
-		rLoc = 1880;
+		rLoc = 1889;
 		rType = 0;
 		vrLen = 1154;
 		vrLoc = 469;
@@ -5323,7 +5384,7 @@
 		fRef = 6134466711AF319A001530F4 /* FBPainter.m */;
 		name = "FBPainter.m: 65";
 		rLen = 0;
-		rLoc = 1915;
+		rLoc = 1924;
 		rType = 0;
 		vrLen = 1082;
 		vrLoc = 444;
@@ -5343,7 +5404,7 @@
 		fRef = 6134466711AF319A001530F4 /* FBPainter.m */;
 		name = "FBPainter.m: 62";
 		rLen = 0;
-		rLoc = 1647;
+		rLoc = 1651;
 		rType = 0;
 		vrLen = 1234;
 		vrLoc = 765;
@@ -5353,7 +5414,7 @@
 		fRef = 6134466711AF319A001530F4 /* FBPainter.m */;
 		name = "FBPainter.m: 62";
 		rLen = 0;
-		rLoc = 1647;
+		rLoc = 1651;
 		rType = 0;
 		vrLen = 1079;
 		vrLoc = 765;
@@ -5403,7 +5464,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 169";
 		rLen = 0;
-		rLoc = 3660;
+		rLoc = 3663;
 		rType = 0;
 		vrLen = 849;
 		vrLoc = 2339;
@@ -5413,7 +5474,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 170";
 		rLen = 0;
-		rLoc = 3714;
+		rLoc = 3717;
 		rType = 0;
 		vrLen = 1158;
 		vrLoc = 3188;
@@ -5423,7 +5484,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 169";
 		rLen = 0;
-		rLoc = 3666;
+		rLoc = 3669;
 		rType = 0;
 		vrLen = 1082;
 		vrLoc = 3267;
@@ -5433,7 +5494,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 178";
 		rLen = 0;
-		rLoc = 5025;
+		rLoc = 5028;
 		rType = 0;
 		vrLen = 1242;
 		vrLoc = 2435;
@@ -5443,7 +5504,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 69";
 		rLen = 0;
-		rLoc = 1306;
+		rLoc = 1309;
 		rType = 0;
 		vrLen = 972;
 		vrLoc = 2338;
@@ -5462,7 +5523,7 @@
 		fRef = 613445EC11AF0911001530F4 /* SandPainter.m */;
 		name = "SandPainter.m: 55";
 		rLen = 0;
-		rLoc = 1228;
+		rLoc = 1234;
 		rType = 0;
 		vrLen = 973;
 		vrLoc = 279;
@@ -5472,7 +5533,7 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 39";
 		rLen = 0;
-		rLoc = 853;
+		rLoc = 854;
 		rType = 0;
 		vrLen = 1128;
 		vrLoc = 331;
@@ -5482,7 +5543,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 107";
 		rLen = 11;
-		rLoc = 2210;
+		rLoc = 2213;
 		rType = 0;
 		vrLen = 1071;
 		vrLoc = 1660;
@@ -5491,7 +5552,7 @@
 		isa = PBXTextBookmark;
 		fRef = 61B8CC7011B5A134007A1B77 /* SubstrateRenderer.m */;
 		rLen = 11;
-		rLoc = 5162;
+		rLoc = 5165;
 		rType = 0;
 	};
 	61B8CC7011B5A134007A1B77 /* SubstrateRenderer.m */ = {
@@ -5501,9 +5562,9 @@
 		path = /Users/jdc/Documents/IPhone/Substrate/Classes/SubstrateRenderer.m;
 		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1146, 3614}}";
-			sepNavSelRange = "{6237, 0}";
-			sepNavVisRange = "{5695, 914}";
+			sepNavIntBoundsRect = "{{0, 0}, {1160, 3263}}";
+			sepNavSelRange = "{1029, 0}";
+			sepNavVisRange = "{901, 1333}";
 		};
 	};
 	61B8CC7111B5A134007A1B77 /* PBXTextBookmark */ = {
@@ -5511,7 +5572,7 @@
 		fRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 184";
 		rLen = 11;
-		rLoc = 5162;
+		rLoc = 5165;
 		rType = 0;
 		vrLen = 895;
 		vrLoc = 4800;
@@ -5521,7 +5582,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 169";
 		rLen = 0;
-		rLoc = 3666;
+		rLoc = 3669;
 		rType = 0;
 		vrLen = 1085;
 		vrLoc = 3270;
@@ -5530,7 +5591,7 @@
 		isa = PBXTextBookmark;
 		fRef = 61B8CC7611B5A136007A1B77 /* Substrate.m */;
 		rLen = 11;
-		rLoc = 823;
+		rLoc = 824;
 		rType = 0;
 	};
 	61B8CC7611B5A136007A1B77 /* Substrate.m */ = {
@@ -5540,9 +5601,9 @@
 		path = /Users/jdc/Documents/IPhone/Substrate/Classes/Substrate.m;
 		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {949, 1183}}";
-			sepNavSelRange = "{1748, 0}";
-			sepNavVisRange = "{1323, 476}";
+			sepNavIntBoundsRect = "{{0, 0}, {1146, 1183}}";
+			sepNavSelRange = "{1659, 0}";
+			sepNavVisRange = "{1103, 697}";
 		};
 	};
 	61B8CC7711B5A136007A1B77 /* PBXTextBookmark */ = {
@@ -5550,35 +5611,17 @@
 		fRef = 6134481811B038ED001530F4 /* Substrate.m */;
 		name = "Substrate.m: 39";
 		rLen = 11;
-		rLoc = 823;
+		rLoc = 824;
 		rType = 0;
 		vrLen = 1043;
 		vrLoc = 383;
-	};
-	61B8CC7911B5A163007A1B77 /* FBPainter.m:63 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 6134466711AF319A001530F4 /* FBPainter.m */;
-		functionName = "-pointX:Y:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 63;
-		location = Substrate;
-		modificationTime = 297118641.253829;
-		originalNumberOfMultipleMatches = 1;
-		state = 1;
 	};
 	61B8CC7D11B5A166007A1B77 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 61B8CC7611B5A136007A1B77 /* Substrate.m */;
 		name = "Substrate.m: 39";
 		rLen = 11;
-		rLoc = 823;
+		rLoc = 824;
 		rType = 0;
 		vrLen = 1075;
 		vrLoc = 383;
@@ -5637,7 +5680,7 @@
 		isa = PBXTextBookmark;
 		fRef = 61B8CC8E11B5A24D007A1B77 /* Crack.m */;
 		rLen = 11;
-		rLoc = 2210;
+		rLoc = 2213;
 		rType = 0;
 	};
 	61B8CC8E11B5A24D007A1B77 /* Crack.m */ = {
@@ -5647,9 +5690,9 @@
 		path = /Users/jdc/Documents/IPhone/Substrate/Classes/Crack.m;
 		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1146, 2548}}";
-			sepNavSelRange = "{2210, 11}";
-			sepNavVisRange = "{1450, 889}";
+			sepNavIntBoundsRect = "{{0, 0}, {1146, 2652}}";
+			sepNavSelRange = "{2580, 0}";
+			sepNavVisRange = "{0, 731}";
 		};
 	};
 	61B8CC8F11B5A24D007A1B77 /* PBXTextBookmark */ = {
@@ -5657,7 +5700,7 @@
 		fRef = 6134481111B035DE001530F4 /* Crack.m */;
 		name = "Crack.m: 107";
 		rLen = 11;
-		rLoc = 2210;
+		rLoc = 2213;
 		rType = 0;
 		vrLen = 912;
 		vrLoc = 1716;
@@ -5667,7 +5710,7 @@
 		fRef = 61B8CC8E11B5A24D007A1B77 /* Crack.m */;
 		name = "Crack.m: 107";
 		rLen = 11;
-		rLoc = 2210;
+		rLoc = 2213;
 		rType = 0;
 		vrLen = 889;
 		vrLoc = 1450;
@@ -5757,7 +5800,7 @@
 		fRef = 613445EC11AF0911001530F4 /* SandPainter.m */;
 		name = "SandPainter.m: 42";
 		rLen = 0;
-		rLoc = 835;
+		rLoc = 841;
 		rType = 0;
 		vrLen = 876;
 		vrLoc = 369;
@@ -5787,7 +5830,7 @@
 		fRef = 613445EC11AF0911001530F4 /* SandPainter.m */;
 		name = "SandPainter.m: 42";
 		rLen = 0;
-		rLoc = 835;
+		rLoc = 841;
 		rType = 0;
 		vrLen = 871;
 		vrLoc = 369;
@@ -5827,7 +5870,7 @@
 		fRef = 613445EC11AF0911001530F4 /* SandPainter.m */;
 		name = "SandPainter.m: 42";
 		rLen = 0;
-		rLoc = 835;
+		rLoc = 841;
 		rType = 0;
 		vrLen = 936;
 		vrLoc = 309;
@@ -5837,7 +5880,7 @@
 		fRef = 613445EC11AF0911001530F4 /* SandPainter.m */;
 		name = "SandPainter.m: 42";
 		rLen = 0;
-		rLoc = 851;
+		rLoc = 857;
 		rType = 0;
 		vrLen = 931;
 		vrLoc = 309;
@@ -5847,7 +5890,7 @@
 		fRef = 613445EC11AF0911001530F4 /* SandPainter.m */;
 		name = "SandPainter.m: 42";
 		rLen = 0;
-		rLoc = 851;
+		rLoc = 857;
 		rType = 0;
 		vrLen = 898;
 		vrLoc = 343;
@@ -5877,7 +5920,7 @@
 		fRef = 61B8CC7011B5A134007A1B77 /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 241";
 		rLen = 0;
-		rLoc = 6237;
+		rLoc = 6300;
 		rType = 0;
 		vrLen = 973;
 		vrLoc = 5695;
@@ -5887,10 +5930,638 @@
 		fRef = 61B8CC7011B5A134007A1B77 /* SubstrateRenderer.m */;
 		name = "SubstrateRenderer.m: 239";
 		rLen = 0;
-		rLoc = 6237;
+		rLoc = 6300;
 		rType = 0;
 		vrLen = 914;
 		vrLoc = 5695;
+	};
+	61B8CCDF11B5AD33007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 61B8CC7011B5A134007A1B77 /* SubstrateRenderer.m */;
+		name = "SubstrateRenderer.m: 239";
+		rLen = 0;
+		rLoc = 6300;
+		rType = 0;
+		vrLen = 914;
+		vrLoc = 5695;
+	};
+	61B8CCE011B5AD33007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6134466711AF319A001530F4 /* FBPainter.m */;
+		name = "FBPainter.m: 55";
+		rLen = 0;
+		rLoc = 1362;
+		rType = 0;
+		vrLen = 1255;
+		vrLoc = 514;
+	};
+	61B8CCE111B5AD33007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6134466711AF319A001530F4 /* FBPainter.m */;
+		name = "FBPainter.m: 66";
+		rLen = 0;
+		rLoc = 1681;
+		rType = 0;
+		vrLen = 1193;
+		vrLoc = 662;
+	};
+	61B8CCE611B5AD4A007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6134466711AF319A001530F4 /* FBPainter.m */;
+		name = "FBPainter.m: 66";
+		rLen = 0;
+		rLoc = 1681;
+		rType = 0;
+		vrLen = 1158;
+		vrLoc = 662;
+	};
+	61B8CCE811B5ADFC007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6134466711AF319A001530F4 /* FBPainter.m */;
+		name = "FBPainter.m: 66";
+		rLen = 0;
+		rLoc = 1681;
+		rType = 0;
+		vrLen = 1193;
+		vrLoc = 662;
+	};
+	61B8CCE911B5ADFC007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 618AD97611AD9FD600D8AF67 /* FrameBuffer.m */;
+		name = "FrameBuffer.m: 56";
+		rLen = 0;
+		rLoc = 876;
+		rType = 0;
+		vrLen = 700;
+		vrLoc = 0;
+	};
+	61B8CCEA11B5ADFC007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 61B8CC7611B5A136007A1B77 /* Substrate.m */;
+		name = "Substrate.m: 31";
+		rLen = 0;
+		rLoc = 497;
+		rType = 0;
+		vrLen = 1076;
+		vrLoc = 383;
+	};
+	61B8CCEB11B5ADFC007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 61B8CC7011B5A134007A1B77 /* SubstrateRenderer.m */;
+		name = "SubstrateRenderer.m: 137";
+		rLen = 4;
+		rLoc = 4118;
+		rType = 0;
+		vrLen = 1008;
+		vrLoc = 3927;
+	};
+	61B8CCEC11B5ADFC007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 61B8CC7011B5A134007A1B77 /* SubstrateRenderer.m */;
+		name = "SubstrateRenderer.m: 224";
+		rLen = 0;
+		rLoc = 5905;
+		rType = 0;
+		vrLen = 818;
+		vrLoc = 5537;
+	};
+	61B8CCF111B5AE31007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 61B8CC7011B5A134007A1B77 /* SubstrateRenderer.m */;
+		name = "SubstrateRenderer.m: 231";
+		rLen = 0;
+		rLoc = 6005;
+		rType = 0;
+		vrLen = 762;
+		vrLoc = 5537;
+	};
+	61B8CCF911B5B05A007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 61B8CC7011B5A134007A1B77 /* SubstrateRenderer.m */;
+		name = "SubstrateRenderer.m: 231";
+		rLen = 0;
+		rLoc = 6005;
+		rType = 0;
+		vrLen = 1047;
+		vrLoc = 0;
+	};
+	61B8CCFA11B5B05A007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 613445F111AF1FC7001530F4 /* FBPixel.h */;
+		name = "FBPixel.h: 73";
+		rLen = 0;
+		rLoc = 1694;
+		rType = 0;
+		vrLen = 1090;
+		vrLoc = 623;
+	};
+	61B8CCFB11B5B05A007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 614D133211ADD6BA00646C4A /* Renderer.m */;
+		name = "Renderer.m: 39";
+		rLen = 0;
+		rLoc = 1030;
+		rType = 0;
+		vrLen = 1154;
+		vrLoc = 687;
+	};
+	61B8CCFC11B5B05A007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 614D139311ADE21E00646C4A /* OpenGLView.h */;
+		name = "OpenGLView.h: 18";
+		rLen = 0;
+		rLoc = 292;
+		rType = 0;
+		vrLen = 447;
+		vrLoc = 0;
+	};
+	61B8CCFD11B5B05A007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 614D139411ADE21E00646C4A /* OpenGLView.m */;
+		name = "OpenGLView.m: 28";
+		rLen = 0;
+		rLoc = 709;
+		rType = 0;
+		vrLen = 1002;
+		vrLoc = 20;
+	};
+	61B8CCFE11B5B05A007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 614D139411ADE21E00646C4A /* OpenGLView.m */;
+		name = "OpenGLView.m: 79";
+		rLen = 0;
+		rLoc = 1848;
+		rType = 0;
+		vrLen = 979;
+		vrLoc = 1288;
+	};
+	61B8CD0611B5B08C007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 614D139411ADE21E00646C4A /* OpenGLView.m */;
+		name = "OpenGLView.m: 85";
+		rLen = 0;
+		rLoc = 1848;
+		rType = 0;
+		vrLen = 983;
+		vrLoc = 1288;
+	};
+	61B8CD0E11B5B154007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 614D139411ADE21E00646C4A /* OpenGLView.m */;
+		name = "OpenGLView.m: 81";
+		rLen = 0;
+		rLoc = 1767;
+		rType = 0;
+		vrLen = 980;
+		vrLoc = 1349;
+	};
+	61B8CD1C11B5B1FE007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 614D139411ADE21E00646C4A /* OpenGLView.m */;
+		name = "OpenGLView.m: 80";
+		rLen = 0;
+		rLoc = 1767;
+		rType = 0;
+		vrLen = 998;
+		vrLoc = 1349;
+	};
+	61B8CD2411B5B290007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 614D139411ADE21E00646C4A /* OpenGLView.m */;
+		name = "OpenGLView.m: 80";
+		rLen = 0;
+		rLoc = 1767;
+		rType = 0;
+		vrLen = 1041;
+		vrLoc = 1349;
+	};
+	61B8CD2B11B5B2FF007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 61B8CC7611B5A136007A1B77 /* Substrate.m */;
+		name = "Substrate.m: 61";
+		rLen = 0;
+		rLoc = 1346;
+		rType = 0;
+		vrLen = 880;
+		vrLoc = 717;
+	};
+	61B8CD2C11B5B2FF007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 614D139411ADE21E00646C4A /* OpenGLView.m */;
+		name = "OpenGLView.m: 80";
+		rLen = 0;
+		rLoc = 1767;
+		rType = 0;
+		vrLen = 1041;
+		vrLoc = 1349;
+	};
+	61B8CD2D11B5B2FF007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 614D139411ADE21E00646C4A /* OpenGLView.m */;
+		name = "OpenGLView.m: 79";
+		rLen = 0;
+		rLoc = 1767;
+		rType = 0;
+		vrLen = 724;
+		vrLoc = 1614;
+	};
+	61B8CD3311B5B390007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 614D139411ADE21E00646C4A /* OpenGLView.m */;
+		name = "OpenGLView.m: 79";
+		rLen = 0;
+		rLoc = 1767;
+		rType = 0;
+		vrLen = 744;
+		vrLoc = 1614;
+	};
+	61B8CD3411B5B390007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 613445EC11AF0911001530F4 /* SandPainter.m */;
+		name = "SandPainter.m: 42";
+		rLen = 0;
+		rLoc = 857;
+		rType = 0;
+		vrLen = 932;
+		vrLoc = 309;
+	};
+	61B8CD3511B5B390007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 613445EC11AF0911001530F4 /* SandPainter.m */;
+		name = "SandPainter.m: 45";
+		rLen = 0;
+		rLoc = 832;
+		rType = 0;
+		vrLen = 893;
+		vrLoc = 433;
+	};
+	61B8CD3911B5B3BC007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 613445EC11AF0911001530F4 /* SandPainter.m */;
+		name = "SandPainter.m: 40";
+		rLen = 0;
+		rLoc = 832;
+		rType = 0;
+		vrLen = 816;
+		vrLoc = 433;
+	};
+	61B8CD3F11B5B9D7007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 613445EC11AF0911001530F4 /* SandPainter.m */;
+		name = "SandPainter.m: 30";
+		rLen = 0;
+		rLoc = 548;
+		rType = 0;
+		vrLen = 841;
+		vrLoc = 433;
+	};
+	61B8CD4011B5B9D7007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6134481711B038ED001530F4 /* Substrate.h */;
+		name = "Substrate.h: 21";
+		rLen = 0;
+		rLoc = 341;
+		rType = 0;
+		vrLen = 540;
+		vrLoc = 0;
+	};
+	61B8CD4111B5B9D7007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 61B8CC7611B5A136007A1B77 /* Substrate.m */;
+		name = "Substrate.m: 61";
+		rLen = 0;
+		rLoc = 1346;
+		rType = 0;
+		vrLen = 1024;
+		vrLoc = 331;
+	};
+	61B8CD4211B5B9D7007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 61B8CC8E11B5A24D007A1B77 /* Crack.m */;
+		name = "Crack.m: 144";
+		rLen = 0;
+		rLoc = 2980;
+		rType = 0;
+		vrLen = 788;
+		vrLoc = 2289;
+	};
+	61B8CD4811B5BA11007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 61B8CC8E11B5A24D007A1B77 /* Crack.m */;
+		name = "Crack.m: 117";
+		rLen = 0;
+		rLoc = 2412;
+		rType = 0;
+		vrLen = 903;
+		vrLoc = 2289;
+	};
+	61B8CD4911B5BA11007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 613445EC11AF0911001530F4 /* SandPainter.m */;
+		name = "SandPainter.m: 30";
+		rLen = 0;
+		rLoc = 548;
+		rType = 0;
+		vrLen = 841;
+		vrLoc = 433;
+	};
+	61B8CD4A11B5BA11007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 613445EC11AF0911001530F4 /* SandPainter.m */;
+		name = "SandPainter.m: 29";
+		rLen = 0;
+		rLoc = 548;
+		rType = 0;
+		vrLen = 823;
+		vrLoc = 465;
+	};
+	61B8CD5011B5BA72007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 613445EC11AF0911001530F4 /* SandPainter.m */;
+		name = "SandPainter.m: 30";
+		rLen = 0;
+		rLoc = 548;
+		rType = 0;
+		vrLen = 868;
+		vrLoc = 465;
+	};
+	61B8CD5711B5BB14007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 61B8CC8E11B5A24D007A1B77 /* Crack.m */;
+		name = "Crack.m: 144";
+		rLen = 0;
+		rLoc = 2982;
+		rType = 0;
+		vrLen = 821;
+		vrLoc = 2335;
+	};
+	61B8CD5811B5BB14007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 613445EC11AF0911001530F4 /* SandPainter.m */;
+		name = "SandPainter.m: 29";
+		rLen = 0;
+		rLoc = 548;
+		rType = 0;
+		vrLen = 789;
+		vrLoc = 462;
+	};
+	61B8CD5911B5BB14007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 613445EC11AF0911001530F4 /* SandPainter.m */;
+		name = "SandPainter.m: 38";
+		rLen = 0;
+		rLoc = 548;
+		rType = 0;
+		vrLen = 867;
+		vrLoc = 462;
+	};
+	61B8CD5C11B5BB7B007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 613445EC11AF0911001530F4 /* SandPainter.m */;
+		name = "SandPainter.m: 40";
+		rLen = 0;
+		rLoc = 831;
+		rType = 0;
+		vrLen = 820;
+		vrLoc = 433;
+	};
+	61B8CD5D11B5BBD3007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 613445EC11AF0911001530F4 /* SandPainter.m */;
+		name = "SandPainter.m: 40";
+		rLen = 0;
+		rLoc = 831;
+		rType = 0;
+		vrLen = 997;
+		vrLoc = 199;
+	};
+	61B8CD5E11B5BBD3007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 61B8CC8E11B5A24D007A1B77 /* Crack.m */;
+		name = "Crack.m: 144";
+		rLen = 0;
+		rLoc = 2982;
+		rType = 0;
+		vrLen = 855;
+		vrLoc = 2333;
+	};
+	61B8CD5F11B5BBD3007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 61B8CC8E11B5A24D007A1B77 /* Crack.m */;
+		name = "Crack.m: 144";
+		rLen = 0;
+		rLoc = 2982;
+		rType = 0;
+		vrLen = 929;
+		vrLoc = 2338;
+	};
+	61B8CD6811B5BC5A007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 61B8CC8E11B5A24D007A1B77 /* Crack.m */;
+		name = "Crack.m: 69";
+		rLen = 0;
+		rLoc = 1309;
+		rType = 0;
+		vrLen = 799;
+		vrLoc = 1017;
+	};
+	61B8CD6B11B5BCD7007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 61B8CC8E11B5A24D007A1B77 /* Crack.m */;
+		name = "Crack.m: 125";
+		rLen = 0;
+		rLoc = 2580;
+		rType = 0;
+		vrLen = 915;
+		vrLoc = 2398;
+	};
+	61B8CD6E11B5BCDF007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 61B8CC8E11B5A24D007A1B77 /* Crack.m */;
+		name = "Crack.m: 125";
+		rLen = 0;
+		rLoc = 2580;
+		rType = 0;
+		vrLen = 877;
+		vrLoc = 2398;
+	};
+	61B8CD7111B5BD0D007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 61B8CC8E11B5A24D007A1B77 /* Crack.m */;
+		name = "Crack.m: 125";
+		rLen = 0;
+		rLoc = 2580;
+		rType = 0;
+		vrLen = 731;
+		vrLoc = 0;
+	};
+	61B8CD7211B5BD0D007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 61B8CC7611B5A136007A1B77 /* Substrate.m */;
+		name = "Substrate.m: 61";
+		rLen = 0;
+		rLoc = 1346;
+		rType = 0;
+		vrLen = 1005;
+		vrLoc = 350;
+	};
+	61B8CD7311B5BD0D007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 61B8CC7611B5A136007A1B77 /* Substrate.m */;
+		name = "Substrate.m: 50";
+		rLen = 0;
+		rLoc = 1100;
+		rType = 0;
+		vrLen = 919;
+		vrLoc = 678;
+	};
+	61B8CD7611B5BD1D007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 61B8CC7611B5A136007A1B77 /* Substrate.m */;
+		name = "Substrate.m: 50";
+		rLen = 0;
+		rLoc = 1100;
+		rType = 0;
+		vrLen = 919;
+		vrLoc = 678;
+	};
+	61B8CD7911B5BD42007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 61B8CC7611B5A136007A1B77 /* Substrate.m */;
+		name = "Substrate.m: 50";
+		rLen = 0;
+		rLoc = 1100;
+		rType = 0;
+		vrLen = 940;
+		vrLoc = 678;
+	};
+	61B8CD7A11B5BD42007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 613445EC11AF0911001530F4 /* SandPainter.m */;
+		name = "SandPainter.m: 40";
+		rLen = 0;
+		rLoc = 831;
+		rType = 0;
+		vrLen = 994;
+		vrLoc = 199;
+	};
+	61B8CD7B11B5BD42007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 613445EC11AF0911001530F4 /* SandPainter.m */;
+		name = "SandPainter.m: 40";
+		rLen = 0;
+		rLoc = 831;
+		rType = 0;
+		vrLen = 820;
+		vrLoc = 433;
+	};
+	61B8CD7C11B5BF2E007A1B77 /* Palette.m:83 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 61BD2D4411AD878100EDAEA3 /* Palette.m */;
+		functionName = "-randomColor";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 83;
+		location = Substrate;
+		modificationTime = 297123672.827289;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
+	};
+	61B8CD8011B5BF31007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 613445EC11AF0911001530F4 /* SandPainter.m */;
+		name = "SandPainter.m: 40";
+		rLen = 0;
+		rLoc = 831;
+		rType = 0;
+		vrLen = 820;
+		vrLoc = 433;
+	};
+	61B8CD8111B5BF31007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 61BD2D4411AD878100EDAEA3 /* Palette.m */;
+		name = "Palette.m: 69";
+		rLen = 0;
+		rLoc = 2111;
+		rType = 0;
+		vrLen = 1200;
+		vrLoc = 1808;
+	};
+	61B8CD8211B5BF31007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 61BD2D4411AD878100EDAEA3 /* Palette.m */;
+		name = "Palette.m: 69";
+		rLen = 0;
+		rLoc = 2111;
+		rType = 0;
+		vrLen = 1198;
+		vrLoc = 1805;
+	};
+	61B8CD8611B5BF58007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 61BD2D4411AD878100EDAEA3 /* Palette.m */;
+		name = "Palette.m: 79";
+		rLen = 0;
+		rLoc = 2595;
+		rType = 0;
+		vrLen = 1200;
+		vrLoc = 1808;
+	};
+	61B8CD8A11B5BF82007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 61BD2D4411AD878100EDAEA3 /* Palette.m */;
+		name = "Palette.m: 79";
+		rLen = 0;
+		rLoc = 2595;
+		rType = 0;
+		vrLen = 1200;
+		vrLoc = 1808;
+	};
+	61B8CD8B11B5BF82007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 613445EC11AF0911001530F4 /* SandPainter.m */;
+		name = "SandPainter.m: 40";
+		rLen = 0;
+		rLoc = 831;
+		rType = 0;
+		vrLen = 910;
+		vrLoc = 343;
+	};
+	61B8CD8C11B5BF82007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 61B8CC7611B5A136007A1B77 /* Substrate.m */;
+		name = "Substrate.m: 82";
+		rLen = 0;
+		rLoc = 1659;
+		rType = 0;
+		vrLen = 696;
+		vrLoc = 1103;
+	};
+	61B8CD8F11B5BFA0007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 61B8CC7611B5A136007A1B77 /* Substrate.m */;
+		name = "Substrate.m: 82";
+		rLen = 0;
+		rLoc = 1659;
+		rType = 0;
+		vrLen = 696;
+		vrLoc = 1103;
+	};
+	61B8CD9211B5BFA9007A1B77 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 61B8CC7611B5A136007A1B77 /* Substrate.m */;
+		name = "Substrate.m: 82";
+		rLen = 0;
+		rLoc = 1659;
+		rType = 0;
+		vrLen = 697;
+		vrLoc = 1103;
 	};
 	61BD2C1D11ACA5FA00EDAEA3 /* Substrate */ = {
 		isa = PBXExecutable;
@@ -5899,7 +6570,7 @@
 		argumentStrings = (
 		);
 		autoAttachOnCrash = 1;
-		breakpointsEnabled = 1;
+		breakpointsEnabled = 0;
 		configStateDict = {
 		};
 		customDataFormattersEnabled = 1;
@@ -5953,7 +6624,7 @@
 	61BD2D4411AD878100EDAEA3 /* Palette.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1146, 1248}}";
-			sepNavSelRange = "{2103, 0}";
+			sepNavSelRange = "{2595, 0}";
 			sepNavVisRange = "{1808, 1200}";
 			sepNavWindowFrame = "{{15, 4}, {1067, 874}}";
 		};

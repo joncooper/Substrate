@@ -58,10 +58,12 @@
 	// definitionally
 	newPixel.a = 1.0; 	
 	
+	/*
 	// TODO: remove after debug
 	if (!BlessFBPixel(newPixel)) {
 		NSLog(@"Aieee!");
 	}
+	 */
 	
 	[fb setPixelAtX:rx andY:ry to:newPixel];
 }

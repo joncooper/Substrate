@@ -37,9 +37,9 @@
 	
 	// calculate grains by distance
 	// TODO: do you need to use roundf()? 
-	// int grains = (int) sqrtf((ox - x) * (ox - x) + (oy - y) * (oy - y));
-	
-	int grains = 128;
+	int grains = (int) sqrtf((ox - x) * (ox - x) + (oy - y) * (oy - y)) * 3;
+		  
+	//int grains = 128;
 	
 	// lay down grains of sand using transparent pixels
 	float w = gain / (grains - 1.0);
