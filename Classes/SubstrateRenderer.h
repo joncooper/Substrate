@@ -15,7 +15,11 @@
 	Substrate *substrate;
 }
 
+@property (nonatomic, retain) IBOutlet UIToolbar *toolbar;
+
 - (void) setupGL;
 - (void) render;
+
+- (void) clearAndRestart;
 
 @end

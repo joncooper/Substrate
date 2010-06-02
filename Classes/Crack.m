@@ -155,7 +155,7 @@
 	}
 	
 	// current location
-	float z = 0.33;
+	float z = 0.55;
 	int cx = (int) (fmax(x + random_float(-z, z), 0)); // add fuzz
 	int cy = (int) (fmax(y + random_float(-z, z), 0));
 

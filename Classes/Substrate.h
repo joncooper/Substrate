@@ -23,6 +23,7 @@
 @property (nonatomic, assign) int width;
 @property (nonatomic, assign) int height;
 
+- (void) setupCrackGrid;
 - (void) tick;
 
 @end

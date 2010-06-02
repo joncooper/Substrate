@@ -17,4 +17,6 @@
 + (id) paletteFromFile:(NSString *)filename;
 - (FBPixel) randomColor;
 
+- (void) setupSamplePalette;
+
 @end

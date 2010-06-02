@@ -11,13 +11,13 @@
 #import "FBPixel.h"
 #import "Substrate.h"
 
-@implementation SubstrateRenderer
-
 typedef struct {
 	GLfloat x;
 	GLfloat y;
 	GLfloat z;
 } Vertex3D;
+
+@implementation SubstrateRenderer;
 
 // See http://ask.metafilter.com/101438/Getting-to-the-point-in-OpenGL-ES
 
@@ -41,6 +41,13 @@ typedef struct {
 		[self setupGL];
 	}
 	return self;
+}
+
+- (void) clearAndRestart
+{
+	[substrate.fbPainter setBackgroundColor:MakeFBPixel(1.0, 1.0, 1.0, 1.0)];
+	[self setupGL];
+	[substrate setupCrackGrid];
 }
 
 - (void) dealloc {

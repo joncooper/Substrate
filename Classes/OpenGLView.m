@@ -82,6 +82,12 @@
 	else {
 		[self startAnimation];
 	}
+	
+	UITouch *touch = [[event allTouches] anyObject];
+	if ([touch tapCount] == 2) {
+		[renderer clearAndRestart];
+		[self startAnimation];
+	}
 }
 
 - (void) startAnimation

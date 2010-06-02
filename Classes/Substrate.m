@@ -38,6 +38,13 @@
 	fbPainter.fb = [[FrameBuffer alloc] initWithWidth:width AndHeight:height];
 	[fbPainter setBackgroundColor:MakeFBPixel(1.0, 1.0, 1.0, 1.0)];
 	
+	[self setupCrackGrid];
+
+	return self;
+}
+
+- (void) setupCrackGrid
+{
 	// create and erase crack grid
 	
 	cgrid = calloc(width * height, sizeof(int));
@@ -62,8 +69,6 @@
 		Crack *aCrack = [[[Crack alloc] initWithSubstrate:self] autorelease];
 		[cracks addObject:aCrack];
 	}
-
-	return self;
 }
 
 - (void) dealloc 
