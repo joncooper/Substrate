@@ -12,10 +12,10 @@
 @implementation SubstrateAppDelegate
 
 @synthesize window;
-@synthesize glView;
+@synthesize substrateVC;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
-	[glView startAnimation];
+	[window addSubview:substrateVC.view];
 	[window makeKeyAndVisible];
     return YES;
 }

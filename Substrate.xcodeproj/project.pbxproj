@@ -17,6 +17,8 @@
 		6134466811AF319A001530F4 /* FBPainter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6134466711AF319A001530F4 /* FBPainter.m */; };
 		6134481211B035DE001530F4 /* Crack.m in Sources */ = {isa = PBXBuildFile; fileRef = 6134481111B035DE001530F4 /* Crack.m */; };
 		6134481911B038ED001530F4 /* Substrate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6134481811B038ED001530F4 /* Substrate.m */; };
+		614C4FA011B6F4B5005F14BC /* SubstrateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 614C4F9E11B6F4B5005F14BC /* SubstrateVC.m */; };
+		614C4FA111B6F4B5005F14BC /* SubstrateVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 614C4F9F11B6F4B5005F14BC /* SubstrateVC.xib */; };
 		614D133311ADD6BA00646C4A /* Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 614D133211ADD6BA00646C4A /* Renderer.m */; };
 		614D138311ADE17100646C4A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614D138211ADE17100646C4A /* OpenGLES.framework */; };
 		614D138511ADE17100646C4A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614D138411ADE17100646C4A /* QuartzCore.framework */; };
@@ -47,6 +49,9 @@
 		6134481111B035DE001530F4 /* Crack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Crack.m; sourceTree = "<group>"; };
 		6134481711B038ED001530F4 /* Substrate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Substrate.h; sourceTree = "<group>"; };
 		6134481811B038ED001530F4 /* Substrate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Substrate.m; sourceTree = "<group>"; };
+		614C4F9D11B6F4B5005F14BC /* SubstrateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubstrateVC.h; sourceTree = "<group>"; };
+		614C4F9E11B6F4B5005F14BC /* SubstrateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubstrateVC.m; sourceTree = "<group>"; };
+		614C4F9F11B6F4B5005F14BC /* SubstrateVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubstrateVC.xib; sourceTree = "<group>"; };
 		614D133111ADD6BA00646C4A /* Renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Renderer.h; sourceTree = "<group>"; };
 		614D133211ADD6BA00646C4A /* Renderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Renderer.m; sourceTree = "<group>"; };
 		614D138211ADE17100646C4A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -171,6 +176,9 @@
 				6134481711B038ED001530F4 /* Substrate.h */,
 				6134481811B038ED001530F4 /* Substrate.m */,
 				61B8CA4F11B20274007A1B77 /* Util.h */,
+				614C4F9D11B6F4B5005F14BC /* SubstrateVC.h */,
+				614C4F9E11B6F4B5005F14BC /* SubstrateVC.m */,
+				614C4F9F11B6F4B5005F14BC /* SubstrateVC.xib */,
 			);
 			name = Substrate;
 			sourceTree = "<group>";
@@ -231,6 +239,7 @@
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				61BD2D6511AD8DE400EDAEA3 /* pollockShimmering.gif in Resources */,
 				614D166C11AEC26500646C4A /* texture.png in Resources */,
+				614C4FA111B6F4B5005F14BC /* SubstrateVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +261,7 @@
 				6134466811AF319A001530F4 /* FBPainter.m in Sources */,
 				6134481211B035DE001530F4 /* Crack.m in Sources */,
 				6134481911B038ED001530F4 /* Substrate.m in Sources */,
+				614C4FA011B6F4B5005F14BC /* SubstrateVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

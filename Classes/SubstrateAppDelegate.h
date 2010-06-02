@@ -6,16 +6,16 @@
 //  Copyright Jon Cooper 2010. All rights reserved.
 //
 
-#import "OpenGLView.h"
 #import <UIKit/UIKit.h>
+#import "SubstrateVC.h"
 
 @interface SubstrateAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
-	OpenGLView *glView;
+	SubstrateVC *substrateVC;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) IBOutlet OpenGLView *glView;
+@property (nonatomic, retain) IBOutlet SubstrateVC *substrateVC;
 
 @end
 

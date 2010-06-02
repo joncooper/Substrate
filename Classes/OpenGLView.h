@@ -16,6 +16,7 @@
 	id displayLink;
 }
 
+@property (nonatomic, retain) Renderer *renderer;
 @property (readonly, nonatomic, getter=isAnimating) BOOL animating;
 
 - (void) startAnimation;

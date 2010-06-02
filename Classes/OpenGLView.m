@@ -12,6 +12,7 @@
 
 @implementation OpenGLView
 
+@synthesize renderer;
 @synthesize animating;
 
 - (id) initWithCoder:(NSCoder *)aDecoder 
@@ -24,12 +25,6 @@
 										[NSNumber numberWithBool:FALSE], kEAGLDrawablePropertyRetainedBacking, 
 										kEAGLColorFormatRGBA8, kEAGLDrawablePropertyColorFormat,
 										nil];
-		
-		renderer = [[SubstrateRenderer alloc] init];
-		if (!renderer) {
-			[self release];
-			return nil;
-		}
 		
 		animating = FALSE;
 		animationFrameInterval = 1;
