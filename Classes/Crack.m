@@ -67,6 +67,12 @@
 	y = cy;
 	// t = ca;
 	t = fmodf(ca, 360.0); // %360
+	
+	if (random_float(0.0, 1.0) >= 0.85)
+		curvature = random_float(0.05, 0.2);
+	else 
+		curvature = 0.0;
+	
 	// This constant adjusts spacing from the crack point. It's not magic otherwise.
 	x += 0.61 * cos(t * M_PI/180);
 	y += 0.61 * sin(t * M_PI/180);
@@ -146,6 +152,14 @@
 		
 - (void) move
 {
+	if (t >= 180.0)
+		t += curvature;
+	else 
+		t -= curvature;
+	
+	if (random_float(0.0, 1.0) > 0.95)
+		curvature *= 1.005;
+	
 	// continue cracking; this constant adjusts the spacing of points along the crack
 	x += 0.42 * cos(t * M_PI/180);
 	y += 0.42 * sin(t * M_PI/180);

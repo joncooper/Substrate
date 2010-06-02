@@ -20,6 +20,8 @@
 	float x;
 	float y;
 	float t; // angle of travel in degrees
+	
+	float curvature; // curvature
 }
 
 @property (nonatomic, retain) Substrate *substrate;
