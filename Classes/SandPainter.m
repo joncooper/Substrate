@@ -18,7 +18,7 @@
 		gain = random_float(0.01, 0.1);
 		substrate = aSubstrate;
 		palette = [Palette paletteFromFile:@"pollockShimmering.gif"];
-		[palette setupSamplePalette];
+		// [palette setupSamplePalette];
 		c = [palette randomColor];
 	}
 	return self;

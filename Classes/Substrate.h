@@ -16,6 +16,11 @@
 	int height;
 	NSMutableArray *palette;
 	NSMutableArray *cracks;
+	
+	// Configurable properties
+	float crack_density;
+	int simultaneous_cracks;
+	int drawing_speed;
 }
 
 @property (nonatomic, retain) FBPainter *fbPainter;

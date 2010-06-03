@@ -116,7 +116,7 @@ typedef struct {
 - (void) setupGL {
 	[self setupViewport];
 	[self setupLighting];
-	[self setupTexture];	
+	[self setupTexture];
 }
 
 - (void) setupTexture {
@@ -188,6 +188,9 @@ typedef struct {
 	[self setupViewport];
 	[self setupLighting];
 	
+	glClearColor(0.5, 0.5, 0.5, 1.0);
+    glClear(GL_COLOR_BUFFER_BIT);
+	
     //[substrate.fbPainter setBackgroundColor:MakeFBPixel(0x00, 0x00, 0x00, 0x00)];
 	//[substrate.fbPainter alphaTestFB];
 	[substrate tick];
@@ -222,9 +225,6 @@ typedef struct {
 		0.0, 0.0, 1.0,
 		0.0, 0.0, 1.0
 	};
-	
-	glClearColor(0.5, 0.5, 0.5, 1.0);
-    glClear(GL_COLOR_BUFFER_BIT);
 	
 	// Map and enable the texture
 	

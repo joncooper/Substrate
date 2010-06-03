@@ -29,7 +29,6 @@
 	
 	width = 768;
 	height = 1004;
-	cracks = [[NSMutableArray alloc] init];
 	// palette = [Palette paletteFromImageFile:@"pollockShimmering"];
 	
 	// Create frame buffer and painter; set background color to white
@@ -45,6 +44,13 @@
 
 - (void) setupCrackGrid
 {
+	// Grab properties from settings
+	
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	crack_density = [defaults floatForKey:@"crack_density"];
+	simultaneous_cracks = [defaults integerForKey:@"simultaneous_cracks"];
+	drawing_speed = [defaults integerForKey:@"drawing_speed"];
+	
 	// create and erase crack grid
 	
 	cgrid = calloc(width * height, sizeof(int));
@@ -54,8 +60,7 @@
 	
 	// make random crack seeds
 	
-	float crackDensity = 5e-5f;
-	int numCracks = width * height * crackDensity;
+	int numCracks = width * height * crack_density;
 	
 	for (int seed = 0; seed < numCracks; seed++) {
 		int i = random() % ((width * height) - 1);
@@ -65,7 +70,8 @@
 	
 	// make some cracks
 	
-	for (int k = 0; k < 4; k++) {
+	cracks = [[NSMutableArray alloc] init];
+	for (int k = 0; k < simultaneous_cracks; k++) {
 		Crack *aCrack = [[[Crack alloc] initWithSubstrate:self] autorelease];
 		[cracks addObject:aCrack];
 	}
@@ -84,7 +90,7 @@
 
 - (void) tick 
 {
-	int ticksPerFrame = 10;
+	int ticksPerFrame = drawing_speed;
 	for (int k = 0; k < ticksPerFrame; k++) {
 		for (int i = 0; i < [cracks count]; i++) {
 			[[cracks objectAtIndex:i] move];

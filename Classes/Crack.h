@@ -21,7 +21,11 @@
 	float y;
 	float t; // angle of travel in degrees
 	
-	float curvature; // curvature
+	int crack_divergence_from_perpendicular;
+	BOOL allow_curvature;
+	float curvature_probability;
+	float curvature_rate;
+	float curvature;
 }
 
 @property (nonatomic, retain) Substrate *substrate;

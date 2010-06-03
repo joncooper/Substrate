@@ -19,6 +19,13 @@
 	dimx = [substrate.fbPainter.fb getWidth];
 	dimy = [substrate.fbPainter.fb getHeight];
 	sandPainter = [[SandPainter alloc] initWithSubstrate:substrate];
+	
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	crack_divergence_from_perpendicular = [defaults integerForKey:@"crack_divergence_from_perpendicular"];
+	allow_curvature = [defaults boolForKey:@"allow_curvature"];
+	curvature_probability = [defaults floatForKey:@"curvature_probability"];
+	curvature_rate = [defaults floatForKey:@"curvature_rate"];
+
 	[self findStart];
 	return self;
 }
@@ -49,7 +56,7 @@
 	if (found) {
 		// start crack perpendicular to the one we just found
 		int crackAngle = substrate.cgrid[py * dimx + px];
-		int crackRandomness = random_int(-2,2);
+		int crackRandomness = random_int(-crack_divergence_from_perpendicular, crack_divergence_from_perpendicular);
 		if ((random() % 100) < 50) {
 			crackAngle -= 90 + crackRandomness;
 		} else {
@@ -68,10 +75,20 @@
 	// t = ca;
 	t = fmodf(ca, 360.0); // %360
 	
-	if (random_float(0.0, 1.0) >= 0.85)
-		curvature = random_float(0.05, 0.2);
-	else 
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	
+	allow_curvature = [defaults boolForKey:@"allow_curvature"];
+	curvature_probability = [defaults floatForKey:@"curvature_probability"];
+	curvature_rate = [defaults floatForKey:@"curvature_rate"];
+	
+	if (allow_curvature) 
+	{
+		if (random_float(0.0, 1.0) >= (1.0 - curvature_probability))
+			curvature = random_float((curvature_rate / 4.0), curvature_rate);
+	}
+	else {
 		curvature = 0.0;
+	}
 	
 	// This constant adjusts spacing from the crack point. It's not magic otherwise.
 	x += 0.61 * cos(t * M_PI/180);
