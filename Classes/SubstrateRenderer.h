@@ -18,6 +18,11 @@
 @property (nonatomic, retain) IBOutlet UIToolbar *toolbar;
 
 - (void) setupGL;
+- (void) setupViewport;
+- (void) setupLighting;
+- (void) setupTexture;
+- (void) updateTexture;
+
 - (void) render;
 
 - (void) clearAndRestart;

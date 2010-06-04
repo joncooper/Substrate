@@ -19,6 +19,7 @@
 @synthesize cgrid;
 @synthesize width;
 @synthesize height;
+@synthesize palette;
 
 - (id) init
 {
@@ -29,8 +30,7 @@
 	
 	width = 768;
 	height = 1004;
-	// palette = [Palette paletteFromImageFile:@"pollockShimmering"];
-	
+			
 	// Create frame buffer and painter; set background color to white
 	
 	fbPainter = [[FBPainter alloc] init];
@@ -44,6 +44,9 @@
 
 - (void) setupCrackGrid
 {
+	// Setup the palette
+	palette = [Palette paletteFromFile:@"pollockShimmering.gif"];
+
 	// Grab properties from settings
 	
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
@@ -72,8 +75,9 @@
 	
 	cracks = [[NSMutableArray alloc] init];
 	for (int k = 0; k < simultaneous_cracks; k++) {
-		Crack *aCrack = [[[Crack alloc] initWithSubstrate:self] autorelease];
+		Crack *aCrack = [[Crack alloc] initWithSubstrate:self];
 		[cracks addObject:aCrack];
+		[aCrack release];
 	}
 }
 
@@ -89,13 +93,18 @@
 // Called per-frame
 
 - (void) tick 
-{
+{	
+	NSDate *startFrame = [NSDate date];
+	
 	int ticksPerFrame = drawing_speed;
 	for (int k = 0; k < ticksPerFrame; k++) {
 		for (int i = 0; i < [cracks count]; i++) {
 			[[cracks objectAtIndex:i] move];
 		}
 	}
+	
+	NSTimeInterval frameTime = [startFrame timeIntervalSinceNow];
+	NSLog(@"frame time: %f seconds", frameTime);
 }
 
-@end
+@end 

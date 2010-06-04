@@ -17,6 +17,8 @@
 	float gain;
 }
 
+@property (nonatomic, retain) Palette *palette;
+
 - (id) initWithSubstrate:(Substrate *)substrate;
 - (void) renderX:(float) x Y:(float)y OX:(float)ox OY:(float) oy;
 

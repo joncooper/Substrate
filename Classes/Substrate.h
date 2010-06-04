@@ -8,14 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import "FBPainter.h"
+#import "Palette.h"
 
 @interface Substrate : NSObject {
 	FBPainter *fbPainter;
 	int *cgrid;
 	int width;
 	int height;
-	NSMutableArray *palette;
 	NSMutableArray *cracks;
+	Palette *palette;
 	
 	// Configurable properties
 	float crack_density;
@@ -27,6 +28,7 @@
 @property (nonatomic, assign) int *cgrid;
 @property (nonatomic, assign) int width;
 @property (nonatomic, assign) int height;
+@property (nonatomic, retain) Palette *palette;
 
 - (void) setupCrackGrid;
 - (void) tick;

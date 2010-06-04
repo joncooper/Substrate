@@ -135,7 +135,7 @@
 */
 
 - (void) regionColor
-{
+{	
 	// start checking one step away
 	float rx = x;
 	float ry = y;

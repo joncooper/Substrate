@@ -12,14 +12,16 @@
 
 @synthesize colors;
 
+
 + (id) paletteFromFile:(NSString *)filename {
+	NSLog(@"paletteFromFile");
 	
 	Palette *palette = [[[Palette alloc] init] autorelease];
 	
 	// Retval
 	NSMutableArray *result = [NSMutableArray array];
 	
-	// Load image
+	// Load image -- this will actually cache the image, but there's no reason to be hitting this method over and over with the same file. 
 	UIImage *image = [UIImage imageNamed:filename];
 	
 	// Get a Core Graphics image reference and set up parameters to the bitmap context creation

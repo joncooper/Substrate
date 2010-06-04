@@ -12,13 +12,14 @@
 
 @implementation SandPainter
 
+@synthesize palette;
+
 - (id) initWithSubstrate:(Substrate *)aSubstrate; 
 {
 	if (self = [super init]) {
 		gain = random_float(0.01, 0.1);
 		substrate = aSubstrate;
-		palette = [Palette paletteFromFile:@"pollockShimmering.gif"];
-		// [palette setupSamplePalette];
+		[self setPalette:substrate.palette];
 		c = [palette randomColor];
 	}
 	return self;

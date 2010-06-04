@@ -142,13 +142,22 @@ typedef struct {
 	
 	GLubyte *textureData = [substrate.fbPainter.fb getBufferRGBA8888Pixels];
 	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, 1024, 1024, 0, GL_RGBA, GL_UNSIGNED_BYTE, textureData);
+	
+	// GLubyte *textureData = [substrate.fbPainter.fb getBufferRGB565Pixels];
+	// generate garbage data for the first iteration
+	// GLubyte *textureData = (GLubyte *)calloc(1024*1024, sizeof(uint16_t));
+	// glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, 1024, 1024, 0, GL_RGB, GL_UNSIGNED_SHORT_5_6_5, textureData);
+	//free(textureData);
 
 }
 
 // Update the texture with new image data from the FB
 - (void) updateTexture {
+	// GLubyte *textureData = [substrate.fbPainter.fb getBufferRGB565Pixels];
+	// glTexSubImage2D(GL_TEXTURE_2D, 0, 0, 0, 768, 1004, GL_RGB, GL_UNSIGNED_SHORT_5_6_5, textureData);
 	GLubyte *textureData = [substrate.fbPainter.fb getBufferRGBA8888Pixels];
 	glTexSubImage2D(GL_TEXTURE_2D, 0, 0, 0, 768, 1004, GL_RGBA, GL_UNSIGNED_BYTE, textureData);
+
 }
 
 // Set up the projection and viewport
@@ -193,6 +202,7 @@ typedef struct {
 	
     //[substrate.fbPainter setBackgroundColor:MakeFBPixel(0x00, 0x00, 0x00, 0x00)];
 	//[substrate.fbPainter alphaTestFB];
+	
 	[substrate tick];
 	
 	// Don't do anything unless it drew something
