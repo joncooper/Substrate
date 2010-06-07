@@ -22,6 +22,10 @@
 	float crack_density;
 	int simultaneous_cracks;
 	int drawing_speed;
+	
+	// Thread related
+	BOOL DIE;
+	BOOL PAUSE;
 }
 
 @property (nonatomic, retain) FBPainter *fbPainter;

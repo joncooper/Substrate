@@ -14,6 +14,7 @@
 
 @property (retain) NSArray *colors; 
 
++ (id) paletteFromUIImage:(UIImage *)image;
 + (id) paletteFromFile:(NSString *)filename;
 - (FBPixel) randomColor;
 

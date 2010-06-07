@@ -12,17 +12,19 @@
 
 @synthesize colors;
 
-
-+ (id) paletteFromFile:(NSString *)filename {
-	NSLog(@"paletteFromFile");
++ (id) paletteFromUIImage:(UIImage *)image
+{
+	NSLog(@"paletteFromImage");
+	
+	// We reduce the size of the image using core graphics so that sampling colors doesn't take forever.
+	
+	int desiredWidth = 64;
+	int desiredHeight = 64;
 	
 	Palette *palette = [[[Palette alloc] init] autorelease];
 	
 	// Retval
 	NSMutableArray *result = [NSMutableArray array];
-	
-	// Load image -- this will actually cache the image, but there's no reason to be hitting this method over and over with the same file. 
-	UIImage *image = [UIImage imageNamed:filename];
 	
 	// Get a Core Graphics image reference and set up parameters to the bitmap context creation
 	CGImageRef imageRef = [image CGImage];
@@ -30,21 +32,21 @@
     NSUInteger height = CGImageGetHeight(imageRef);
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
 	
-    unsigned char *rawData = malloc(height * width * 4);
+    unsigned char *rawData = malloc(desiredHeight * desiredWidth * 4);
     NSUInteger bytesPerPixel = 4;
-    NSUInteger bytesPerRow = bytesPerPixel * width;
+    NSUInteger bytesPerRow = bytesPerPixel * desiredWidth;
     NSUInteger bitsPerComponent = 8;
 	
 	// Create bitmapped context, free memory, and draw the image into the context
-    CGContextRef context = CGBitmapContextCreate(rawData, width, height,
+    CGContextRef context = CGBitmapContextCreate(rawData, desiredWidth, desiredHeight,
 												 bitsPerComponent, bytesPerRow, colorSpace,
 												 kCGImageAlphaPremultipliedLast | kCGBitmapByteOrder32Big);
     CGColorSpaceRelease(colorSpace);
-    CGContextDrawImage(context, CGRectMake(0, 0, width, height), imageRef);
+    CGContextDrawImage(context, CGRectMake(0, 0, desiredWidth, desiredHeight), imageRef);
     CGContextRelease(context);
 	
     // Now your rawData contains the image data in the RGBA8888 pixel format.
-	for (int i = 0; i < (width * height * bytesPerPixel); i += bytesPerPixel) {
+	for (int i = 0; i < (desiredWidth * desiredHeight * bytesPerPixel); i += bytesPerPixel) {
 		uint8_t red   = rawData[i];
         uint8_t green = rawData[i + 1]; 
         uint8_t blue  = rawData[i + 2];
@@ -65,6 +67,17 @@
 	
 	free(rawData);
 	palette.colors = result;
+	
+	return palette;
+}
+
++ (id) paletteFromFile:(NSString *)filename {
+	NSLog(@"paletteFromFile");
+		
+	// Load image -- this will actually cache the image, but there's no reason to be hitting this method over and over with the same file. 
+	UIImage *image = [UIImage imageNamed:filename];
+	
+	Palette *palette = [Palette paletteFromUIImage:image];
 	
 	return palette;
 }

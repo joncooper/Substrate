@@ -13,6 +13,9 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		6106C81911B97C35001BF672 /* SubstrateSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 6106C81811B97C35001BF672 /* SubstrateSettings.m */; };
+		6106C84711B97FEB001BF672 /* 72x72.png in Resources */ = {isa = PBXBuildFile; fileRef = 6106C84611B97FEB001BF672 /* 72x72.png */; };
+		6106C85211B98699001BF672 /* NSUserDefaults+ReadWithDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 6106C85111B98699001BF672 /* NSUserDefaults+ReadWithDefaults.m */; };
 		613445ED11AF0911001530F4 /* SandPainter.m in Sources */ = {isa = PBXBuildFile; fileRef = 613445EC11AF0911001530F4 /* SandPainter.m */; };
 		6134466811AF319A001530F4 /* FBPainter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6134466711AF319A001530F4 /* FBPainter.m */; };
 		6134481211B035DE001530F4 /* Crack.m in Sources */ = {isa = PBXBuildFile; fileRef = 6134481111B035DE001530F4 /* Crack.m */; };
@@ -25,6 +28,7 @@
 		614D139511ADE21E00646C4A /* OpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 614D139411ADE21E00646C4A /* OpenGLView.m */; };
 		614D13B811ADE87D00646C4A /* SubstrateRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 614D13B711ADE87D00646C4A /* SubstrateRenderer.m */; };
 		614D166C11AEC26500646C4A /* texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 614D166B11AEC26500646C4A /* texture.png */; };
+		6164CE4D11B9B8DF0071CE35 /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 6164CE4C11B9B8DF0071CE35 /* Default-Portrait.png */; };
 		618AD97711AD9FD600D8AF67 /* FrameBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 618AD97611AD9FD600D8AF67 /* FrameBuffer.m */; };
 		61A45BBC11B70798007A3446 /* PopoverHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A45BBA11B70798007A3446 /* PopoverHelper.m */; };
 		61A45C3611B71469007A3446 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 61A45C3511B71469007A3446 /* Settings.bundle */; };
@@ -58,6 +62,11 @@
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Substrate_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Substrate_Prefix.pch; sourceTree = "<group>"; };
+		6106C81711B97C35001BF672 /* SubstrateSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubstrateSettings.h; sourceTree = "<group>"; };
+		6106C81811B97C35001BF672 /* SubstrateSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubstrateSettings.m; sourceTree = "<group>"; };
+		6106C84611B97FEB001BF672 /* 72x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 72x72.png; sourceTree = "<group>"; };
+		6106C85011B98699001BF672 /* NSUserDefaults+ReadWithDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+ReadWithDefaults.h"; sourceTree = "<group>"; };
+		6106C85111B98699001BF672 /* NSUserDefaults+ReadWithDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+ReadWithDefaults.m"; sourceTree = "<group>"; };
 		613445EB11AF0911001530F4 /* SandPainter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SandPainter.h; sourceTree = "<group>"; };
 		613445EC11AF0911001530F4 /* SandPainter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SandPainter.m; sourceTree = "<group>"; };
 		613445F111AF1FC7001530F4 /* FBPixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBPixel.h; sourceTree = "<group>"; };
@@ -79,6 +88,7 @@
 		614D13B611ADE87D00646C4A /* SubstrateRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubstrateRenderer.h; sourceTree = "<group>"; };
 		614D13B711ADE87D00646C4A /* SubstrateRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubstrateRenderer.m; sourceTree = "<group>"; };
 		614D166B11AEC26500646C4A /* texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture.png; sourceTree = "<group>"; };
+		6164CE4C11B9B8DF0071CE35 /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait.png"; sourceTree = "<group>"; };
 		618AD97511AD9FD600D8AF67 /* FrameBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameBuffer.h; sourceTree = "<group>"; };
 		618AD97611AD9FD600D8AF67 /* FrameBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrameBuffer.m; sourceTree = "<group>"; };
 		61A45BBA11B70798007A3446 /* PopoverHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverHelper.m; sourceTree = "<group>"; };
@@ -144,6 +154,8 @@
 				614D133011ADD6AD00646C4A /* OpenGL */,
 				1D3623240D0F684500981E51 /* SubstrateAppDelegate.h */,
 				1D3623250D0F684500981E51 /* SubstrateAppDelegate.m */,
+				6106C85011B98699001BF672 /* NSUserDefaults+ReadWithDefaults.h */,
+				6106C85111B98699001BF672 /* NSUserDefaults+ReadWithDefaults.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -159,6 +171,8 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				6164CE4C11B9B8DF0071CE35 /* Default-Portrait.png */,
+				6106C84611B97FEB001BF672 /* 72x72.png */,
 				614D166B11AEC26500646C4A /* texture.png */,
 				61BD2D6411AD8DE400EDAEA3 /* pollockShimmering.gif */,
 				080E96DDFE201D6D7F000001 /* Classes */,
@@ -230,6 +244,8 @@
 				614C4F9D11B6F4B5005F14BC /* SubstrateVC.h */,
 				614C4F9E11B6F4B5005F14BC /* SubstrateVC.m */,
 				614C4F9F11B6F4B5005F14BC /* SubstrateVC.xib */,
+				6106C81711B97C35001BF672 /* SubstrateSettings.h */,
+				6106C81811B97C35001BF672 /* SubstrateSettings.m */,
 			);
 			name = Substrate;
 			sourceTree = "<group>";
@@ -372,6 +388,8 @@
 				61A45CB811B71F73007A3446 /* IASKPSTextFieldSpecifierViewCell.xib in Resources */,
 				61A45CB911B71F73007A3446 /* IASKPSToggleSwitchSpecifierViewCell.xib in Resources */,
 				61A45CBA11B71F73007A3446 /* IASKSpecifierValuesView.xib in Resources */,
+				6106C84711B97FEB001BF672 /* 72x72.png in Resources */,
+				6164CE4D11B9B8DF0071CE35 /* Default-Portrait.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +424,8 @@
 				61A45CB311B71F73007A3446 /* IASKSlider.m in Sources */,
 				61A45CB411B71F73007A3446 /* IASKSwitch.m in Sources */,
 				61A45CB511B71F73007A3446 /* IASKTextField.m in Sources */,
+				6106C81911B97C35001BF672 /* SubstrateSettings.m in Sources */,
+				6106C85211B98699001BF672 /* NSUserDefaults+ReadWithDefaults.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

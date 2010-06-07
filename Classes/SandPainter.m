@@ -39,7 +39,7 @@
 	
 	// calculate grains by distance
 	// TODO: do you need to use roundf()? 
-	int grains = (int) sqrtf((ox - x) * (ox - x) + (oy - y) * (oy - y)) * 3;
+	int grains = (int) sqrtf((ox - x) * (ox - x) + (oy - y) * (oy - y));
 		  
 	//int grains = 128;
 	

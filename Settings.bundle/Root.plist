@@ -97,10 +97,10 @@
 			<string>2</string>
 			<key>Titles</key>
 			<array>
-				<string>Perfectly (+/- 0)</string>
-				<string>Basically (+/- 2)</string>
-				<string>Relatively (+/- 5)</string>
-				<string>Not Very (+/- 10)</string>
+				<string>Perfectly</string>
+				<string>Basically</string>
+				<string>Relatively</string>
+				<string>Not Very</string>
 			</array>
 			<key>Values</key>
 			<array>

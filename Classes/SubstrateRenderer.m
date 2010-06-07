@@ -19,6 +19,8 @@ typedef struct {
 
 @implementation SubstrateRenderer;
 
+@synthesize substrate;
+
 // See http://ask.metafilter.com/101438/Getting-to-the-point-in-OpenGL-ES
 
 // See http://www.scottlu.com/2008/04/fast-2d-graphics-wopengl-es.html
@@ -38,19 +40,40 @@ typedef struct {
 - (id) init {
 	if ((self = [super init])) {
 		substrate = [[Substrate alloc] init];
+		drawingThread = [[NSThread alloc] initWithTarget:substrate selector:@selector(threadRun) object:nil];
+		[drawingThread start];
 		[self setupGL];
 	}
 	return self;
+} 
+ 
+- (void) pause
+{
+	[substrate pause];
+}
+ 
+- (void) unpause
+{
+	[substrate unpause];
 }
 
 - (void) clearAndRestart
 {
-	[substrate.fbPainter setBackgroundColor:MakeFBPixel(1.0, 1.0, 1.0, 1.0)];
-	[self setupGL];
+	// Kill the drawing thread and wait for completion
+	[drawingThread cancel];
+	// This is a ganky version of join()
+	while ([drawingThread isExecuting]) {}
+	
+	// Restart the drawing thread
 	[substrate setupCrackGrid];
+	drawingThread = [[NSThread alloc] initWithTarget:substrate selector:@selector(threadRun) object:nil];
+	[drawingThread start];
+	
+	[self setupGL];
 }
 
 - (void) dealloc {
+	[drawingThread release];
 	[substrate release];
 	[super dealloc];
 }
@@ -203,7 +226,7 @@ typedef struct {
     //[substrate.fbPainter setBackgroundColor:MakeFBPixel(0x00, 0x00, 0x00, 0x00)];
 	//[substrate.fbPainter alphaTestFB];
 	
-	[substrate tick];
+	// [substrate tick];
 	
 	// Don't do anything unless it drew something
 	if (![substrate.fbPainter.fb isDirty]) 

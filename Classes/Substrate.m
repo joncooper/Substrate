@@ -12,6 +12,7 @@
 #import "FrameBuffer.h"
 #import "FBPainter.h"
 #import "Crack.h"
+#import "NSUserDefaults+ReadWithDefaults.h"
 
 @implementation Substrate
 
@@ -30,26 +31,44 @@
 	
 	width = 768;
 	height = 1004;
-			
-	// Create frame buffer and painter; set background color to white
 	
-	fbPainter = [[FBPainter alloc] init];
-	fbPainter.fb = [[FrameBuffer alloc] initWithWidth:width AndHeight:height];
-	[fbPainter setBackgroundColor:MakeFBPixel(1.0, 1.0, 1.0, 1.0)];
+	// Setup the palette
+	palette = [Palette paletteFromFile:@"pollockShimmering.gif"];
 	
 	[self setupCrackGrid];
 
 	return self;
 }
 
+- (void) pause
+{
+	PAUSE = YES;
+}
+
+- (void) unpause
+{
+	PAUSE = NO;
+}
+
 - (void) setupCrackGrid
 {
-	// Setup the palette
-	palette = [Palette paletteFromFile:@"pollockShimmering.gif"];
-
-	// Grab properties from settings
+	// Create frame buffer and painter; set background color to white
 	
+	fbPainter = [[FBPainter alloc] init];
+	fbPainter.fb = [[FrameBuffer alloc] initWithWidth:width AndHeight:height];
+	[fbPainter setBackgroundColor:MakeFBPixel(1.0, 1.0, 1.0, 1.0)];
+	
+	// Grab properties from settings
+	/*
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	[defaults registerDefaults:[NSUserDefaults getDefaultsFromSettingsBundle]];
+	[defaults synchronize];
+	 */
+	
+	// Load settings and/or initialize them
+	[NSUserDefaults registerDefaultsFromSettingsBundleIfNecessary];
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	
 	crack_density = [defaults floatForKey:@"crack_density"];
 	simultaneous_cracks = [defaults integerForKey:@"simultaneous_cracks"];
 	drawing_speed = [defaults integerForKey:@"drawing_speed"];
@@ -90,11 +109,28 @@
 	[super dealloc];
 }
 
-// Called per-frame
 
+- (void) threadRun
+{
+	PAUSE = NO;
+	
+	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init]; // Top-level pool
+	while (![[NSThread currentThread] isCancelled]) {
+		if (!PAUSE) {
+			for (int i = 0; i < [cracks count]; i++) {
+				[[cracks objectAtIndex:i] move];
+			}
+		}
+	}
+	[pool release];
+}
+
+
+// Called per-frame
+/* DEPRECATED
 - (void) tick 
 {	
-	NSDate *startFrame = [NSDate date];
+	// NSDate *startFrame = [NSDate date];
 	
 	int ticksPerFrame = drawing_speed;
 	for (int k = 0; k < ticksPerFrame; k++) {
@@ -103,8 +139,9 @@
 		}
 	}
 	
-	NSTimeInterval frameTime = [startFrame timeIntervalSinceNow];
-	NSLog(@"frame time: %f seconds", frameTime);
+	// NSTimeInterval frameTime = [startFrame timeIntervalSinceNow];
+	// NSLog(@"frame time: %f seconds", frameTime);
 }
+ */
 
 @end 

@@ -11,12 +11,13 @@
 #import "SubstrateRenderer.h"
 #import "IASKAppSettingsViewController.h"
 
-@interface SubstrateVC : UIViewController <IASKSettingsDelegate> {
+@interface SubstrateVC : UIViewController <IASKSettingsDelegate, UIImagePickerControllerDelegate> {
 	SubstrateRenderer *renderer;
 	OpenGLView *glView;
 	
-	UIToolbar *toolbar;
+	BOOL animating;
 	
+	UIToolbar *toolbar;
 	UIPopoverController *popoverController;
 }
 

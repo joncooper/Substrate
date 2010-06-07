@@ -21,20 +21,106 @@
 	[glView setRenderer:renderer];
 	[glView startAnimation];		
 	[self setupToolbar];
+	animating = YES;
+}
+
+// A touch has finished
+- (void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+	NSLog(@"got a touch in SubstrateVC");
+	
+	if (animating) {
+		[self pause];
+	}
+	else {
+		[self unpause];
+	}
+	
+	UITouch *touch = [[event allTouches] anyObject];
+	if ([touch tapCount] == 2) {
+		[self restart];
+	}
+}
+
+- (void) restart
+{
+	[renderer pause];
+	[glView stopAnimation];
+	[renderer clearAndRestart];
+	[renderer unpause];
+	[glView startAnimation];
+}
+
+- (void) pause
+{
+	[renderer pause];
+	[glView stopAnimation];
+	animating = NO;
+}
+
+- (void) unpause
+{
+	[renderer unpause];
+	[glView startAnimation];
+	animating = YES;
 }
 
 - (void) setupToolbar
 {
 	NSMutableArray *buttons = [NSMutableArray array];
+	
 	UIBarButtonItem *cracksButton = [[UIBarButtonItem alloc] initWithTitle:@"Configure" style:UIBarButtonItemStyleBordered target:self action:@selector(showConfigurePopover:)];
 	[buttons addObject:cracksButton];
 	[cracksButton release];
+	
+	UIBarButtonItem *pickImageButton = [[UIBarButtonItem alloc] initWithTitle:@"Palette" style:UIBarButtonItemStyleBordered target:self action:@selector(showPalettePopover:)];
+	[buttons addObject:pickImageButton];
+	[pickImageButton release];
+	
 	[toolbar setItems:buttons animated:NO];
+}
+
+- (void) showPalettePopover:(id) sender
+{
+	if ([popoverController isPopoverVisible]) {
+		[popoverController dismissPopoverAnimated:YES];
+		[self unpause];
+		return;
+	}
+	
+	[self pause];
+	UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+	[imagePicker setDelegate:self];
+	popoverController = [[UIPopoverController alloc] initWithContentViewController:imagePicker];
+	[popoverController presentPopoverFromBarButtonItem:[toolbar.items objectAtIndex:1] permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+}
+
+// <UIImagePickerControllerDelegate>
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+	UIImage *selectedImage = [info objectForKey:UIImagePickerControllerOriginalImage];
+	Palette *newPalette = [Palette paletteFromUIImage:selectedImage];
+	[renderer.substrate setPalette:newPalette];
+	[popoverController dismissPopoverAnimated:YES];
+	[self restart];
+}
+
+// <UIImagePickerControllerDelegate>
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+	[popoverController dismissPopoverAnimated:YES];
+	[self unpause];
 }
 
 - (void) showConfigurePopover:(id) sender
 {
-	[glView stopAnimation];
+	if ([popoverController isPopoverVisible]) {
+		[popoverController dismissPopoverAnimated:YES];
+		[self unpause];
+		return;
+	}
+		
+	[self pause];
 	IASKAppSettingsViewController *settingsVC = [[IASKAppSettingsViewController alloc] initWithNibName:@"IASKAppSettingsView" bundle:nil];
 	UINavigationController *settingsNavController = [[UINavigationController alloc] initWithRootViewController:settingsVC];
 	popoverController = [[UIPopoverController alloc] initWithContentViewController:settingsNavController];
@@ -42,10 +128,10 @@
 	[popoverController presentPopoverFromBarButtonItem:[toolbar.items objectAtIndex:0] permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
 }
 
+// <IASKSettingsDelegate>
 - (void)settingsViewControllerDidEnd:(IASKAppSettingsViewController*)sender {
 	[popoverController dismissPopoverAnimated:YES];
-	[renderer clearAndRestart];
-	[glView startAnimation];
+	[self unpause];
 }
 
 /*

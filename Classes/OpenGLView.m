@@ -68,23 +68,6 @@
 	}
 }
 
-// A touch has finished
-- (void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
-{
-	if (animating) {
-		[self stopAnimation];
-	}
-	else {
-		[self startAnimation];
-	}
-	
-	UITouch *touch = [[event allTouches] anyObject];
-	if ([touch tapCount] == 2) {
-		[renderer clearAndRestart];
-		[self startAnimation];
-	}
-}
-
 - (void) startAnimation
 {
 	if (!animating)

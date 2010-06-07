@@ -13,8 +13,10 @@
 
 @interface SubstrateRenderer : Renderer {
 	Substrate *substrate;
+	NSThread *drawingThread;
 }
 
+@property (nonatomic, retain) Substrate *substrate;
 @property (nonatomic, retain) IBOutlet UIToolbar *toolbar;
 
 - (void) setupGL;
