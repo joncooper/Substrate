@@ -12,6 +12,12 @@
 
 @synthesize colors;
 
+- (void) dealloc
+{
+	[colors release];
+	[super dealloc];
+}
+
 + (id) paletteFromUIImage:(UIImage *)image
 {
 	NSLog(@"paletteFromImage");

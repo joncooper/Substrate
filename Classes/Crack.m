@@ -196,7 +196,6 @@
 	// bound check (sic)
 	if ((cx >= 0) && (cx < dimx) && (cy >= 0) && (cy < dimy)) 
 	{
-		// Weird, colors seem inverted or something
 		[substrate.fbPainter setColor:MakeFBPixel(0.0, 0.0, 0.0, 0.85)]; // 0xD8 ?
 		[substrate.fbPainter pointX:cx Y:cy];
 		

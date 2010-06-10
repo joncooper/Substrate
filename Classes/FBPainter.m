@@ -14,6 +14,12 @@
 
 @synthesize fb;
 
+- (void) dealloc
+{
+	[fb release];
+	[super dealloc];
+}
+
 - (void) setColor:(FBPixel)color
 {
 	currentColor = color;

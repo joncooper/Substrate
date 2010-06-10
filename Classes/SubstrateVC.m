@@ -98,6 +98,7 @@
 	UIImage *selectedImage = [info objectForKey:UIImagePickerControllerOriginalImage];
 	Palette *newPalette = [Palette paletteFromUIImage:selectedImage];
 	[renderer.substrate setPalette:newPalette];
+	[picker release];
 	[popoverController dismissPopoverAnimated:YES];
 	[self restart];
 }
@@ -105,6 +106,7 @@
 // <UIImagePickerControllerDelegate>
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
+	[picker release];
 	[popoverController dismissPopoverAnimated:YES];
 	[self unpause];
 }

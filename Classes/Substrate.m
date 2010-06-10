@@ -31,7 +31,7 @@
 	
 	width = 768;
 	height = 1024;
-	
+		
 	// Setup the palette
 	palette = [Palette paletteFromFile:@"pollockShimmering.gif"];
 	
@@ -52,11 +52,14 @@
 
 - (void) setupCrackGrid
 {
+	// Clean up memory if necessary
+	[self cleanupMemory];
+	
 	// Create frame buffer and painter; set background color to white
 	
 	fbPainter = [[FBPainter alloc] init];
 	fbPainter.fb = [[FrameBuffer alloc] initWithWidth:width AndHeight:height];
-	[fbPainter setBackgroundColor:MakeFBPixel(1.0, 1.0, 1.0, 1.0)];
+	[fbPainter setBackgroundColor:MakeFBPixel(0.95, 0.95, 0.85, 1.0)];
 	
 	// Grab properties from settings
 	/*
@@ -102,12 +105,17 @@
 	 
 }
 
-- (void) dealloc 
+- (void) cleanupMemory
 {
 	free(cgrid);
-	[fbPainter.fb dealloc];
-	[fbPainter dealloc];
-	[cracks dealloc];
+	[cracks release];
+	[fbPainter.fb release];
+	[fbPainter release];
+}
+
+- (void) dealloc 
+{
+	[self cleanupMemory];
 	[super dealloc];
 }
 
