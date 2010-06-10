@@ -35,6 +35,5 @@
 @property (nonatomic, retain) Palette *palette;
 
 - (void) setupCrackGrid;
-- (void) tick;
 
 @end

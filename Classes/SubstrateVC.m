@@ -26,19 +26,18 @@
 
 // A touch has finished
 - (void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
-{
-	NSLog(@"got a touch in SubstrateVC");
-	
-	if (animating) {
-		[self pause];
-	}
-	else {
-		[self unpause];
-	}
-	
+{	
 	UITouch *touch = [[event allTouches] anyObject];
 	if ([touch tapCount] == 2) {
 		[self restart];
+	}
+	else {
+		if (animating) {
+			[self pause];
+		}
+		else {
+			[self unpause];
+		}
 	}
 }
 
@@ -54,14 +53,12 @@
 - (void) pause
 {
 	[renderer pause];
-	[glView stopAnimation];
 	animating = NO;
 }
 
 - (void) unpause
 {
 	[renderer unpause];
-	[glView startAnimation];
 	animating = YES;
 }
 
@@ -152,9 +149,22 @@
 */
 
 
+// Any orientation is okay
+//
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Overriden to allow any orientation.
     return YES;
+}
+
+// Handle rotation
+//
+- (void) didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
+{
+	CGRect bounds = [glView bounds];
+	CGRect frame = [glView frame];
+	NSLog(@"didRotate:\nbounds: %@\nframe: %@", NSStringFromCGRect(bounds), NSStringFromCGRect(frame));
+	
+	BOOL eh = ([glView contentMode] == UIViewContentModeScaleToFill);
+	NSLog(@"%i", eh);
 }
 
 

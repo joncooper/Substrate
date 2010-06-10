@@ -13,7 +13,6 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
-		6106C81911B97C35001BF672 /* SubstrateSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 6106C81811B97C35001BF672 /* SubstrateSettings.m */; };
 		6106C84711B97FEB001BF672 /* 72x72.png in Resources */ = {isa = PBXBuildFile; fileRef = 6106C84611B97FEB001BF672 /* 72x72.png */; };
 		6106C85211B98699001BF672 /* NSUserDefaults+ReadWithDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 6106C85111B98699001BF672 /* NSUserDefaults+ReadWithDefaults.m */; };
 		613445ED11AF0911001530F4 /* SandPainter.m in Sources */ = {isa = PBXBuildFile; fileRef = 613445EC11AF0911001530F4 /* SandPainter.m */; };
@@ -62,8 +61,6 @@
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Substrate_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Substrate_Prefix.pch; sourceTree = "<group>"; };
-		6106C81711B97C35001BF672 /* SubstrateSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubstrateSettings.h; sourceTree = "<group>"; };
-		6106C81811B97C35001BF672 /* SubstrateSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubstrateSettings.m; sourceTree = "<group>"; };
 		6106C84611B97FEB001BF672 /* 72x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 72x72.png; sourceTree = "<group>"; };
 		6106C85011B98699001BF672 /* NSUserDefaults+ReadWithDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+ReadWithDefaults.h"; sourceTree = "<group>"; };
 		6106C85111B98699001BF672 /* NSUserDefaults+ReadWithDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+ReadWithDefaults.m"; sourceTree = "<group>"; };
@@ -76,6 +73,7 @@
 		6134481111B035DE001530F4 /* Crack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Crack.m; sourceTree = "<group>"; };
 		6134481711B038ED001530F4 /* Substrate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Substrate.h; sourceTree = "<group>"; };
 		6134481811B038ED001530F4 /* Substrate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Substrate.m; sourceTree = "<group>"; };
+		613D758B11BFF3690021E9EA /* SubstrateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SubstrateTests-Info.plist"; sourceTree = "<group>"; };
 		614C4F9D11B6F4B5005F14BC /* SubstrateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubstrateVC.h; sourceTree = "<group>"; };
 		614C4F9E11B6F4B5005F14BC /* SubstrateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubstrateVC.m; sourceTree = "<group>"; };
 		614C4F9F11B6F4B5005F14BC /* SubstrateVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubstrateVC.xib; sourceTree = "<group>"; };
@@ -147,6 +145,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				612EB10911C032F900324FF2 /* NSUserDefaults+ReadWithDefaults */,
 				61A45C8B11B71F73007A3446 /* InAppSettingsKit */,
 				61A45B9A11B70658007A3446 /* Popover */,
 				6134480F11B035B7001530F4 /* Substrate */,
@@ -154,8 +153,6 @@
 				614D133011ADD6AD00646C4A /* OpenGL */,
 				1D3623240D0F684500981E51 /* SubstrateAppDelegate.h */,
 				1D3623250D0F684500981E51 /* SubstrateAppDelegate.m */,
-				6106C85011B98699001BF672 /* NSUserDefaults+ReadWithDefaults.h */,
-				6106C85111B98699001BF672 /* NSUserDefaults+ReadWithDefaults.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -171,15 +168,12 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				6164CE4C11B9B8DF0071CE35 /* Default-Portrait.png */,
-				6106C84611B97FEB001BF672 /* 72x72.png */,
-				614D166B11AEC26500646C4A /* texture.png */,
-				61BD2D6411AD8DE400EDAEA3 /* pollockShimmering.gif */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				613D758B11BFF3690021E9EA /* SubstrateTests-Info.plist */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -196,6 +190,10 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6164CE4C11B9B8DF0071CE35 /* Default-Portrait.png */,
+				6106C84611B97FEB001BF672 /* 72x72.png */,
+				614D166B11AEC26500646C4A /* texture.png */,
+				61BD2D6411AD8DE400EDAEA3 /* pollockShimmering.gif */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Substrate-Info.plist */,
 				61A45C3511B71469007A3446 /* Settings.bundle */,
@@ -213,6 +211,15 @@
 				614D138411ADE17100646C4A /* QuartzCore.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		612EB10911C032F900324FF2 /* NSUserDefaults+ReadWithDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				6106C85011B98699001BF672 /* NSUserDefaults+ReadWithDefaults.h */,
+				6106C85111B98699001BF672 /* NSUserDefaults+ReadWithDefaults.m */,
+			);
+			name = "NSUserDefaults+ReadWithDefaults";
 			sourceTree = "<group>";
 		};
 		613445F011AF1EDF001530F4 /* Framebuffer */ = {
@@ -244,8 +251,6 @@
 				614C4F9D11B6F4B5005F14BC /* SubstrateVC.h */,
 				614C4F9E11B6F4B5005F14BC /* SubstrateVC.m */,
 				614C4F9F11B6F4B5005F14BC /* SubstrateVC.xib */,
-				6106C81711B97C35001BF672 /* SubstrateSettings.h */,
-				6106C81811B97C35001BF672 /* SubstrateSettings.m */,
 			);
 			name = Substrate;
 			sourceTree = "<group>";
@@ -424,7 +429,6 @@
 				61A45CB311B71F73007A3446 /* IASKSlider.m in Sources */,
 				61A45CB411B71F73007A3446 /* IASKSwitch.m in Sources */,
 				61A45CB511B71F73007A3446 /* IASKTextField.m in Sources */,
-				6106C81911B97C35001BF672 /* SubstrateSettings.m in Sources */,
 				6106C85211B98699001BF672 /* NSUserDefaults+ReadWithDefaults.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

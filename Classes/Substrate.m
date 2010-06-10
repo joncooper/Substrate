@@ -30,7 +30,7 @@
 	srandomdev();
 	
 	width = 768;
-	height = 1004;
+	height = 1024;
 	
 	// Setup the palette
 	palette = [Palette paletteFromFile:@"pollockShimmering.gif"];
@@ -67,6 +67,7 @@
 	
 	// Load settings and/or initialize them
 	[NSUserDefaults registerDefaultsFromSettingsBundleIfNecessary];
+
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	
 	crack_density = [defaults floatForKey:@"crack_density"];
@@ -79,7 +80,7 @@
 	for (int x = 0; x < width; x++) 
 		for (int y = 0; y < height; y++)
 			cgrid[y * width + x] = 10001;
-	
+
 	// make random crack seeds
 	
 	int numCracks = width * height * crack_density;
@@ -98,6 +99,7 @@
 		[cracks addObject:aCrack];
 		[aCrack release];
 	}
+	 
 }
 
 - (void) dealloc 
@@ -124,24 +126,5 @@
 	}
 	[pool release];
 }
-
-
-// Called per-frame
-/* DEPRECATED
-- (void) tick 
-{	
-	// NSDate *startFrame = [NSDate date];
-	
-	int ticksPerFrame = drawing_speed;
-	for (int k = 0; k < ticksPerFrame; k++) {
-		for (int i = 0; i < [cracks count]; i++) {
-			[[cracks objectAtIndex:i] move];
-		}
-	}
-	
-	// NSTimeInterval frameTime = [startFrame timeIntervalSinceNow];
-	// NSLog(@"frame time: %f seconds", frameTime);
-}
- */
 
 @end 

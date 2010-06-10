@@ -179,7 +179,7 @@ typedef struct {
 	// GLubyte *textureData = [substrate.fbPainter.fb getBufferRGB565Pixels];
 	// glTexSubImage2D(GL_TEXTURE_2D, 0, 0, 0, 768, 1004, GL_RGB, GL_UNSIGNED_SHORT_5_6_5, textureData);
 	GLubyte *textureData = [substrate.fbPainter.fb getBufferRGBA8888Pixels];
-	glTexSubImage2D(GL_TEXTURE_2D, 0, 0, 0, 768, 1004, GL_RGBA, GL_UNSIGNED_BYTE, textureData);
+	glTexSubImage2D(GL_TEXTURE_2D, 0, 0, 0, 768, 1024, GL_RGBA, GL_UNSIGNED_BYTE, textureData);
 
 }
 
@@ -213,10 +213,7 @@ typedef struct {
 // Called every frame - do the drawing
 //
 - (void) render
-{	
-	// Tick the substrate model!
-		
-	// [substrate.fbPainter randomizeFB];
+{		
 	[self setupViewport];
 	[self setupLighting];
 	
@@ -227,10 +224,6 @@ typedef struct {
 	//[substrate.fbPainter alphaTestFB];
 	
 	// [substrate tick];
-	
-	// Don't do anything unless it drew something
-	if (![substrate.fbPainter.fb isDirty]) 
-		return;
 	
 	[self updateTexture];
 
@@ -259,17 +252,38 @@ typedef struct {
 		0.0, 0.0, 1.0
 	};
 	
-	// Map and enable the texture
+	// Map and enable the texture 
+		
+	GLfloat tw = substrate.width  / 1024.0;
+	GLfloat th = substrate.height / 1024.0;
 	
-	GLfloat tw = 768.0  / 1024.0;
-	GLfloat th = 1004.0 / 1024.0;
-	
-	GLfloat texCoords[] = { 
-		0.0, th, 
-		tw, th, 
-		0.0, 0.0, 
-		tw, 0.0 
+	GLfloat texCoords[] = {
+		0.0, th,
+		tw, th,
+		0.0, 0.0,
+		tw, 0.0
 	};
+	
+	// Note that InterfaceOrientation Left means the home button is on the left, i.e. the interface needs to rotate left vs a rightward
+	// device orientation. This is a little confusing.
+	
+	UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
+	switch (orientation) {
+		case UIInterfaceOrientationLandscapeLeft:
+			glTranslatef(0.0, 1.0, 0.0);
+			glRotatef(-90.0, 0.0, 0.0, 1.0);
+			break;
+		case UIInterfaceOrientationLandscapeRight:
+			glTranslatef(1.0, 0.0, 0.0);
+			glRotatef(90.0, 0.0, 0.0, 1.0);
+			break;
+		case UIInterfaceOrientationPortraitUpsideDown:
+			glTranslatef(1.0, 1.0, 0.0);
+			glRotatef(180.0, 0.0, 0.0, 1.0);
+			break;
+		default:
+			break;
+	}
 	
 	// Material setup
 	

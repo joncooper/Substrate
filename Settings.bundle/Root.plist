@@ -10,34 +10,6 @@
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 			<key>Title</key>
-			<string>Drawing</string>
-		</dict>
-		<dict>
-			<key>Type</key>
-			<string>PSMultiValueSpecifier</string>
-			<key>Title</key>
-			<string>Drawing Speed</string>
-			<key>Key</key>
-			<string>drawing_speed</string>
-			<key>DefaultValue</key>
-			<string>10</string>
-			<key>Titles</key>
-			<array>
-				<string>Slow</string>
-				<string>Normal</string>
-				<string>Fast</string>
-			</array>
-			<key>Values</key>
-			<array>
-				<string>5</string>
-				<string>10</string>
-				<string>100</string>
-			</array>
-		</dict>
-		<dict>
-			<key>Type</key>
-			<string>PSGroupSpecifier</string>
-			<key>Title</key>
 			<string>Cracks</string>
 		</dict>
 		<dict>
