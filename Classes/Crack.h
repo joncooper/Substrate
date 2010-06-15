@@ -26,6 +26,7 @@
 	float curvature_probability;
 	float curvature_rate;
 	float curvature;
+	BOOL antialias;
 }
 
 @property (nonatomic, retain) Substrate *substrate;

@@ -25,6 +25,7 @@
 	allow_curvature = [defaults boolForKey:@"allow_curvature"];
 	curvature_probability = [defaults floatForKey:@"curvature_probability"];
 	curvature_rate = [defaults floatForKey:@"curvature_rate"];
+	antialias = YES;
 
 	[self findStart];
 	return self;
@@ -95,45 +96,6 @@
 	y += 0.61 * sin(t * M_PI/180);
 }
 
-/*
-- (void) move
-{
-	// move 0.42px in the direction we're going,
-	
-	x += 0.42 * cos(t * (M_PI/180));
-	y += 0.42 * sin(t * (M_PI/180));
-	
-	int ix = (int) x;
-	int iy = (int) y;
-	
-	// if we hit the edge of the screen stop cracking,
-	
-	if ((ix >= dimx) || (iy >= dimy) || (ix < 0) || (iy < 0)) {
-		[self findStart];
-		return;
-	}
-		
-	// if we hit another crack, stop cracking,
-	
-	int crackPoint = substrate.cgrid[iy * dimx + ix];
-	
-	// if we hit a crack with angle measure more than +/- 5 degrees of us, stop cracking
-	
-	if (abs(crackPoint - t) > 1){
-		[self findStart];
-		return;
-	}
-	
-	// otherwise draw a point at 85 opacity, with fuzziness applied to its location
-	// and update the crack grid
-	
-	[substrate.fbPainter setColor:MakeFBPixel(0xCC, 0xCC, 0xCC, 0xFF)];
-	[substrate.fbPainter pointX:ix Y:iy];
-	
-	substrate.cgrid[iy * dimx + ix] = (int) t;
-}
-*/
-
 - (void) regionColor
 {	
 	// start checking one step away
@@ -186,9 +148,11 @@
 	}
 	
 	// current location
-	float z = 0.55;
-	int cx = (int) (fmax(x + random_float(-z, z), 0)); // add fuzz
-	int cy = (int) (fmax(y + random_float(-z, z), 0));
+	float z = 0.33;
+	float fx = fmax(x + random_float(-z, z), 0);
+	float fy = fmax(y + random_float(-z, z), 0);
+	int cx = (int) (fx); // add fuzz
+	int cy = (int) (fy);
 
 	// draw sand painter
 	[self regionColor];
@@ -197,7 +161,14 @@
 	if ((cx >= 0) && (cx < dimx) && (cy >= 0) && (cy < dimy)) 
 	{
 		[substrate.fbPainter setColor:MakeFBPixel(0.0, 0.0, 0.0, 0.85)]; // 0xD8 ?
-		[substrate.fbPainter pointX:cx Y:cy];
+		
+		if (antialias) {
+			[substrate.fbPainter antialiasedPointX:fx Y:fy];
+		}
+		else {
+			[substrate.fbPainter pointX:x Y:y];
+		}
+
 		
 		// [substrate.fbPainter pointXf:fmax(x + random_float(-z, z), 0)
 		//						  Yf:fmax(y + random_float(-z, z), 0)]

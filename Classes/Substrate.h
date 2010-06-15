@@ -33,6 +33,7 @@
 @property (nonatomic, assign) int width;
 @property (nonatomic, assign) int height;
 @property (nonatomic, retain) Palette *palette;
+@property (nonatomic, readonly) BOOL NEEDS_REDRAW;
 
 - (void) setupCrackGrid;
 

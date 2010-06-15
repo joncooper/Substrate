@@ -31,6 +31,7 @@
 - (BOOL) isDirty;
 - (GLubyte *) getBufferRGB565Pixels;
 - (GLubyte *) getBufferRGBA8888Pixels;
+- (UIImage *) getBufferAsUIImage;
 
 @end
 

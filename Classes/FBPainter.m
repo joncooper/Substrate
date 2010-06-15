@@ -74,6 +74,45 @@
 	[fb setPixelAtX:rx andY:ry to:newPixel];
 }
 
+- (void) antialiasedPointX:(float)x Y:(float)y
+{
+	float alpha_in = currentColor.a;
+	float xi;
+	float yi;
+	float xf = modff(x, &xi);
+	float yf = modff(y, &yi);
+	
+	float top_left_alpha = (1.0 - xf) * (1.0 - yf) * alpha_in;
+	float top_right_alpha = xf * (1 - yf) * alpha_in;
+	float bottom_left_alpha = (1 - xf) * yf * alpha_in;
+	float bottom_right_alpha = xf * yf * alpha_in;
+
+	FBPixel originalColor = currentColor;
+	FBPixel alphaDrawColor = originalColor;
+	
+	// TL
+	alphaDrawColor.a = top_left_alpha;
+	[self setColor:alphaDrawColor];
+	[self pointX:(float)xi Y:(float)yi];
+	
+	// TR
+	alphaDrawColor.a = top_right_alpha;
+	[self setColor:alphaDrawColor];
+	[self pointX:(float)(xi+1.0) Y:(float)yi];
+	
+	// BL
+	alphaDrawColor.a = bottom_left_alpha;
+	[self setColor:alphaDrawColor];
+	[self pointX:(float)xi Y:(float)(yi+1.0)];
+	
+	// BR
+	alphaDrawColor.a = bottom_right_alpha;
+	[self setColor:alphaDrawColor];
+	[self pointX:(float)(xi+1.0) Y:(float)(yi+1.0)];
+	
+	[self setColor:originalColor];
+}
+
 #pragma mark -
 #pragma mark FrameBuffer testing
 

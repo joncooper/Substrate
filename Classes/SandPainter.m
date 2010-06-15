@@ -54,7 +54,7 @@
 		float nx = ox + (x - ox) * sin(sin(i * w));
 		float ny = oy + (y - oy) * sin(sin(i * w));
 		
-		[substrate.fbPainter pointX:nx	Y:ny];
+		[substrate.fbPainter antialiasedPointX:nx	Y:ny];
 	}
 } 
 

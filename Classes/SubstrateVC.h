@@ -11,7 +11,7 @@
 #import "SubstrateRenderer.h"
 #import "IASKAppSettingsViewController.h"
 
-@interface SubstrateVC : UIViewController <IASKSettingsDelegate, UIImagePickerControllerDelegate> {
+@interface SubstrateVC : UIViewController <IASKSettingsDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate> {
 	SubstrateRenderer *renderer;
 	OpenGLView *glView;
 	
@@ -19,11 +19,21 @@
 	
 	UIToolbar *toolbar;
 	UIPopoverController *popoverController;
+	UIBarButtonItem *pausedLabel;
+	UIView *aboutBox;
+	
+	BOOL aboutBoxIsDisplayed;
 }
 
 @property (nonatomic, retain) IBOutlet OpenGLView *glView;
 @property (nonatomic, retain) IBOutlet UIToolbar *toolbar;
 
-- (IBAction) redraw;
+- (void) togglePause;
+- (void) pause;
+- (void) unpause;
+- (void) restart;
+
+- (void) setupToolbar;
+- (void) hideInfoBox;
 
 @end

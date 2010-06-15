@@ -28,5 +28,7 @@
 - (void) render;
 
 - (void) clearAndRestart;
+- (void) pause;
+- (void) unpause;
 
 @end

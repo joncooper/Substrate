@@ -27,7 +27,7 @@
 										nil];
 		
 		animating = FALSE;
-		animationFrameInterval = 1;
+		animationFrameInterval = 5;
 		displayLink = nil;
 	}
 	

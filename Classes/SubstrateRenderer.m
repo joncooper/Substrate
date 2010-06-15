@@ -213,20 +213,15 @@ typedef struct {
 // Called every frame - do the drawing
 //
 - (void) render
-{		
+{			
 	[self setupViewport];
 	[self setupLighting];
 	
 	glClearColor(0.5, 0.5, 0.5, 1.0);
     glClear(GL_COLOR_BUFFER_BIT);
 	
-    //[substrate.fbPainter setBackgroundColor:MakeFBPixel(0x00, 0x00, 0x00, 0x00)];
-	//[substrate.fbPainter alphaTestFB];
-	
-	// [substrate tick];
-	
 	[self updateTexture];
-
+	
 	// Draw
 	
 	/*
@@ -304,6 +299,7 @@ typedef struct {
 	glDisableClientState(GL_TEXTURE_COORD_ARRAY);
 	
 	[context presentRenderbuffer:GL_RENDERBUFFER_OES];	
+	
 }
 
 @end

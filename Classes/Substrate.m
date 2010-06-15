@@ -123,7 +123,6 @@
 - (void) threadRun
 {
 	PAUSE = NO;
-	
 	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init]; // Top-level pool
 	while (![[NSThread currentThread] isCancelled]) {
 		if (!PAUSE) {

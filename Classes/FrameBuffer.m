@@ -145,4 +145,17 @@ int offset(int x, int y, int width)
 	return (GLubyte *) pixels;
 }
 
+- (UIImage *) getBufferAsUIImage
+{
+	CGDataProviderRef provider = CGDataProviderCreateWithData(NULL, pixels, 4 * width * height, NULL);
+	CGColorSpaceRef colorSpaceRef = CGColorSpaceCreateDeviceRGB();
+	CGBitmapInfo bitmapInfo = kCGBitmapByteOrderDefault;
+	CGColorRenderingIntent renderingIntent = kCGRenderingIntentDefault;
+	CGImageRef imageRef = CGImageCreate(width, height, 8, 4 * 8, 4 * width, colorSpaceRef, bitmapInfo, provider, NULL, NO, renderingIntent);
+	CGDataProviderRelease(provider);
+	UIImage *image = [UIImage imageWithCGImage:imageRef];
+	CGImageRelease(imageRef);
+	return image;
+}
+
 @end

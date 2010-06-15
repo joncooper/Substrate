@@ -20,7 +20,9 @@
 
 - (void) setColor:(FBPixel)color;
 - (void) setBackgroundColor:(FBPixel) color;
+
 - (void) pointX:(float)x Y:(float)y;
+- (void) antialiasedPointX:(float)x Y:(float)y;
 
 - (void) randomizeFB;
 - (void) alphaTestFB;
