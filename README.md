@@ -6,7 +6,7 @@ I wrote this to learn something about writing iOS applications, and about OpenGL
 
 The original is here: [Substrate](http://www.complexification.net/gallery/machines/substrate/).
 
-Since there isn't any concept natively under iOS of blitting 2D graphics to the screen, I had to write a custom rendering layer on top of OpenGL. (This is what Cocos2D does too, btw.)
+Since there isn't any concept natively under iOS of blitting bitmapped 2D graphics to the screen, I had to write a custom rendering layer on top of OpenGL. (This is what Cocos2D does too, btw.)
 
 The actual implementation approach is mildly hair-raising and more than a little hacky: I render to a texture which then gets mapped onto a quad which is lit and displayed in the viewport. I've implemented a simple antialiased line drawing algorithm and color blending. 
 
