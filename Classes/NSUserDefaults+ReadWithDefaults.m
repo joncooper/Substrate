@@ -82,7 +82,7 @@
 		
 		// Grab key name and default value
 		NSString *pKey = [preferenceItem objectForKey:@"Key"];
-		id *pDefaultValue = [preferenceItem objectForKey:@"DefaultValue"];
+		id pDefaultValue = [preferenceItem objectForKey:@"DefaultValue"];
 		
 		// Add to emitted dictionary
 		[emittedDictionary setObject:pDefaultValue forKey:pKey];

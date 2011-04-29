@@ -27,7 +27,10 @@
 										nil];
 		
 		animating = FALSE;
-		animationFrameInterval = 5;
+		
+		// This is tuned by hand, by timing a [SubstrateRenderer -render] call. Tinkering with it will produce odd/ugly results.
+		animationFrameInterval = 2; 
+		
 		displayLink = nil;
 	}
 	

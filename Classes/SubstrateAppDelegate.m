@@ -9,7 +9,6 @@
 #import "NSUserDefaults+ReadWithDefaults.h"
 #import "SubstrateAppDelegate.h"
 #import "OpenGLView.h"
-#import "FlurryAPI.h"
 
 @implementation SubstrateAppDelegate
 
@@ -17,14 +16,14 @@
 @synthesize substrateVC;
 
 void uncaughtExceptionHandler(NSException *exception) {
-    [FlurryAPI logError:@"Uncaught" message:@"Crash!" exception:exception];
+//    [FlurryAPI logError:@"Uncaught" message:@"Crash!" exception:exception];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
 	
 	// Set up the Flurry analytics API
 	NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
-	[FlurryAPI startSession:@"GG7WI18ZDK2KCQRZB6NY"];
+//	[FlurryAPI startSession:@"GG7WI18ZDK2KCQRZB6NY"];
 	
 	// Bind the view controller to the window
 	[window addSubview:substrateVC.view];

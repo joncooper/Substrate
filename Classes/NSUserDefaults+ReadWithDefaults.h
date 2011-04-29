@@ -11,7 +11,10 @@
 
 @interface NSUserDefaults (ReadWithDefaults) 
 
++ (void) registerDefaultsFromSettingsBundleIfNecessary;
++ (void) persistDefaultsFromSettingsBundleIfNecessary;
 + (NSDictionary *) getDefaultsFromSettingsBundle;
+
 - (NSInteger) integerForKey:(NSString *)key withDefault:(NSInteger)value;
 - (BOOL)      boolForKey:(NSString *)key    withDefault:(BOOL)value;
 - (float)     floatForKey:(NSString *)key   withDefault:(float)value;

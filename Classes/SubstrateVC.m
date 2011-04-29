@@ -9,7 +9,6 @@
 #import "SubstrateVC.h"
 #import "SubstrateRenderer.h"
 #import "IASKAppSettingsViewController.h"
-#import "FlurryAPI.h"
 #import "InfoBox.h"
 
 @implementation SubstrateVC
@@ -46,9 +45,7 @@
 }
 
 - (void) restart
-{
-	[FlurryAPI logEvent:@"Started a new drawing"];
-	
+{	
 	[self pause];
 	[glView stopAnimation];
 	[renderer clearAndRestart];
@@ -121,7 +118,7 @@
 		return;
 	}
 	
-	[FlurryAPI logEvent:@"About box showed"];
+	// [FlurryAPI logEvent:@"About box showed"];
 	
 	aboutBoxIsDisplayed = YES;
 	UIImage *aboutBoxImage = [UIImage imageNamed:@"AboutBox.png"];
@@ -182,7 +179,7 @@
 // <UIImagePickerControllerDelegate>
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
-	[FlurryAPI logEvent:@"Palette chosen from image"];
+	//[FlurryAPI logEvent:@"Palette chosen from image"];
 	
 	[picker release];
 	[popoverController dismissPopoverAnimated:YES];
@@ -204,7 +201,7 @@
 
 - (void) savePicture:(id) sender
 {
-	[FlurryAPI logEvent:@"Screenshot taken"];
+	//[FlurryAPI logEvent:@"Screenshot taken"];
 	
 	// Ugly traversal, but it works.
 	UIImage *viewImage = [renderer.substrate.fbPainter.fb getBufferAsUIImage];
@@ -229,7 +226,7 @@
 
 // <IASKSettingsDelegate>
 - (void)settingsViewControllerDidEnd:(IASKAppSettingsViewController*)sender {
-	[FlurryAPI logEvent:@"Configuration dialog closed"];
+	//[FlurryAPI logEvent:@"Configuration dialog closed"];
 	[popoverController dismissPopoverAnimated:YES];
 	[self unpause];
 }

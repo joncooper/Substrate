@@ -34,8 +34,6 @@
 	
 	// Get a Core Graphics image reference and set up parameters to the bitmap context creation
 	CGImageRef imageRef = [image CGImage];
-	NSUInteger width = CGImageGetWidth(imageRef);
-    NSUInteger height = CGImageGetHeight(imageRef);
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
 	
     unsigned char *rawData = malloc(desiredHeight * desiredWidth * 4);
