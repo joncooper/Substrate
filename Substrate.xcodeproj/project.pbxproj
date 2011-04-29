@@ -15,7 +15,6 @@
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		6102E57D11C14F6D00B1DFF9 /* 20-gear2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6102E57C11C14F6D00B1DFF9 /* 20-gear2.png */; };
 		6102E57F11C14F8500B1DFF9 /* 98-palette.png in Resources */ = {isa = PBXBuildFile; fileRef = 6102E57E11C14F8500B1DFF9 /* 98-palette.png */; };
-		6102E59811C168F300B1DFF9 /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6102E59711C168F300B1DFF9 /* libFlurry.a */; };
 		6102E6B411C18E6200B1DFF9 /* 86-camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 6102E6B311C18E6200B1DFF9 /* 86-camera.png */; };
 		6102E74911C1B8A600B1DFF9 /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 6102E74811C1B8A600B1DFF9 /* Default-Landscape.png */; };
 		6102E74B11C1B8AE00B1DFF9 /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 6102E74A11C1B8AE00B1DFF9 /* Default-Portrait.png */; };
@@ -70,8 +69,6 @@
 		32CA4F630368D1EE00C91783 /* Substrate_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Substrate_Prefix.pch; sourceTree = "<group>"; };
 		6102E57C11C14F6D00B1DFF9 /* 20-gear2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "20-gear2.png"; sourceTree = "<group>"; };
 		6102E57E11C14F8500B1DFF9 /* 98-palette.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "98-palette.png"; sourceTree = "<group>"; };
-		6102E59611C168F300B1DFF9 /* FlurryAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAPI.h; sourceTree = "<group>"; };
-		6102E59711C168F300B1DFF9 /* libFlurry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry.a; sourceTree = "<group>"; };
 		6102E6B311C18E6200B1DFF9 /* 86-camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "86-camera.png"; sourceTree = "<group>"; };
 		6102E74811C1B8A600B1DFF9 /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape.png"; sourceTree = "<group>"; };
 		6102E74A11C1B8AE00B1DFF9 /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait.png"; sourceTree = "<group>"; };
@@ -151,7 +148,6 @@
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				614D138311ADE17100646C4A /* OpenGLES.framework in Frameworks */,
 				614D138511ADE17100646C4A /* QuartzCore.framework in Frameworks */,
-				6102E59811C168F300B1DFF9 /* libFlurry.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,7 +180,6 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				6102E59511C168F300B1DFF9 /* FlurryLib */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -233,15 +228,6 @@
 				614D138411ADE17100646C4A /* QuartzCore.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		6102E59511C168F300B1DFF9 /* FlurryLib */ = {
-			isa = PBXGroup;
-			children = (
-				6102E59611C168F300B1DFF9 /* FlurryAPI.h */,
-				6102E59711C168F300B1DFF9 /* libFlurry.a */,
-			);
-			path = FlurryLib;
 			sourceTree = "<group>";
 		};
 		612EB10911C032F900324FF2 /* NSUserDefaults+ReadWithDefaults */ = {
@@ -489,10 +475,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Substrate_Prefix.pch;
 				INFOPLIST_FILE = "Substrate-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/FlurryLib\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = Substrate;
 				SDKROOT = iphoneos;
 			};
@@ -508,10 +491,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Substrate_Prefix.pch;
 				INFOPLIST_FILE = "Substrate-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/FlurryLib\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = Substrate;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
